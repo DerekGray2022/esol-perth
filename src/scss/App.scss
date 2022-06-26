@@ -1,0 +1,122 @@
+.App 
+{
+  text-align: center;
+}
+
+.bg-esolDarkBlue
+{
+  background-color: #5eaaa8;
+}
+
+.bg-esolOrange
+{
+  background-color: #eb5e0b;
+}
+
+.navbar
+{
+  padding: 1rem;
+
+  .brand
+  {
+    color: #f8f1f1;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+    .justify-content-end
+  {
+    justify-content: end;
+
+    .dropDown
+    {
+      background-color: #5eaaa8;
+      color: #f8f1f1;
+    }
+  }
+}
+
+.carousel
+{
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+
+  .d-block
+  {
+    max-width: 600px;
+  }
+}
+
+.content
+{
+  padding: 50px;
+
+  h2
+  {
+    color: #eb5e0b;
+  }
+}
+
+.intro, .register
+  {
+    background-color: #a3d2ca;
+    padding: 25px;
+  }
+
+  .facebook
+  {
+    background-color: #5eaaa8;
+    color: #f8f1f1;
+    padding: 25px;
+  }
+
+  .carouselContainer
+  {
+    margin: 100px 20px 50px;
+  }
+
+  .container
+  {
+    width: 100%;
+    max-width: 800px;
+  }
+
+  .bodyText
+  {
+    margin-top: 30px;
+  }
+  .donate
+  {
+    padding: 50px 10px;
+  }
+
+  .donateButton
+  {
+    background-color: #eb5e0b;
+    color: #f8f1f1;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: none;
+  }
+
+  .donateButton:hover
+  {
+    background-color: #ff9e66;
+    color: #eb5e0b;
+  }
+
+  .mapboxgl-canvas
+  {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    min-height: 300px !important;
+    min-width: 300px !important;
+  }
+
+  
+
+  
+
+
