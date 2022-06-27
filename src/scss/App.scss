@@ -27,14 +27,29 @@
     .justify-content-end
   {
     justify-content: end;
-
-    .dropDown
-    {
-      background-color: #5eaaa8;
-      color: #f8f1f1;
-    }
   }
 }
+
+  .navbar-nav
+  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a
+    {
+      margin-right: 10px;
+      text-decoration: none;
+      background-color: #5eaaa8;
+    }
+
+    .dropdown-menu.show
+    {
+      width: 200px;
+      background-color: #5eaaa8;
+      border: none;
+      text-align: center;
+    }
+  }
 
 .carousel
 {
@@ -86,6 +101,7 @@
   {
     margin-top: 30px;
   }
+  
   .donate
   {
     padding: 50px 10px;
@@ -114,9 +130,25 @@
     min-height: 300px !important;
     min-width: 300px !important;
   }
+
   .page
   {
     height: 100vh;
+  }
+
+  button.toggle.navbar-toggler
+  {
+    border: none;
+
+    :focus
+    {
+      border: none;
+    }
+  }
+
+  .foot-text
+  {
+    text-align: right;
   }
 
   

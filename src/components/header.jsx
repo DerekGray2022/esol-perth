@@ -1,46 +1,65 @@
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { LinkContainer } from 'react-router-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-            <Navbar
-                className="navbar"
-                bg="esolDarkBlue"
-                variant="dark"
-                sticky="top"
-                expand="md"
-                collapseOnSelect
-            >
+        <Navbar
+            className="navbar"
+            bg="esolDarkBlue"
+            variant="dark"
+            sticky="top"
+            expand="md"
+            collapseOnSelect
+        >
 
-                <Navbar.Brand className="brand">
-                    <img src="assets/images/onBlue_logo.png" width="80px" alt="Logo" />
-                    esolperth
-                </Navbar.Brand>
+            <Navbar.Brand className="brand">
+                <img src="assets/images/onBlue_logo.png" width="80px" alt="Logo" />
+                esolperth
+            </Navbar.Brand>
 
-                <Navbar.Toggle className="toggle" />
+            <Navbar.Toggle className="toggle" />
 
-                <Navbar.Collapse className="justify-content-end">
-                    <Nav>
-                        <Link to="/">Home</Link>
-                        <Link to="/about">About us</Link>
-                        <Link to="/timetable">Timetable</Link>
+            <Navbar.Collapse className="justify-content-end">
+                <Nav>
+                    <LinkContainer to="/">
+                        <Nav.Link>Home</Nav.Link>
+                    </LinkContainer>
+                    <LinkContainer to="/about">
+                        <Nav.Link>About Us</Nav.Link>
+                    </LinkContainer>
+                    <LinkContainer to="/timetable">
+                        <Nav.Link>Timetable</Nav.Link>
+                    </LinkContainer>
 
-                        {/* DropDown */}
-                        <NavDropdown variant="dark" title="English Lessons">
-                        <ul>
-                            <li><Link to="/beginners">Beginners' Lessons</Link></li>
-                            <li><Link to="/intermediate">Intermediate Lessons</Link></li>
-                            <li><Link to="/advanced">Advanced Lessons</Link></li>
-                            <li><Link to="/ielts">IELTS Lessons</Link></li>
-                        </ul>
-                        </NavDropdown>
+                    {/* DropDown */}
+                    <NavDropdown variant="dark" title="English Lessons">
+                        <LinkContainer to="/beginners">
+                            <Nav.Link>Beginners' Lessons</Nav.Link>
+                        </LinkContainer>
+                        <LinkContainer to="/intermediate">
+                            <Nav.Link>Intermediate Lessons</Nav.Link>
+                        </LinkContainer>
+                        <LinkContainer to="/advanced">
+                            <Nav.Link>Advanced Lessons</Nav.Link>
+                        </LinkContainer>
+                        <LinkContainer to="/ielts">
+                            <Nav.Link>IELTS Lessons</Nav.Link>
+                        </LinkContainer>
+                    </NavDropdown>
+                    {/* End DropDown */}
 
-                        <Link to="/activities">Activities</Link>
-                        <Link to="/contact">Contact</Link>
-                    </Nav>
-                </Navbar.Collapse>
+                    <LinkContainer to="/activities">
+                        <Nav.Link>Activities</Nav.Link>
+                    </LinkContainer>
+                    <LinkContainer to="/contact">
+                        <Nav.Link>Contact</Nav.Link>
+                    </LinkContainer>
 
-            </Navbar>
+                </Nav>
+            </Navbar.Collapse>
+
+        </Navbar>
     );
 };
 
