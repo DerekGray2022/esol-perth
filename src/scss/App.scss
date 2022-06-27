@@ -79,7 +79,7 @@
   .container
   {
     width: 100%;
-    max-width: 800px;
+    max-width: 600px;
   }
 
   .bodyText
@@ -113,6 +113,10 @@
     height: 80%;
     min-height: 300px !important;
     min-width: 300px !important;
+  }
+  .page
+  {
+    height: 100vh;
   }
 
   

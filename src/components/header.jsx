@@ -1,4 +1,5 @@
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -20,20 +21,22 @@ const Header = () => {
 
                 <Navbar.Collapse className="justify-content-end">
                     <Nav>
-                        <Nav.Link href="home">Home</Nav.Link>
-                        <Nav.Link href="about">About us</Nav.Link>
-                        <Nav.Link href="timetable">Timetable</Nav.Link>
+                        <Link to="/">Home</Link>
+                        <Link to="/about">About us</Link>
+                        <Link to="/timetable">Timetable</Link>
 
                         {/* DropDown */}
                         <NavDropdown variant="dark" title="English Lessons">
-                            <NavDropdown.Item href="beginners">Beginners' Lessons</NavDropdown.Item>
-                            <NavDropdown.Item href="intermediate">Intermediate Lessons</NavDropdown.Item>
-                            <NavDropdown.Item href="advanced">Advanced Lessons</NavDropdown.Item>
-                            <NavDropdown.Item href="ielts">IELTS Lessons</NavDropdown.Item>
+                        <ul>
+                            <li><Link to="/beginners">Beginners' Lessons</Link></li>
+                            <li><Link to="/intermediate">Intermediate Lessons</Link></li>
+                            <li><Link to="/advanced">Advanced Lessons</Link></li>
+                            <li><Link to="/ielts">IELTS Lessons</Link></li>
+                        </ul>
                         </NavDropdown>
 
-                        <Nav.Link href="activities">Activities</Nav.Link>
-                        <Nav.Link href="contact">Contact</Nav.Link>
+                        <Link to="/activities">Activities</Link>
+                        <Link to="/contact">Contact</Link>
                     </Nav>
                 </Navbar.Collapse>
 
