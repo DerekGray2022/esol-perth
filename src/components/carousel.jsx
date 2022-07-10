@@ -6,7 +6,11 @@ const FadeCarousel = () => {
 
             {/* T'ai Chi */}
             <Carousel.Item>
-                <img src="assets/esol-images/tai-chi.png" className=" w-100" alt="T'ai Chi" />
+                <img
+                    src="assets/esol-images/tai-chi.png"
+                    className=" w-100"
+                    alt="T'ai Chi" 
+                    />
             </Carousel.Item>
             {/* Piano */}
             <Carousel.Item>

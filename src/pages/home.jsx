@@ -1,6 +1,6 @@
 import { Col, Container, Row } from 'react-bootstrap';
 
-import FadeCarousel from '../components/carousel';
+import FadeCarousel from '../components/Carousel';
 import Donate from '../components/donate';
 import SignUp from '../components/signUp';
 import EsolMap from '../components/map';
