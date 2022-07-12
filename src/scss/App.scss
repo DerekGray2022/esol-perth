@@ -159,7 +159,20 @@
 
   .adBanner
   {
+    width: 100vw;
     padding: 0;
+  }
+
+  .adContainer
+  {
+    width: 100%;
+    max-width: 1400px;
+  }
+
+  .carousel-item.active
+  {
+    margin: 0;
+    padding: auto;
   }
 
   

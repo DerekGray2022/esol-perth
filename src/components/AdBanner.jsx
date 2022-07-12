@@ -1,8 +1,6 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
 import Carousel from 'react-bootstrap/Carousel';
-// import Images from 'assets/adBanner';
-
 
 const AdBanner = () => {
     return (
@@ -51,31 +49,42 @@ const AdBanner = () => {
 export default AdBanner;
 
 
-/*
-<Carousel indicators={false} controls={false}>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src="assets/adBanner/AD#01.png"
-                    alt="AD#01.png"
-                />
-            </Carousel.Item>
 
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src="assets/adBanner/AD#02.png"
-                    alt="AD#02.png"
-                />
-            </Carousel.Item>
-            
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src="assets/adBanner/AD#03.png"
-                    alt="AD#03.png"
-                />
-            </Carousel.Item>
-        </Carousel>
+/*
+<Container>
+            <Carousel controls="off" indicators="false">
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src="assets/adBanner/AD01.png"
+                        alt="First slide"
+                    />
+                </Carousel.Item>
+
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src="assets/adBanner/AD02.png"
+                        alt="Second slide"
+                    />
+                </Carousel.Item>
+
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src="assets/adBanner/AD03.png"
+                        alt="Third slide"
+                    />
+                </Carousel.Item>
+
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src="assets/adBanner/AD04.png"
+                        alt="Third slide"
+                    />
+                </Carousel.Item>
+            </Carousel>
+        </Container>
 */
 
