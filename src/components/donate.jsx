@@ -5,19 +5,16 @@ function Donate() {
         <Container>
             <Row>
 
-                <Col sm={12} md={2} />
-
-                <Col sm={12} md={6}>
+                <Col className='donateText' sm={12} md={9}>
                     <h3>esolperth is a charity</h3>
+                    <p>please consider donating to help us keep our lessons and community activities free</p>
                 </Col>
 
-                <Col sm={12} md={2}>
+                <Col className='donate' sm={12} md={3}>
                     <Button className='donateButton'>
                         Donate
                     </Button>
                 </Col>
-
-                <Col sm={12} md={2} />
 
             </Row>
         </Container>

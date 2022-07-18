@@ -1,16 +1,18 @@
+//    GENERAL
+body
+{
+  font-size: 1.2rem;
+}
+
 .App 
 {
   text-align: center;
 }
 
+//    HEADER
 .bg-esolDarkBlue
 {
   background-color: #5eaaa8;
-}
-
-.bg-esolOrange
-{
-  background-color: #eb5e0b;
 }
 
 .navbar
@@ -30,128 +32,38 @@
   }
 }
 
-  .navbar-nav
-  {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    a
-    {
-      margin-right: 10px;
-      text-decoration: none;
-      background-color: #5eaaa8;
-    }
-
-    .dropdown-menu.show
-    {
-      width: 200px;
-      background-color: #5eaaa8;
-      border: none;
-      text-align: center;
-    }
-  }
-
-.carousel
+.navbar-nav
 {
   display: flex;
-  justify-content: center;
-  padding: 20px 0;
-
-  .d-block
+  justify-content: space-between;
+  align-items: center;
+  a
   {
-    max-width: 600px;
-  }
-}
-
-.content
-{
-  padding: 50px;
-
-  h2
-  {
-    color: #eb5e0b;
-  }
-}
-
-.intro, .register
-  {
-    background-color: #a3d2ca;
-    padding: 25px;
-  }
-
-  .facebook
-  {
+    margin-right: 10px;
+    text-decoration: none;
     background-color: #5eaaa8;
-    color: #f8f1f1;
-    padding: 25px;
   }
 
-  .carouselContainer
+  .dropdown-menu.show
   {
-    margin: 100px 20px 50px;
+    width: 200px;
+    background-color: #5eaaa8;
+    border: none;
+    text-align: center;
   }
+}
 
-  .container
-  {
-    width: 100%;
-    max-width: 600px;
-  }
+button.toggle.navbar-toggler
+{
+  border: none;
 
-  .bodyText
+  :focus
   {
-    margin-top: 30px;
-  }
-  
-  .donate
-  {
-    padding: 50px 10px;
-  }
-
-  .donateButton
-  {
-    background-color: #eb5e0b;
-    color: #f8f1f1;
-    font-size: 1.5rem;
-    font-weight: 700;
     border: none;
   }
+}
 
-  .donateButton:hover
-  {
-    background-color: #ff9e66;
-    color: #eb5e0b;
-  }
-
-  .mapboxgl-canvas
-  {
-    position: relative;
-    width: 80%;
-    height: 80%;
-    min-height: 300px !important;
-    min-width: 300px !important;
-  }
-
-  .page
-  {
-    height: 100vh;
-  }
-
-  button.toggle.navbar-toggler
-  {
-    border: none;
-
-    :focus
-    {
-      border: none;
-    }
-  }
-
-  .foot-text
-  {
-    text-align: right;
-  }
-
-  // Ad Carousel
+  // AD CAROUSEL
   #carouselExampleSlidesOnly
   {
     padding: 0;
@@ -161,6 +73,7 @@
   {
     width: 100vw;
     padding: 0;
+    margin: 50px auto;
   }
 
   .adContainer
@@ -174,6 +87,118 @@
     margin: 0;
     padding: auto;
   }
+
+//    WORKSHOP CAROUSEL
+.carousel
+{
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+
+  .d-block
+  {
+    max-width: 600px;
+  }
+}
+
+.carouselContainer
+{
+  margin: 100px 20px 50px;
+}
+
+//    INTRO & REGISTER DIVISIONS
+.intro, .register
+{
+  background-color: #a3d2ca;
+  padding: 25px;
+}
+
+.bodyText
+{
+  margin: 30px;
+}
+
+//    DONATE DIVISION
+.donate
+{
+  padding: 30px 10px;
+}
+
+.donateButton
+{
+  background-color: #eb5e0b;
+  color: #f8f1f1;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border: none;
+}
+
+.donateButton:hover
+{
+  background-color: #ff9e66;
+  color: #eb5e0b;
+}
+
+  //    FACEBOOK DIVISION
+.facebook
+{
+  background-color: #5eaaa8;
+  color: #f8f1f1;
+  padding: 25px;
+}
+
+.activitiesFacebook
+{
+  justify-content: center;
+  background-color: #a3d2ca;
+  color: #023f8f;
+  margin-top: 40px;
+  padding: 10px;
+}
+
+//    MAP DIVISION
+.mapboxgl-canvas
+{
+  position: relative;
+  width: 80%;
+  height: 80%;
+  min-height: 300px !important;
+  min-width: 300px !important;
+}
+
+.content
+{
+  padding: 50px;
+
+  h2
+  {
+    color: #eb5e0b;
+  }
+}
+
+.container
+{
+  width: 100%;
+  max-width: 600px;
+}
+
+//    FOOTER
+.bg-esolOrange
+{
+  background-color: #eb5e0b;
+}
+
+.foot-text
+{
+  text-align: right;
+}
+
+////    OTHER PAGES
+.page
+{
+  height: 100vh;
+}
+
 
   
 

@@ -1,6 +1,5 @@
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { LinkContainer } from 'react-router-bootstrap';
-import AdBanner from "./AdBanner";
 
 const Header = () => {
     return (
@@ -59,13 +58,7 @@ const Header = () => {
 
                     </Nav>
                 </Navbar.Collapse>
-            </Navbar>
-
-            <Navbar className="adBanner">
-                <AdBanner />
-            </Navbar>
-            
-            
+            </Navbar>  
         </>
     );
 };

@@ -1,16 +1,29 @@
+import { Container, Row } from "react-bootstrap";
+import FadeCarousel from "../components/carousel";
+
 const Activities = () => {
   return (
     <div className="page">
 
-      <h1>Activities Page</h1>
+      <Container>
+        <h2 className="bodyText">Activities</h2>
+        <p className="bodyText"><b>Each week our volunteers run activities to help our students mingle with each other.</b><br />
+          Some activities happen on a regular weekly basis, where others are one off or opportunistic<br /></p>
 
-      <p>Each week our volunteers run activities to help our students mingle with each other.<br />
-        Some activities happen on a regular weekly basis, where others are one off or opportunistic<br /><b>- see our Facebook for updates.</b>
-      </p>
+        <div className="activitiesFacebook">
+          <i className="fa-brands fa-facebook"></i>
+          &nbsp;- see our Facebook page for updates
+        </div>
+      </Container>
 
-      <h4>
-        <b>[List of activities with descriptions]</b>
-      </h4>
+      {/* WORKSHOP CAROUSEL */}
+      <div className="carouselContainer">
+        <Container>
+          <Row className='rowContainer'>
+            <FadeCarousel />
+          </Row>
+        </Container>
+      </div>
     </div>
   );
 };

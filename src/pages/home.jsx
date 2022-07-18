@@ -1,22 +1,24 @@
-import { Col, Container, Row } from 'react-bootstrap';
-
-import FadeCarousel from '../components/Carousel';
+import { Col, Container, Row, Navbar } from 'react-bootstrap';
 import Donate from '../components/donate';
 import SignUp from '../components/signUp';
-import EsolMap from '../components/map';
+import AdBanner from '../components/AdBanner';
 
 const Home = () => {
     return (
         <>
-            <div className="carouselContainer">
+            {/* DONATE DIVISION */}
+            <div className="donate">
                 <Container>
-                    <Row className='rowContainer'>
-                        <FadeCarousel />
+                    <Row>
+                        <Col>
+                            <Donate />
+                        </Col>
                     </Row>
                 </Container>
             </div>
 
-            <div className="cotent intro">
+            {/* INTRO DIVISION */}
+            <div className="intro">
                 <Container>
                     <Row>
                         <h1>esolperth</h1>
@@ -30,21 +32,20 @@ const Home = () => {
                 </Container>
             </div>
 
-            <div className="donate">
-                <Container>
-                    <Row>
-                        <Col>
-                            <Donate />
-                        </Col>
-                    </Row>
-                </Container>
+            {/* AD BANNER DIVISION */}
+            <div>
+                <Navbar className="adBanner">
+                    <AdBanner />
+                </Navbar>
             </div>
 
+            {/* FACEBOOK DIVISION */}
             <div className="facebook">
                 <h2><i className="fa-brands fa-facebook"></i>
                     &nbsp;Find us on Facebook</h2>
             </div>
 
+            {/* SIGN-UP FORM DIVISION */}
             <div className="register">
                 <Container>
                     <Row>
@@ -62,24 +63,6 @@ const Home = () => {
                     </Row>
                 </Container>
             </div>
-
-            <Container className='content'>
-                <Row>
-                    <h2><b>Our Location:</b></h2>
-                    <p><b>Suite 1, Drummond House, 6 Scott Street, Perth, PH1 5EJ UK</b></p>
-
-                    <p> Please get in touch with Linda on</p>
-                    
-                    <p><b>+447427 689797</b> (from outside the UK)</p>
-
-                    <p><b>07427689797</b> (in the UK)</p>
-
-                    <p><b>email:</b> esolperth@gmail.com</p>
-                </Row>
-                <Row>
-                    <EsolMap />
-                </Row>
-            </Container>
         </>
     );
 };
