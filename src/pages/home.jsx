@@ -2,6 +2,7 @@ import { Col, Container, Row, Navbar } from 'react-bootstrap';
 import Donate from '../components/donate';
 import SignUp from '../components/signUp';
 import AdBanner from '../components/AdBanner';
+import FadeCarousel from "../components/carousel";
 
 const Home = () => {
     return (
@@ -20,9 +21,19 @@ const Home = () => {
             {/* INTRO DIVISION */}
             <div className="intro">
                 <Container>
+                    
                     <Row>
                         <h1>esolperth</h1>
 
+                    </Row>
+
+                    <Row>
+                        {/* WORKSHOP CAROUSEL */}
+                        <div className="carouselContainer">
+                                <Row className='rowContainer'>
+                                    <FadeCarousel />
+                                </Row>
+                        </div>
                     </Row>
                     <Row>
                         <p className='bodyText'>esolperth provides free English lessons to speakers of other languages.

@@ -1,39 +1,35 @@
-import { Carousel } from 'react-bootstrap';
+import Carousel from 'react-bootstrap/Carousel';
 
 const FadeCarousel = () => {
     return (
-        <Carousel fade>
+        <Carousel fade controls={false} indicators={false}>
 
             {/* T'ai Chi */}
-            <Carousel.Item>
-                <img
-                    src="assets/esol-images/tai-chi.png"
-                    className=" w-100"
-                    alt="T'ai Chi" 
-                    />
+            <Carousel.Item id="fadeItem">
+                <img src="assets/esol-images/tai-chi.png" className=" w-100" alt="T'ai Chi"  />
             </Carousel.Item>
             {/* Piano */}
-            <Carousel.Item>
+            <Carousel.Item id="fadeItem">
                 <img src="assets/esol-images/piano.png" className=" w-100" alt="Piano" />
             </Carousel.Item>
             {/* Kids' Art */}
-            <Carousel.Item>
+            <Carousel.Item id="fadeItem">
                 <img src="assets/esol-images/kids-art.png" className=" w-100" alt="Kids' Art" />
             </Carousel.Item>
             {/* Coding */}
-            <Carousel.Item>
+            <Carousel.Item id="fadeItem">
                 <img src="assets/esol-images/coding.png" className="w-100" alt="Coding" />
             </Carousel.Item>
             {/* Piano & Singing */}
-            <Carousel.Item>
+            <Carousel.Item id="fadeItem">
                 <img src="assets/esol-images/piano-sing.png" className=" w-100" alt="Piano and Singing" />
             </Carousel.Item>
             {/* Chess */}
-            <Carousel.Item>
+            <Carousel.Item id="fadeItem">
                 <img src="assets/esol-images/chess.png" className=" w-100" alt="Chess" />
             </Carousel.Item>
             {/* Art */}
-            <Carousel.Item>
+            <Carousel.Item id="fadeItem">
                 <img src="assets/esol-images/art.png" className=" w-100" alt="Art" />
             </Carousel.Item>
             
@@ -44,7 +40,25 @@ const FadeCarousel = () => {
 export default FadeCarousel;
 
 
+// const FadeControl = () => {
+//     return (
+//         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+//             <div class="carousel-inner">
+//                 <div class="carousel-item active">
+//                     <img src="assets/esol-images/piano.png" className=" w-100" alt="Piano" />
+//                 </div>
+//                 <div class="carousel-item">
+//                     <img src="assets/esol-images/kids-art.png" className=" w-100" alt="Kids' Art" />
+//                 </div>
+//                 <div class="carousel-item">
+//                     <img src="assets/esol-images/coding.png" className="w-100" alt="Coding" />
+//                 </div>
+//             </div>
+//         </div>
+//     )
+// };
 
+// export default FadeControl;
 
 
 

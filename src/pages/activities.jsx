@@ -1,5 +1,4 @@
-import { Container, Row } from "react-bootstrap";
-import FadeCarousel from "../components/carousel";
+import { Container } from "react-bootstrap";
 
 const Activities = () => {
   return (
@@ -16,14 +15,6 @@ const Activities = () => {
         </div>
       </Container>
 
-      {/* WORKSHOP CAROUSEL */}
-      <div className="carouselContainer">
-        <Container>
-          <Row className='rowContainer'>
-            <FadeCarousel />
-          </Row>
-        </Container>
-      </div>
     </div>
   );
 };

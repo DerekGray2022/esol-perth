@@ -89,6 +89,18 @@ button.toggle.navbar-toggler
   }
 
 //    WORKSHOP CAROUSEL
+#fadeItem 
+{
+  transition: opacity 1s ease-in-out !important;
+
+  li
+  {
+  transition: opacity 1s ease !important;
+  }
+}
+
+
+
 .carousel
 {
   display: flex;
