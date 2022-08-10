@@ -35,6 +35,7 @@ const Home = () => {
                                 </Row>
                         </div>
                     </Row>
+                    
                     <Row>
                         <p className='bodyText'>esolperth provides free English lessons to speakers of other languages.
                             We run weekly activities to encourage a community spirit through the speaking of English.

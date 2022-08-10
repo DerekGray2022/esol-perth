@@ -1,3 +1,5 @@
+@import "~bootstrap/scss/bootstrap";
+
 //    GENERAL
 body
 {
@@ -82,30 +84,28 @@ button.toggle.navbar-toggler
     max-width: 1400px;
   }
 
-  .carousel-item.active
-  {
-    margin: 0;
-    padding: auto;
-  }
+  // .carousel-item.active
+  // {
+  //   margin: 0;
+  //   padding: auto;
+  // }
 
 //    WORKSHOP CAROUSEL
-#fadeItem 
-{
-  transition: opacity 1s ease-in-out !important;
+// #fadeItem 
+// {
+//   transition: opacity 1s ease-in-out !important;
 
-  li
-  {
-  transition: opacity 1s ease !important;
-  }
-}
-
-
+//   li
+//   {
+//   transition: opacity 1s ease !important;
+//   }
+// }
 
 .carousel
 {
   display: flex;
   justify-content: center;
-  padding: 20px 0;
+  padding: 0;
 
   .d-block
   {
@@ -115,7 +115,7 @@ button.toggle.navbar-toggler
 
 .carouselContainer
 {
-  margin: 100px 20px 50px;
+  margin: 100px auto 50px;
 }
 
 //    INTRO & REGISTER DIVISIONS
@@ -127,7 +127,7 @@ button.toggle.navbar-toggler
 
 .bodyText
 {
-  margin: 30px;
+  margin: 30px auto;
 }
 
 //    DONATE DIVISION
@@ -143,12 +143,14 @@ button.toggle.navbar-toggler
   font-size: 1.5rem;
   font-weight: 700;
   border: none;
+  box-shadow: 5px 5px 10px #777;
 }
 
 .donateButton:hover
 {
   background-color: #ff9e66;
   color: #eb5e0b;
+  box-shadow: 5px 5px 10px #777;
 }
 
   //    FACEBOOK DIVISION

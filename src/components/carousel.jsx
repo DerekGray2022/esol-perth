@@ -2,7 +2,7 @@ import Carousel from 'react-bootstrap/Carousel';
 
 const FadeCarousel = () => {
     return (
-        <Carousel fade controls={false} indicators={false}>
+        <Carousel slide={true} fade controls={false} indicators={false}>
 
             {/* T'ai Chi */}
             <Carousel.Item id="fadeItem">
@@ -39,26 +39,6 @@ const FadeCarousel = () => {
 
 export default FadeCarousel;
 
-
-// const FadeControl = () => {
-//     return (
-//         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-//             <div class="carousel-inner">
-//                 <div class="carousel-item active">
-//                     <img src="assets/esol-images/piano.png" className=" w-100" alt="Piano" />
-//                 </div>
-//                 <div class="carousel-item">
-//                     <img src="assets/esol-images/kids-art.png" className=" w-100" alt="Kids' Art" />
-//                 </div>
-//                 <div class="carousel-item">
-//                     <img src="assets/esol-images/coding.png" className="w-100" alt="Coding" />
-//                 </div>
-//             </div>
-//         </div>
-//     )
-// };
-
-// export default FadeControl;
 
 
 
