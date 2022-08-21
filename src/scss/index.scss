@@ -1,23 +1,41 @@
-body {
+:root
+{
+  --background: rgb(248, 241, 241);
+  --darkBlue: rgb(94, 170, 168);
+  --lightBlue: rgb(163, 210, 202);
+  --orange: rgb(235, 94, 11);
+  --lightOrange: rgb(255, 158, 102);
+}
+
+body 
+{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 
-  background-color: #f8f1f1;
+  background-color: var(--background);
 
   font-family: -apple-system, BlinkMacSystemFont, 'Nunito Sans', 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue' sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1
+{
+  font-family: -apple-system, BlinkMacSystemFont, 'Nunito Sans', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue' sans-serif;
 }
 
-.App> h1
+h3
 {
-  font-weight: 900;
+  font-family: -apple-system, BlinkMacSystemFont, 'Nunito Sans', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue' sans-serif;
+    margin: 10px auto 50px auto;
+}
+
+code 
+{
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }

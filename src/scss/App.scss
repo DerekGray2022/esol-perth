@@ -14,7 +14,7 @@ body
 //    HEADER
 .bg-esolDarkBlue
 {
-  background-color: #5eaaa8;
+  background-color: var(--darkBlue);
 }
 
 .navbar
@@ -23,7 +23,7 @@ body
 
   .brand
   {
-    color: #f8f1f1;
+    color: var(--background);
     font-size: 2rem;
     font-weight: 700;
   }
@@ -43,13 +43,13 @@ body
   {
     margin-right: 10px;
     text-decoration: none;
-    background-color: #5eaaa8;
+    background-color: var(--darkBlue);
   }
 
   .dropdown-menu.show
   {
     width: 200px;
-    background-color: #5eaaa8;
+    background-color: var(--darkBlue);
     border: none;
     text-align: center;
   }
@@ -84,22 +84,7 @@ button.toggle.navbar-toggler
     max-width: 1400px;
   }
 
-  // .carousel-item.active
-  // {
-  //   margin: 0;
-  //   padding: auto;
-  // }
-
 //    WORKSHOP CAROUSEL
-// #fadeItem 
-// {
-//   transition: opacity 1s ease-in-out !important;
-
-//   li
-//   {
-//   transition: opacity 1s ease !important;
-//   }
-// }
 
 .carousel
 {
@@ -121,7 +106,7 @@ button.toggle.navbar-toggler
 //    INTRO & REGISTER DIVISIONS
 .intro, .register
 {
-  background-color: #a3d2ca;
+  background-color: var(--lightBlue);
   padding: 25px;
 }
 
@@ -131,6 +116,12 @@ button.toggle.navbar-toggler
 }
 
 //    DONATE DIVISION
+.card-body
+{
+  background-color: var(--background);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .donate
 {
   padding: 30px 10px;
@@ -138,8 +129,8 @@ button.toggle.navbar-toggler
 
 .donateButton
 {
-  background-color: #eb5e0b;
-  color: #f8f1f1;
+  background-color: var(--orange);
+  color: var(--background);
   font-size: 1.5rem;
   font-weight: 700;
   border: none;
@@ -148,23 +139,23 @@ button.toggle.navbar-toggler
 
 .donateButton:hover
 {
-  background-color: #ff9e66;
-  color: #eb5e0b;
+  background-color: var(--lightOrange);
+  color: var(--orange);
   box-shadow: 5px 5px 10px #777;
 }
 
   //    FACEBOOK DIVISION
 .facebook
 {
-  background-color: #5eaaa8;
-  color: #f8f1f1;
+  background-color: var(--darkBlue);
+  color: var(--background);
   padding: 25px;
 }
 
 .activitiesFacebook
 {
   justify-content: center;
-  background-color: #a3d2ca;
+  background-color: var(--lightBlue);
   color: #023f8f;
   margin-top: 40px;
   padding: 10px;
@@ -186,7 +177,7 @@ button.toggle.navbar-toggler
 
   h2
   {
-    color: #eb5e0b;
+    color: var(--orange);
   }
 }
 
@@ -199,7 +190,7 @@ button.toggle.navbar-toggler
 //    FOOTER
 .bg-esolOrange
 {
-  background-color: #eb5e0b;
+  background-color: var(--orange);
 }
 
 .foot-text

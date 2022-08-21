@@ -9,7 +9,7 @@ const Header = () => {
                 bg="esolDarkBlue"
                 variant="dark"
                 sticky="top"
-                expand="md"
+                expand="lg"
                 collapseOnSelect
             >
 

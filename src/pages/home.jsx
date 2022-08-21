@@ -1,4 +1,4 @@
-import { Col, Container, Row, Navbar } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 import Donate from '../components/donate';
 import SignUp from '../components/signUp';
 import AdBanner from '../components/AdBanner';
@@ -21,7 +21,7 @@ const Home = () => {
             {/* INTRO DIVISION */}
             <div className="intro">
                 <Container>
-                    
+
                     <Row>
                         <h1>esolperth</h1>
 
@@ -30,12 +30,12 @@ const Home = () => {
                     <Row>
                         {/* WORKSHOP CAROUSEL */}
                         <div className="carouselContainer">
-                                <Row className='rowContainer'>
-                                    <FadeCarousel />
-                                </Row>
+                            <Row className='rowContainer'>
+                                <FadeCarousel />
+                            </Row>
                         </div>
                     </Row>
-                    
+
                     <Row>
                         <p className='bodyText'>esolperth provides free English lessons to speakers of other languages.
                             We run weekly activities to encourage a community spirit through the speaking of English.
@@ -46,9 +46,9 @@ const Home = () => {
 
             {/* AD BANNER DIVISION */}
             <div>
-                <Navbar className="adBanner">
+                <Container className="adBanner">
                     <AdBanner />
-                </Navbar>
+                </Container>
             </div>
 
             {/* FACEBOOK DIVISION */}
