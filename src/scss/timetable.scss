@@ -7,173 +7,70 @@ h1
     text-align: center;
 }
 
-.timetableContainer
+//      WEEKDAY BUTTONS     //////////////
+.timetableHead
 {
     position: relative;
+    display: flex;
+    justify-content: space-around;
     width: 75vw;
-    margin: 100px auto;
+    margin: 50px auto;
+
+    .btn
+    {
+        background-color: var(--darkBlue);
+        border: 1px solid var(--darkBlue);
+    }
+
+    .btn:hover
+    {
+        background-color: var(--lightBlue);
+        border: 1px solid var(--lightBlue);
+        color: var(--orange);
+    }
+}
+
+
+//      CONTENT     //////////////////////
+.timetableContainer
+{
+    width: 75vw;
+    margin: 50px auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 5px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0px 10px;
 
-    .head
+    //      Time of Day     //
+    .time
     {
-        height: 50px;
-        font-size: 18px;
         font-weight: 700;
-        text-align: center;
 
-        .col
+        .row
         {
-            width: 14%;
-            background-color: var(--lightBlue);
-            border: 1px solid rgba(0, 0, 0, 0.2);
+            // font-size: 3vw;
+            height: 75px;
+            padding: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.3);
         }
     }
 
-    .title
+    //      Activities      //
+    .activity
     {
-        font-size: 16px;
-        font-weight: 900;
+        .row
+        {
+            // font-size: 3vw;
+            height: 75px;
+            padding: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+        }
+
+        .lunch
+        {
+            font-weight: 700;
+        }
     }
 
-    .body
-    {
-        height: 60px;
-        font-weight: 500;
-        text-align: center;
-
-        .col
-            {
-                background-color: var(--background);
-                border: 1px solid rgba(0, 0, 0, 0.2);
-                // font-size: 14px;
-            }
-    }
-
-    .lunch
-    {
-        font-size: 20px;
-        font-weight: 900;
-    }
     
-    .shade
-    {
-        background-color: var(--lightOrange) !important;
-    }
-}
-
-
-/////       MEDIA QUERIES       ///////////////
-
-/* xs */
-@media only screen and (max-width: 600px) 
-{
-    .timetableContainer
-    {
-        .col
-        {
-            width: 14%;
-        }
-
-        .head
-        {
-            font-size: 50%;
-            text-align: center;
-        }
-
-        .title
-        {
-            font-size: 12px;
-            font-weight: 900;
-        }
-
-        .body
-        {
-            font-size: 5px;
-            font-weight: 700;
-            text-align: center;
-        }
-
-        .lunch
-        {
-            font-size: 8px;
-            font-weight: 900;
-        }
-
-        .classes
-        {
-            font-size: 6px;
-            font-weight: 900;
-        }
-    }
-}
-
-/* sm   */
-@media only screen and (min-width: 600px) 
-{
-    .timetableContainer
-    {
-        .col
-        {
-            width: 14%;
-        }
-        
-        .head
-        {
-            font-size: 12px;
-        }
-
-        .title
-        {
-            font-size: 14px;
-        }
-
-        .body
-        {
-            font-size: 7px;
-            font-weight: 700;
-            text-align: center;
-        }
-
-        .lunch
-        {
-            font-size: 10px;
-            font-weight: 900;
-        }
-
-        .classes
-        {
-            font-size: 9px;
-            font-weight: 900;
-        }
-    }
-}
-
-/* md */
-@media only screen and (min-width: 768px) 
-{
-    .timetableContainer
-    {
-        .head
-        {
-            font-size: 14px;
-        }
-
-        .body
-        {
-            font-size: 10px;
-        }
-
-        .lunch
-        {
-            font-size: 14px;
-        }
-
-        .classes
-        {
-            font-size: 12px;
-            font-weight: 900;
-        }
-    }
 }
 
 
