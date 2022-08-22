@@ -13,6 +13,7 @@ const Activities = () => {
           <i className="fa-brands fa-facebook"></i>
           &nbsp;- see our Facebook page for updates
         </div>
+        <div className="spacer"></div>
       </Container>
 
     </div>

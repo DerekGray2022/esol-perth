@@ -22,7 +22,6 @@ const Timetable = () => {
 
     const handleSelect = (selectedDay) => {
         setDay(days[selectedDay]);
-        console.log(day);
     };
 
     return (

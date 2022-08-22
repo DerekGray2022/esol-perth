@@ -1,4 +1,6 @@
 import { Col, Container, Row } from 'react-bootstrap';
+
+
 import Donate from '../components/donate';
 import SignUp from '../components/signUp';
 import AdBanner from '../components/AdBanner';
@@ -9,13 +11,13 @@ const Home = () => {
         <>
             {/* DONATE DIVISION */}
             <div className="donate">
-                <Container>
-                    <Row>
-                        <Col>
-                            <Donate />
-                        </Col>
-                    </Row>
-                </Container>
+                    <Container>
+                        <Row>
+                            <Col>
+                                <Donate />
+                            </Col>
+                        </Row>
+                    </Container>
             </div>
 
             {/* INTRO DIVISION */}

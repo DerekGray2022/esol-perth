@@ -21,6 +21,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
 //  INHOUSE CSS   ///////////
 import './scss/App.scss';
+import { Container } from 'react-bootstrap';
 
 const App = () => {
   return (
@@ -28,20 +29,23 @@ const App = () => {
       <Header />
 
       {/* Router */}
-      <Routes>
-        <Route path='/' exact element={<Home />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/timetable' element={<Timetable />} />
-        <Route path='/activities' element={<Activities />} />
-        <Route path='/contact' element={<Contact />} />
-        <Route path='/beginners' element={<Beginners />} />
-        <Route path='/intermediate' element={<Intermediate />} />
-        <Route path='/advanced' element={<Advanced />} />
-        <Route path='/ielts' element={<Ielts />} />
-      </Routes>
-      {/* End Router */}
+        <Routes>
+          <Route path='/' exact element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/timetable' element={<Timetable />} />
+          <Route path='/activities' element={<Activities />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/beginners' element={<Beginners />} />
+          <Route path='/intermediate' element={<Intermediate />} />
+          <Route path='/advanced' element={<Advanced />} />
+          <Route path='/ielts' element={<Ielts />} />
+        </Routes>
+        {/* End Router */}
 
-      <Footer />
+      <Container fluid>
+        <Footer />
+      </Container>
+
     </div>
   );
 };

@@ -11,6 +11,16 @@ body
   text-align: center;
 }
 
+.spacer
+{
+  height: 100vh;
+}
+
+.container-fluid
+{
+  padding: 0;
+}
+
 //    HEADER
 .bg-esolDarkBlue
 {
@@ -195,26 +205,19 @@ button.toggle.navbar-toggler
 
 .foot-text
 {
-  text-align: right;
+  text-align: end;
 }
 
 ////    OTHER PAGES
 .page
 {
   display: block;
-  height: 100vh;
+  height: 100%;
 }
 
 
 ////        MEDIA QUERIES       ////////////////////////////
-//      Extra small devices (phones, 600px and down) 
-// @media only screen and (max-width: 600px) 
-// {
-//     .footer
-//     {
-//         margin-top: 100px;
-//     }
-// }
+
 
 
   
