@@ -201,8 +201,20 @@ button.toggle.navbar-toggler
 ////    OTHER PAGES
 .page
 {
-  // height: 100vh;
+  display: block;
+  height: 100vh;
 }
+
+
+////        MEDIA QUERIES       ////////////////////////////
+//      Extra small devices (phones, 600px and down) 
+// @media only screen and (max-width: 600px) 
+// {
+//     .footer
+//     {
+//         margin-top: 100px;
+//     }
+// }
 
 
   

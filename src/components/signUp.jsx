@@ -14,7 +14,7 @@ const SignUp = () => {
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Control type="password" placeholder="Password" autoComplete='off' />
                 </Form.Group>
-                <Button variant="primary" type="submit">
+                <Button className='donateButton' type="submit">
                     Submit
                 </Button>
             </Form>

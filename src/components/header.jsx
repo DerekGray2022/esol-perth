@@ -1,5 +1,6 @@
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { LinkContainer } from 'react-router-bootstrap';
+import '../scss/header.scss';
 
 const Header = () => {
     return (

@@ -1,0 +1,52 @@
+.bg-esolDarkBlue
+{
+  background-color: var(--darkBlue);
+}
+
+.navbar
+{
+  padding: 1rem;
+
+  .brand
+  {
+    color: var(--background);
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+    .justify-content-end
+  {
+    justify-content: end;
+  }
+}
+
+.navbar-nav
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a
+  {
+    margin-right: 10px;
+    text-decoration: none;
+    background-color: var(--darkBlue);
+  }
+
+  .dropdown-menu.show
+  {
+    width: 200px;
+    background-color: var(--darkBlue);
+    border: none;
+    text-align: center;
+  }
+}
+
+button.toggle.navbar-toggler
+{
+  border: none;
+
+  :focus
+  {
+    border: none;
+  }
+}

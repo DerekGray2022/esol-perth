@@ -36,8 +36,19 @@ h1
 {
     width: 75vw;
     margin: 50px auto;
+    background-color: var(--darkBlue) !important;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 5px 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 0px 10px;
+    padding: 10px 10px 20px;
+
+    .card-body
+    {
+        background-color: var(--lightBlue) !important;
+    }
+
+    h2
+    {
+        color: rgb(255, 255, 255);
+    }
 
     //      Time of Day     //
     .time
