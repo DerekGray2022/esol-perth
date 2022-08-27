@@ -21,10 +21,17 @@ body
   padding: 0;
 }
 
+.card-body
+{
+  background-color: var(--background);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 //    HEADER
 .bg-esolDarkBlue
 {
   background-color: var(--darkBlue);
+  box-shadow: 0 3px 10px var(--vDarkBlue);
 }
 
 .navbar
@@ -68,73 +75,31 @@ body
 button.toggle.navbar-toggler
 {
   border: none;
-
-  :focus
-  {
-    border: none;
-  }
-}
-
-  // AD CAROUSEL
-  #carouselExampleSlidesOnly
-  {
-    padding: 0;
-  }
-
-  .adBanner
-  {
-    width: 100vw;
-    padding: 0;
-    margin: 50px auto;
-  }
-
-  .adContainer
-  {
-    width: 100%;
-    max-width: 1400px;
-  }
-
-//    WORKSHOP CAROUSEL
-
-.carousel
-{
-  display: flex;
-  justify-content: center;
-  padding: 0;
-
-  .d-block
-  {
-    max-width: 600px;
-  }
-}
-
-.carouselContainer
-{
-  margin: 100px auto 50px;
-}
-
-//    INTRO & REGISTER DIVISIONS
-.intro, .register
-{
-  background-color: var(--lightBlue);
-  padding: 25px;
-}
-
-.bodyText
-{
-  margin: 30px auto;
 }
 
 //    DONATE DIVISION
-.card-body
-{
-  background-color: var(--background);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
 .donate
 {
-  padding: 30px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 30px 0px;
+
+  .card, .card-body
+  {
+    border-radius: 25px;
+  }
+
+  h3
+  {
+    margin: 10px 0;
+  }
+
+  p
+  {
+    margin: 0;
+  }
 }
 
 .donateButton
@@ -154,6 +119,65 @@ button.toggle.navbar-toggler
   box-shadow: 5px 5px 10px #777;
 }
 
+//    WORKSHOP CAROUSEL
+.workshop
+{
+  display: flex;
+  justify-content: center;
+  width: 60vw;
+  min-width: 400px;
+  margin: 0 auto;
+  padding: 0;
+  z-index: 0;
+  box-shadow: 5px 5px 10px #555;
+  border-radius: 50px;
+
+  .carousel-inner
+  {
+    border-radius: 50px;
+  }
+}
+
+.carouselContainer
+{
+  margin: 4vw auto 2vw;
+}
+
+//    INTRO & REGISTER DIVISIONS
+.intro, .register
+{
+  background-color: var(--lightBlue);
+  padding: 25px;
+}
+
+.bodyText
+{
+  margin: 30px auto;
+}
+
+// AD CAROUSEL
+.adBanner
+{
+  padding: 0;
+
+  .card, .card-body
+  {
+    border-radius: 15px;
+  }
+}
+
+.adBanner > .card
+{
+  width: 55vw;
+  padding: 0;
+  margin: 50px auto;
+}
+
+.adBanner > .card-body
+{
+  padding: 0 !important;
+}
+
   //    FACEBOOK DIVISION
 .facebook
 {
@@ -171,30 +195,10 @@ button.toggle.navbar-toggler
   padding: 10px;
 }
 
-//    MAP DIVISION
-.mapboxgl-canvas
+//    REGISTER
+.register > .container
 {
-  position: relative;
-  width: 80%;
-  height: 80%;
-  min-height: 300px !important;
-  min-width: 300px !important;
-}
-
-.content
-{
-  padding: 50px;
-
-  h2
-  {
-    color: var(--orange);
-  }
-}
-
-.container
-{
-  width: 100%;
-  max-width: 600px;
+  margin: 0 auto;
 }
 
 //    FOOTER
@@ -217,7 +221,71 @@ button.toggle.navbar-toggler
 
 
 ////        MEDIA QUERIES       ////////////////////////////
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) 
+{
+  .donate, .adBanner
+  {
+    width: 80vw;
+  }
 
+  .sidebar
+  {
+    margin: 0 auto;
+  }
+
+  .adBanner > .card
+  {
+    width: 70vw;
+  }
+
+  .register > .container
+{
+  width: 90vw;
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) 
+{
+  .donate, .adBanner
+  {
+    width: 90vw;
+  }
+
+  .adBanner > .card
+  {
+    width: 70vw;
+  }
+
+  .register > .container
+  {
+    width: 80vw;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+  .register > .container
+  {
+    width: 70vw;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) 
+{
+  .donate, .adBanner, .adBanner > .card
+  {
+    width: 55vw;
+  }
+
+  .register > .container
+{
+  width: 55vw;
+}
+}
 
 
   

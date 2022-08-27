@@ -37,12 +37,14 @@ h1
     width: 75vw;
     margin: 50px auto;
     background-color: var(--darkBlue) !important;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 5px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 5px 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 10px 10px 20px;
+    border-radius: 25px !important;
 
     .card-body
     {
-        background-color: var(--lightBlue) !important;
+        background-color: var(--lightBlue);
+        border-radius: 10px !important;
     }
 
     h2
@@ -57,21 +59,29 @@ h1
 
         .row
         {
-            // font-size: 3vw;
             height: 75px;
-            padding: 10px;
+            padding: 10px 0 0 10px;
             border: 1px solid rgba(0, 0, 0, 0.3);
+        }
+
+        .TLbox
+        {
+            border-top-left-radius: 10px;
+        }
+
+        .BLbox
+        {
+            border-bottom-left-radius: 10px;
         }
     }
 
     //      Activities      //
     .activity
     {
-        .row
+       .row
         {
-            // font-size: 3vw;
             height: 75px;
-            padding: 10px;
+            padding: 10px 0 0 10px;
             border: 1px solid rgba(0, 0, 0, 0.3);
         }
 
@@ -79,9 +89,17 @@ h1
         {
             font-weight: 700;
         }
-    }
 
-    
+        .TRbox
+        {
+            border-top-right-radius: 10px;
+        }
+
+        .BRbox
+        {
+            border-bottom-right-radius: 10px !important;
+        }
+    }
 }
 
 

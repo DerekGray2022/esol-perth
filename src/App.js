@@ -1,5 +1,6 @@
 //  REACT ROUTER    //////////
 import { Routes, Route } from 'react-router-dom';
+import { Container } from 'react-bootstrap';
 
 //  COMPONENTS    //////////
 import Header from './components/header';
@@ -19,9 +20,9 @@ import Ielts from './pages/ielts';
 // BOOTSTRAP CSS & JS   //////
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
+
 //  INHOUSE CSS   ///////////
 import './scss/App.scss';
-import { Container } from 'react-bootstrap';
 
 const App = () => {
   return (

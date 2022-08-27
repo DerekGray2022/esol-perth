@@ -49,22 +49,22 @@ const Timetable = () => {
                         <Row>
                             {/*         Time of Day      */}
                             <Col className='time' xs={6} sm={5} md={4} lg={3}>
-                                <Row>{day[6]}</Row>
+                                <Row className='TLbox'>{day[6]}</Row>
                                 <Row>11:00 - 12:00</Row>
                                 <Row>12:00 - 13:00</Row>
                                 <Row>13:00 - 14:30</Row>
                                 <Row>15:30 - 17:00</Row>
-                                <Row>18:00</Row>
+                                <Row className='BLbox'>18:00</Row>
                             </Col>
 
                             {/*         Activities       */}
                             <Col className='activity' xs={6} sm={7} md={8} lg={9}>
-                                <Row>{day[1]}</Row>
+                                <Row className='TRbox'>{day[1]}</Row>
                                 <Row>{day[2]}</Row>
                                 <Row className='lunch'>LUNCH</Row>
                                 <Row>{day[3]}</Row>
                                 <Row>{day[4]}</Row>
-                                <Row>{day[5]}</Row>
+                                <Row className='BRbox'>{day[5]}</Row>
                             </Col>
                         </Row>
                     </Card.Body>

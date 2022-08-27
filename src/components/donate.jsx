@@ -12,12 +12,12 @@ function Donate() {
                 <Container>
                     <Row>
 
-                        <Col className='donateText' sm={12} md={9}>
+                        <Col className='donateText' xs={12} md={8}>
                             <h3>esolperth is a charity</h3>
                             <p>please consider donating to help us keep our lessons and community activities free</p>
                         </Col>
 
-                        <Col className='donate' sm={12} md={3}>
+                        <Col className='donate' xs={12} md>
                             <Button className='donateButton'>
                                 Donate
                             </Button>

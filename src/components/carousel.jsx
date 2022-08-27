@@ -2,7 +2,7 @@ import Carousel from 'react-bootstrap/Carousel';
 
 const FadeCarousel = () => {
     return (
-        <Carousel slide={true} fade controls={false} indicators={false}>
+        <Carousel className="workshop" slide fade controls={false} indicators={false}>
 
             {/* T'ai Chi */}
             <Carousel.Item id="fadeItem">

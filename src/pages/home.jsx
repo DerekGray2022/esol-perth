@@ -2,7 +2,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 
 
 import Donate from '../components/donate';
-import SignUp from '../components/signUp';
+import Register from '../components/register';
 import AdBanner from '../components/AdBanner';
 import FadeCarousel from "../components/carousel";
 
@@ -32,7 +32,7 @@ const Home = () => {
                     <Row>
                         {/* WORKSHOP CAROUSEL */}
                         <div className="carouselContainer">
-                            <Row className='rowContainer'>
+                            <Row>
                                 <FadeCarousel />
                             </Row>
                         </div>
@@ -73,7 +73,7 @@ const Home = () => {
                     </Row>
 
                     <Row>
-                        <SignUp />
+                        <Register />
                     </Row>
                 </Container>
             </div>

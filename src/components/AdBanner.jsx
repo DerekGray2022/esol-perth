@@ -15,7 +15,7 @@ const AdBanner = () => {
                             <img
                                 className="d-block w-100"
                                 src="assets\adBanner\AD01.png"
-                                alt="First slide"
+                                alt="Ad #1"
                             />
                         </Carousel.Item>
 
@@ -23,7 +23,7 @@ const AdBanner = () => {
                             <img
                                 className="d-block w-100"
                                 src="assets\adBanner\AD02.png"
-                                alt="Second slide"
+                                alt="Ad #2"
                             />
                         </Carousel.Item>
 
@@ -31,7 +31,7 @@ const AdBanner = () => {
                             <img
                                 className="d-block w-100"
                                 src="assets\adBanner\AD03.png"
-                                alt="Third slide"
+                                alt="Ad #3"
                             />
                         </Carousel.Item>
 
@@ -39,7 +39,7 @@ const AdBanner = () => {
                             <img
                                 className="d-block w-100"
                                 src="assets\adBanner\AD04.png"
-                                alt="Third slide"
+                                alt="Ad #4"
                             />
                         </Carousel.Item>
 

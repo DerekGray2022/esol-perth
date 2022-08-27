@@ -1,6 +1,7 @@
 
 import { Container, Row } from "react-bootstrap";
 import EsolMap from "../components/map";
+import '../scss/contact.scss';
 
 const Contact = () => {
     return (
