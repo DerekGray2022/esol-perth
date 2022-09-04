@@ -1,12 +1,17 @@
 :root
 {
-  --background: rgb(248, 241, 241);
-  --darkBlue: rgb(94, 170, 168);
-  --vDarkBlue: rgb(51, 97, 95);
-  --mapBG: rgba(51, 97, 95, 0.75);
-  --lightBlue: rgb(163, 210, 202);
+  --page: rgb(255, 248, 243);
+  --background: rgb(254, 209, 239);
+  --shadow: rgba(0, 0, 0, 0.33);
+  --esolLogoBlue: rgb(1, 176, 241);
+  --darkBlue: rgb(28, 109, 208);
+  --vDarkBlue: rgb(16, 57, 107);
+  --mapBG: rgba(28, 109, 208, 0.75);
+  --lightBlue: rgb(163, 228, 219);
+  --lightBlueShadow: rgb(58, 121, 112);
   --orange: rgb(235, 94, 11);
   --lightOrange: rgb(255, 158, 102);
+  --bs-primary: rgb(94, 170, 168);
 }
 
 body 
@@ -15,26 +20,26 @@ body
   padding: 0;
   box-sizing: border-box;
 
-  background-color: var(--background);
+  background-color: var(--page);
 
-  font-family: -apple-system, BlinkMacSystemFont, 'Nunito Sans', 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue' sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Quicksand', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica' sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1
-{
-  font-family: -apple-system, BlinkMacSystemFont, 'Nunito Sans', 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue' sans-serif;
-}
+// h1
+// {
+//   font-family: -apple-system, BlinkMacSystemFont, 'Nunito Sans', 'Segoe UI', 'Roboto', 'Oxygen',
+//     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue' sans-serif;
+// }
 
-h3
-{
-  font-family: -apple-system, BlinkMacSystemFont, 'Nunito Sans', 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue' sans-serif;
-    margin: 10px auto 50px auto;
-}
+// h3
+// {
+//   font-family: -apple-system, BlinkMacSystemFont, 'Nunito Sans', 'Segoe UI', 'Roboto', 'Oxygen',
+//     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue' sans-serif;
+//     margin: 10px auto 50px auto;
+// }
 
 code 
 {

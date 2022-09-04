@@ -3,8 +3,8 @@ import { Routes, Route } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 
 //  COMPONENTS    //////////
-import Header from './components/header';
-import Footer from './components/footer';
+import Header from './components/Header';
+import Footer from './components/Footer';
 //    PAGES   //////////////
 import Home from './pages/home';
 import About from './pages/about';

@@ -1,4 +1,4 @@
-import { Col, Container, Navbar } from "react-bootstrap";
+import { Col, Container, Navbar, Row } from "react-bootstrap";
 
 const Footer = () => {
     return (
@@ -6,24 +6,33 @@ const Footer = () => {
 
         <Container fluid>
             <Navbar
+                id="footer"
                 className="footer"
                 bg="esolOrange"
                 variant="dark"
                 sticky="bottom"
             >
-                <Col xs={3}>
-                    <Navbar.Brand className="brand">
-                        <img src="assets/images/onBlue_logo.png" width="80px" alt="Logo" />
-                    </Navbar.Brand>
-                </Col>
+                <Row>
+                    <Col xs={12} sm={12} md={12} lg={3}>
+                        <Navbar.Brand className="brand">
+                            <img src="assets/images/ESOLPERTH-logo.png" width="300px" alt="Logo" />
+                        </Navbar.Brand>
+                    </Col>
 
-                <Col className="foot-text" xs={9}>
-                    <Navbar className="justify-content-end">
-                        Suite 1, Drummond House, 6 Scott Street, Perth, PH1 5EJ UK<br />
-                        +44(0)742 768 9797<br />
-                        esolperth@gmail.com
-                    </Navbar>
-                </Col>
+                    <Col className="foot-text" xs={12} sm={12} md={12} lg={9}>
+                        <Navbar className="footBar">
+                            <p>
+                                <b>Linda El-Miligy</b><br />
+                                senior tutor and centre manager<br />
+                                Suite 1, Drummond House,<br />
+                                6 Scott Street,<br />
+                                Perth PH1 5EJ<br />
+                                +44(0)742 768 9797<br />
+                                <a href="#footer">esolperth@gmail.com</a>
+                            </p>
+                        </Navbar>
+                    </Col>
+                </Row>
             </Navbar>
         </Container>
 

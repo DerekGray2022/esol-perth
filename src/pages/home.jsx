@@ -1,25 +1,14 @@
 import { Col, Container, Row } from 'react-bootstrap';
 
 
-import Donate from '../components/donate';
-import Register from '../components/register';
+import Donate from '../components/Donate';
+import Register from '../components/Register';
 import AdBanner from '../components/AdBanner';
-import FadeCarousel from "../components/carousel";
+import FadeCarousel from "../components/FadeCarousel";
 
 const Home = () => {
     return (
         <>
-            {/* DONATE DIVISION */}
-            <div className="donate">
-                    <Container>
-                        <Row>
-                            <Col>
-                                <Donate />
-                            </Col>
-                        </Row>
-                    </Container>
-            </div>
-
             {/* INTRO DIVISION */}
             <div className="intro">
                 <Container>
@@ -39,11 +28,35 @@ const Home = () => {
                     </Row>
 
                     <Row>
-                        <p className='bodyText'>esolperth provides free English lessons to speakers of other languages.
-                            We run weekly activities to encourage a community spirit through the speaking of English.
-                            There is no cost for lessons or the activities...<br /><b>so if you want to improve your English come along and start learning!</b></p>
+                        <p className='bodyText'>esolperth provides English lessons to speakers of other languages.  The lessons are free for those who live in the council area of Perth & Kinross.<br />
+                            We run weekly activities to encourage a community spirit through the speaking of English...
+                        </p>
+                        <p className="bodyText"><b>so if you want to improve your English come along and start learning!</b>
+                        </p>
                     </Row>
                 </Container>
+            </div>
+
+            {/*         SUMMARY TIMETABLE */}
+            <div className="summaryTimetable">
+                <h1>Summary Timetable</h1>
+            </div>
+
+            {/* DONATE DIVISION */}
+            <div className="donate">
+                    <Container>
+                        <Row>
+                            <Col>
+                                <Donate />
+                            </Col>
+                        </Row>
+                    </Container>
+            </div>
+
+            {/* FACEBOOK DIVISION */}
+            <div className="facebook">
+                <h2><i className="fa-brands fa-facebook"></i>
+                    &nbsp;Find us on Facebook</h2>
             </div>
 
             {/* AD BANNER DIVISION */}
@@ -51,12 +64,6 @@ const Home = () => {
                 <Container className="adBanner">
                     <AdBanner />
                 </Container>
-            </div>
-
-            {/* FACEBOOK DIVISION */}
-            <div className="facebook">
-                <h2><i className="fa-brands fa-facebook"></i>
-                    &nbsp;Find us on Facebook</h2>
             </div>
 
             {/* SIGN-UP FORM DIVISION */}

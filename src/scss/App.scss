@@ -3,6 +3,7 @@
 //    GENERAL
 body
 {
+  font-family: 'Quicksand';
   font-size: 1.2rem;
 }
 
@@ -24,7 +25,7 @@ body
 .card-body
 {
   background-color: var(--background);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 7.5px 7.5px 10px var(--shadow);
 }
 
 //    HEADER
@@ -34,7 +35,7 @@ body
   box-shadow: 0 3px 10px var(--vDarkBlue);
 }
 
-.navbar
+.headBar
 {
   padding: 1rem;
 
@@ -77,46 +78,28 @@ button.toggle.navbar-toggler
   border: none;
 }
 
-//    DONATE DIVISION
-.donate
+//    INTRO & REGISTER DIVISIONS
+.intro, .register
 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  padding: 30px 0px;
+  background-color: var(--lightBlue);
+  padding: 25px;
 
-  .card, .card-body
+  h1
   {
-    border-radius: 25px;
+    font-weight: 700;
+    color: var(--darkBlue);
+    text-shadow: 4px 4px 8px var(--lightBlueShadow);
   }
 
-  h3
+  b
   {
-    margin: 10px 0;
-  }
-
-  p
-  {
-    margin: 0;
+    color: var(--vDarkBlue);
   }
 }
 
-.donateButton
+.bodyText
 {
-  background-color: var(--orange);
-  color: var(--background);
-  font-size: 1.5rem;
-  font-weight: 700;
-  border: none;
-  box-shadow: 5px 5px 10px #777;
-}
-
-.donateButton:hover
-{
-  background-color: var(--lightOrange);
-  color: var(--orange);
-  box-shadow: 5px 5px 10px #777;
+  margin: 30px auto;
 }
 
 //    WORKSHOP CAROUSEL
@@ -124,12 +107,11 @@ button.toggle.navbar-toggler
 {
   display: flex;
   justify-content: center;
-  width: 60vw;
-  min-width: 400px;
+  margin: 0 auto;
   margin: 0 auto;
   padding: 0;
   z-index: 0;
-  box-shadow: 5px 5px 10px #555;
+  box-shadow: 10px 10px 20px var(--lightBlueShadow);
   border-radius: 50px;
 
   .carousel-inner
@@ -143,16 +125,96 @@ button.toggle.navbar-toggler
   margin: 4vw auto 2vw;
 }
 
-//    INTRO & REGISTER DIVISIONS
-.intro, .register
+//    SUMMARY TIMETABLE
+.summaryTimetable
+{
+  height: 100px; // TODO - Temporary
+  margin: 50px auto;
+}
+
+//    DONATE DIVISION
+.donate
 {
   background-color: var(--lightBlue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw !important;
+  margin: 0 auto;
+  padding: 30px 0px;
+
+  .container
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card
+  {
+    width: 50vw;
+    border-radius: 25px;
+    margin: 50px auto;
+  }
+
+  .card-body
+  {
+    border-radius: 25px;
+  }
+
+  h2
+  {
+    margin: 10px 0;
+    font-weight: 700;
+    color: var(--vDarkBlue);
+  }
+
+  p
+  {
+    margin: 0;
+  }
+
+  .donateButtonContainer
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .donateButton
+    {
+      background-color: var(--orange);
+      color: var(--background);
+      margin: 50px auto;
+      font-size: 1.5rem;
+      font-weight: 700;
+      border: none;
+      box-shadow: 5px 5px 10px #777;
+    }
+
+    .donateButton:hover
+    {
+      background-color: var(--lightOrange);
+      color: var(--orange);
+      box-shadow: 5px 5px 10px #777;
+    }
+  }
+}
+
+  //    FACEBOOK DIVISION
+.facebook
+{
+  background-color: var(--darkBlue);
+  color: var(--background);
   padding: 25px;
 }
 
-.bodyText
+.activitiesFacebook
 {
-  margin: 30px auto;
+  justify-content: center;
+  background-color: var(--lightBlue);
+  color: #023f8f;
+  margin-top: 40px;
+  padding: 10px;
 }
 
 // AD CAROUSEL
@@ -178,38 +240,55 @@ button.toggle.navbar-toggler
   padding: 0 !important;
 }
 
-  //    FACEBOOK DIVISION
-.facebook
-{
-  background-color: var(--darkBlue);
-  color: var(--background);
-  padding: 25px;
-}
-
-.activitiesFacebook
-{
-  justify-content: center;
-  background-color: var(--lightBlue);
-  color: #023f8f;
-  margin-top: 40px;
-  padding: 10px;
-}
-
 //    REGISTER
 .register > .container
 {
   margin: 0 auto;
+  
+  h2
+  {
+    font-weight: 700;
+    color: var(--vDarkBlue);
+  }
+
+  .donateButton
+    {
+      background-color: var(--orange);
+      color: var(--background);
+      margin: 25px auto;
+      font-size: 1.5rem;
+      font-weight: 700;
+      border: none;
+      box-shadow: 5px 5px 10px #777;
+    }
+
+    .donateButton:hover
+    {
+      background-color: var(--lightOrange);
+      color: var(--orange);
+      box-shadow: 5px 5px 10px #777;
+    }
 }
 
 //    FOOTER
+.footer
+{
+  .row
+  {
+    width: 100vw;
+  }
+
+  a
+  {
+    color: var(--vDarkBlue);
+    font-weight: 700;
+    text-decoration: none;
+  }
+}
+
 .bg-esolOrange
 {
   background-color: var(--orange);
-}
-
-.foot-text
-{
-  text-align: end;
 }
 
 ////    OTHER PAGES
@@ -224,9 +303,27 @@ button.toggle.navbar-toggler
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) 
 {
+  .intro, .register
+  {
+    h1
+    {
+      font-size: 10vw;
+      font-weight: 700;
+    }
+  }
+
   .donate, .adBanner
   {
-    width: 80vw;
+    .card, .card-body
+    {
+        width: 80vw;
+    }
+  }
+
+  .workshop
+  {
+    width: 400px;
+    margin: 0 auto;
   }
 
   .sidebar
@@ -239,15 +336,30 @@ button.toggle.navbar-toggler
     width: 70vw;
   }
 
-  .register > .container
-{
-  width: 90vw;
-}
+    .register > .container
+  {
+    width: 90vw;
+  }
+
+  .foot-text .footBar
+  {
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) 
 {
+  .intro, .register
+  {
+    h1
+    {
+      font-size: 8vw;
+      font-weight: 700;
+    }
+  }
+
   .donate, .adBanner
   {
     width: 90vw;
@@ -258,33 +370,83 @@ button.toggle.navbar-toggler
     width: 70vw;
   }
 
+  .workshop
+  {
+    width: 70vw;
+  }
+
   .register > .container
   {
     width: 80vw;
+  }
+
+  .foot-text .footBar
+  {
+    justify-content: center;
+    text-align: center;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) 
 {
+  .intro, .register
+  {
+    h1
+    {
+      font-size: 7vw;
+      font-weight: 700;
+    }
+  }
+
+  .workshop{
+    width: 55vw;
+  }
+
   .register > .container
   {
     width: 70vw;
+  }
+
+  .foot-text .footBar
+  {
+    justify-content: center;
+    text-align: center;
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) 
 {
-  .donate, .adBanner, .adBanner > .card
+  .intro, .register
+  {
+    h1
+    {
+      font-size: 5vw;
+      font-weight: 700;
+    }
+  }
+
+  .donate
+  {
+    width: 50vw;
+  }
+  
+  .adBanner, .adBanner > .card
+  {
+    width: 40vw;
+  }
+
+  .register > .container
   {
     width: 55vw;
   }
 
-  .register > .container
-{
-  width: 55vw;
-}
+  .foot-text .footBar
+  {
+    justify-content: flex-end;
+    text-align: end;
+  }
 }
 
 

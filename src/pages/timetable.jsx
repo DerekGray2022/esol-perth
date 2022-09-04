@@ -28,17 +28,17 @@ const Timetable = () => {
         <div className="page">
             <Container fluid>
 
-                <h1>September - December 2022</h1>
+                <h1 id="season">September - December 2022</h1>
 
                 {/*         WEEKDAY BUTTONS      */}
                 <div className="timetableHead">
-                    <Button onClick={() => { handleSelect(0) }}>MON</Button>
-                    <Button onClick={() => { handleSelect(1) }}>TUE</Button>
-                    <Button onClick={() => { handleSelect(2) }}>WED</Button>
-                    <Button onClick={() => { handleSelect(3)}}>THU</Button>
-                    <Button onClick={() => { handleSelect(4)}}>FRI</Button>
-                    <Button onClick={() => { handleSelect(5)}}>SAT</Button>
-                    <Button onClick={() => { handleSelect(6)}}>SUN</Button>
+                    <Button variant='none' id='button01' onClick={() => { handleSelect(0) }}>MON</Button>
+                    <Button variant='none' onClick={() => { handleSelect(1) }}>TUE</Button>
+                    <Button variant='none' onClick={() => { handleSelect(2) }}>WED</Button>
+                    <Button variant='none' onClick={() => { handleSelect(3)}}>THU</Button>
+                    <Button variant='none' onClick={() => { handleSelect(4)}}>FRI</Button>
+                    <Button variant='none' onClick={() => { handleSelect(5)}}>SAT</Button>
+                    <Button variant='none' id='button02' onClick={() => { handleSelect(6)}}>SUN</Button>
                 </div>
                 
                 {/*         CONTENT      */}

@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <>
             <Navbar
-                className="navbar"
+                className="headBar"
                 bg="esolDarkBlue"
                 variant="dark"
                 sticky="top"
@@ -15,8 +15,8 @@ const Header = () => {
             >
 
                 <Navbar.Brand className="brand">
-                    <img src="assets/images/onBlue_logo.png" width="80px" alt="Logo" />
-                    esolperth
+                    <img src="assets/images/ESOLPERTH-logo.png" width="300px" alt="Logo" />
+                    {/* esolperth */}
                 </Navbar.Brand>
 
                 <Navbar.Toggle className="toggle" />

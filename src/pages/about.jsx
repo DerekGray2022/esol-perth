@@ -14,6 +14,7 @@ const About = () => {
           {/*     HELEN    */}
           <Col xs={12} md={6}>
             <MemberCard
+              className="member"
               name="Helen Boardmember"
               img="assets\MemberImages\Helen.jpg"
               intro="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error autem laboriosam odio hic beatae esse."
@@ -22,6 +23,7 @@ const About = () => {
           {/*     SHONA    */}
           <Col xs={12} md={6}>
             <MemberCard
+              className="member"
               name="Shona Boardmember"
               img="assets\MemberImages\Shona.png"
               intro="Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, expedita vitae rerum sed voluptatum consectetur?"

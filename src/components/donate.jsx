@@ -13,11 +13,15 @@ function Donate() {
                     <Row>
 
                         <Col className='donateText' xs={12} md={8}>
-                            <h3>esolperth is a charity</h3>
-                            <p>please consider donating to help us keep our lessons and community activities free</p>
+                            <h2>esolperth is a charity</h2>
+                            <p>
+                                We rely on funding from other charities and the public
+                                <br />
+                                <b>please consider donating to help us keep our lessons and community activities free</b>
+                            </p>
                         </Col>
 
-                        <Col className='donate' xs={12} md>
+                        <Col className='donateButtonContainer' xs={12} md>
                             <Button className='donateButton'>
                                 Donate
                             </Button>
