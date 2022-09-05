@@ -1,12 +1,12 @@
 :root
 {
-  --page: rgb(255, 248, 243);
-  --background: rgb(254, 209, 239);
-  --shadow: rgba(0, 0, 0, 0.33);
+  --background: rgb(255, 248, 243);
+  --page: rgb(254, 209, 239);
+  --shadow: rgba(0, 0, 0, 0.5);
   --esolLogoBlue: rgb(1, 176, 241);
   --darkBlue: rgb(28, 109, 208);
   --vDarkBlue: rgb(16, 57, 107);
-  --mapBG: rgba(28, 109, 208, 0.75);
+  --mapBG: rgba(28, 109, 208, 0.5);
   --lightBlue: rgb(163, 228, 219);
   --lightBlueShadow: rgb(58, 121, 112);
   --orange: rgb(235, 94, 11);
@@ -20,7 +20,7 @@ body
   padding: 0;
   box-sizing: border-box;
 
-  background-color: var(--page);
+  background-color: var(--background);
 
   font-family: -apple-system, BlinkMacSystemFont, 'Quicksand', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica' sans-serif;

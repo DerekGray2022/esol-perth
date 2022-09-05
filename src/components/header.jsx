@@ -1,6 +1,6 @@
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { LinkContainer } from 'react-router-bootstrap';
-import '../scss/header.scss';
+import '../scss/Header.scss';
 
 const Header = () => {
     return (
@@ -23,17 +23,34 @@ const Header = () => {
 
                 <Navbar.Collapse className="justify-content-end">
                     <Nav>
+                        {/*         Home         */}
                         <LinkContainer to="/">
                             <Nav.Link>Home</Nav.Link>
                         </LinkContainer>
-                        <LinkContainer to="/about">
+                        {/* <LinkContainer to="/about">
                             <Nav.Link>About Us</Nav.Link>
-                        </LinkContainer>
+                        </LinkContainer> */}
+
+                        {/*     About DropDown      */}
+                        <NavDropdown variant="dark" title="About Us">
+                            <LinkContainer to="/history">
+                                <Nav.Link>History</Nav.Link>
+                            </LinkContainer>
+                            <LinkContainer to="/tutors">
+                                <Nav.Link>Tutors</Nav.Link>
+                            </LinkContainer>
+                            <LinkContainer to="/board">
+                                <Nav.Link>Board Members</Nav.Link>
+                            </LinkContainer>
+                        </NavDropdown>
+                        {/*     End About DropDown      */}
+
+                        {/*     Timetable       */}
                         <LinkContainer to="/timetable">
                             <Nav.Link>Timetable</Nav.Link>
                         </LinkContainer>
 
-                        {/* DropDown */}
+                        {/*     Lessons DropDown        */}
                         <NavDropdown variant="dark" title="English Lessons">
                             <LinkContainer to="/beginners">
                                 <Nav.Link>Beginners' Lessons</Nav.Link>
@@ -48,18 +65,26 @@ const Header = () => {
                                 <Nav.Link>IELTS Lessons</Nav.Link>
                             </LinkContainer>
                         </NavDropdown>
-                        {/* End DropDown */}
+                        {/* End Lessons DropDown */}
 
+                        {/*     Activities      */}
                         <LinkContainer to="/activities">
                             <Nav.Link>Activities</Nav.Link>
                         </LinkContainer>
+
+                        {/*     Friends & Feedback      */}
+                        <LinkContainer to="/Friends">
+                            <Nav.Link>Friends &<br />Feedback</Nav.Link>
+                        </LinkContainer>
+
+                        {/*     Contact     */}
                         <LinkContainer to="/contact">
                             <Nav.Link>Contact</Nav.Link>
                         </LinkContainer>
 
                     </Nav>
                 </Navbar.Collapse>
-            </Navbar>  
+            </Navbar>
         </>
     );
 };

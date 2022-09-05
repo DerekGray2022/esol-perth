@@ -6,15 +6,18 @@ import { Container } from 'react-bootstrap';
 import Header from './components/Header';
 import Footer from './components/Footer';
 //    PAGES   //////////////
-import Home from './pages/home';
-import About from './pages/about';
-import Timetable from './pages/timetable';
-import Activities from './pages/activities';
-import Contact from './pages/contact';
-import Beginners from './pages/beginners';
-import Intermediate from './pages/intermediate';
-import Advanced from './pages/advanced';
-import Ielts from './pages/ielts';
+import Home from './pages/Home';
+import History from './pages/History';
+import Tutors from './pages/Tutors';
+import Board from './pages/Board';
+import Timetable from './pages/Timetable';
+import Activities from './pages/Activities';
+import Beginners from './pages/Beginners';
+import Intermediate from './pages/Intermediate';
+import Advanced from './pages/Advanced';
+import Ielts from './pages/Ielts';
+import Friends from './pages/Friends';
+import Contact from './pages/Contact';
 
 
 // BOOTSTRAP CSS & JS   //////
@@ -32,14 +35,17 @@ const App = () => {
       {/* Router */}
         <Routes>
           <Route path='/' exact element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/timetable' element={<Timetable />} />
-          <Route path='/activities' element={<Activities />} />
-          <Route path='/contact' element={<Contact />} />
-          <Route path='/beginners' element={<Beginners />} />
-          <Route path='/intermediate' element={<Intermediate />} />
-          <Route path='/advanced' element={<Advanced />} />
-          <Route path='/ielts' element={<Ielts />} />
+          <Route path='/History' element={<History />} />
+          <Route path='/Tutors' element={<Tutors />} />
+          <Route path='/Board' element={<Board />} />
+          <Route path='/Timetable' element={<Timetable />} />
+          <Route path='/Activities' element={<Activities />} />
+          <Route path='/Contact' element={<Contact />} />
+          <Route path='/Beginners' element={<Beginners />} />
+          <Route path='/Intermediate' element={<Intermediate />} />
+          <Route path='/Advanced' element={<Advanced />} />
+          <Route path='/Friends' element={<Friends />} />
+          <Route path='/Ielts' element={<Ielts />} />
         </Routes>
         {/* End Router */}
 

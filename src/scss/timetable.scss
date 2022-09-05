@@ -1,12 +1,12 @@
 #season
 {
     position: relative;
-    margin: 0 10px;
-    margin-top: 50px !important;
+    margin: 50px 10px 0 !important;
     font-family: 'Nunito Sans';
     font-weight: 900;
     text-align: center;
-    text-shadow: 4px 4px 8px var(--mapBG);
+    text-shadow: 4px 4px 8px var(--vDarkBlue);
+    color: var(--vDarkBlue);
 }
 
 //      WEEKDAY BUTTONS     //////////////
@@ -21,10 +21,11 @@
     .btn
     {
         background-color: var(--darkBlue);
+        color: var(--page);
         font-weight: 600;
         text-align: center;
         padding: 10px 3px;
-        border: 1px solid var(--orange);
+        border: 1px solid var(--vDarkBlue);
         border-radius: 10px;
         width: 14.3%;
         box-shadow: 4px 4px 8px 0 var(--mapBG);
@@ -34,7 +35,7 @@
     {
         background-color: var(--lightBlue);
         border: none;
-        color: var(--orange);
+        color: var(--vDarkBlue);
     }
 }
 
@@ -44,22 +45,28 @@
 {
     width: 75vw;
     margin: 50px auto;
-    background-color: var(--darkBlue) !important;
+    background-color: var(--mapBG) !important;
     box-shadow: 8px 5px 8px 0 var(--mapBG);
-    padding: 10px 10px 20px;
-    border: 1px solid var(--orange) !important;
+    border: 1px solid var(--vDarkBlue) !important;
     border-radius: 25px !important;
 
-    .card-body
+    .timetableCardTitle
     {
-        background-color: var(--lightBlue);
-        border-radius: 10px !important;
-        border: 1px solid var(--orange);
+      border: 1px solid var(--vDarkBlue);
+      border-radius: 25px;
+      background-color: rgba(0, 0, 0, 0.25);
+    }
+
+    .timetableCardBody
+    {
+        background-color: var(--mapBG) !important;
+        border-radius: 25px !important;
+        border: 1px solid var(--vDarkBlue);
     }
 
     h2
     {
-        color: rgb(255, 255, 255);
+        color: var(--page);
         margin: 20px;
         font-size: 2.5rem;
         font-family: 'Nunito Sans';
@@ -70,13 +77,18 @@
     .time
     {
         font-weight: 700;
+        color: var(--page);
+
 
         .row
         {
-            text-align: left;
-            height: 75px;
-            padding: 10px 0 0 10px;
-            border: 1px solid var(--orange);
+          text-align: left;
+          height: 75px;
+          padding: 10px 0 0 10px;
+          border: 1px solid var(--vDarkBlue);
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+          background-color: rgba(0, 0, 0, 0.25);
         }
 
         .TLbox
@@ -93,12 +105,19 @@
     //      Activities      //
     .activity
     {
+      color: var(--page);
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      
        .row
         {
-            text-align: left;
-            height: 75px;
-            padding: 10px 0 0 10px;
-            border: 1px solid var(--orange);
+          text-align: left;
+          height: 75px;
+          padding: 10px 0 0 10px;
+          border: 1px solid var(--vDarkBlue);
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+          background-color: rgba(0, 0, 0, 0.25);
         }
 
         .lunch

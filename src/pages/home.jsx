@@ -5,6 +5,7 @@ import Donate from '../components/Donate';
 import Register from '../components/Register';
 import AdBanner from '../components/AdBanner';
 import FadeCarousel from "../components/FadeCarousel";
+import LessonsTimetable from '../components/LessonsTimetable';
 
 const Home = () => {
     return (
@@ -15,7 +16,6 @@ const Home = () => {
 
                     <Row>
                         <h1>esolperth</h1>
-
                     </Row>
 
                     <Row>
@@ -38,8 +38,8 @@ const Home = () => {
             </div>
 
             {/*         SUMMARY TIMETABLE */}
-            <div className="summaryTimetable">
-                <h1>Summary Timetable</h1>
+            <div className="lessonsTimetable">
+                <LessonsTimetable />
             </div>
 
             {/* DONATE DIVISION */}
@@ -74,7 +74,7 @@ const Home = () => {
                     </Row>
 
                     <Row>
-                        <p>Register here for online updates or drop into the office 9-5 Monday to Friday.<br /><br />
+                        <p>Register here for further information <br /><br />
                         </p>
 
                     </Row>

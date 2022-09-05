@@ -79,10 +79,16 @@ button.toggle.navbar-toggler
 }
 
 //    INTRO & REGISTER DIVISIONS
-.intro, .register
+.intro
 {
   background-color: var(--lightBlue);
   padding: 25px;
+
+  .row
+  {
+    display: flex;
+    justify-content: center;
+  }
 
   h1
   {
@@ -95,6 +101,12 @@ button.toggle.navbar-toggler
   {
     color: var(--vDarkBlue);
   }
+}
+
+.register
+{
+  background-color: var(--lightBlue);
+  padding: 25px;
 }
 
 .bodyText
@@ -153,13 +165,19 @@ button.toggle.navbar-toggler
   .card
   {
     width: 50vw;
-    border-radius: 25px;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 25%;
+    border-top-left-radius: 5px;
     margin: 50px auto;
   }
 
   .card-body
   {
-    border-radius: 25px;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 25%;
+    border-top-left-radius: 5px;
   }
 
   h2
@@ -206,6 +224,7 @@ button.toggle.navbar-toggler
   background-color: var(--darkBlue);
   color: var(--background);
   padding: 25px;
+  box-shadow: 0px 10px 10px #777, 0px -5px 10px var(--lightBlueShadow);
 }
 
 .activitiesFacebook
@@ -249,6 +268,7 @@ button.toggle.navbar-toggler
   {
     font-weight: 700;
     color: var(--vDarkBlue);
+    margin-top: 50px;
   }
 
   .donateButton
@@ -296,6 +316,11 @@ button.toggle.navbar-toggler
 {
   display: block;
   height: 100%;
+}
+
+.spacer
+{
+  height: 100vh;
 }
 
 

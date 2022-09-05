@@ -1,0 +1,57 @@
+.LTcontainer
+{
+    margin: 35px auto;
+    background-color: var(--background);
+
+    .LTcard
+    {
+        background-color: var(--mapBG);
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px var(--mapBG);
+
+        .LTcardBody
+        {
+            background-color: var(--mapBG);
+            border-radius: 20px;
+
+            .LTcardTitle
+            {
+                margin: 10px auto;
+                color: var(--page);
+                font-weight: 700;
+                border: 2px solid var(--vDarkBlue);
+                border-radius: 15px;
+                background-color: rgba(0, 0, 0, 0.2);
+            }
+
+            .LTrow
+            {
+                text-align: left;
+                margin: 0 auto 2px;
+                width: 95%;
+
+                .LTcol-left
+                {
+                    border: 2px solid var(--vDarkBlue);
+                    border-top-left-radius: 15px;
+                    border-bottom-left-radius: 15px;
+                    margin-right: -2px;
+                    background-color: rgba(0, 0, 0, 0.2);
+                }
+
+                .LTcol-right
+                {
+                    border: 2px solid var(--vDarkBlue);
+                    border-top-right-radius: 15px;
+                    border-bottom-right-radius: 15px;
+                    background-color: rgba(0, 0, 0, 0.2);
+
+                    span
+                    {
+                        color: var(--page);
+                    }
+                }
+            }
+        }
+    }
+}
