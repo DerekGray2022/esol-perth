@@ -126,7 +126,7 @@ button.toggle.navbar-toggler
   box-shadow: 10px 10px 20px var(--lightBlueShadow);
   border-radius: 50px;
 
-  .carousel-inner
+  .carousel-inner, .carousel-item-start, .carousel-item-next
   {
     border-radius: 50px;
   }
@@ -162,7 +162,7 @@ button.toggle.navbar-toggler
     align-items: center;
   }
 
-  .card
+  .donateCard
   {
     width: 50vw;
     border-bottom-left-radius: 25%;
@@ -172,7 +172,7 @@ button.toggle.navbar-toggler
     margin: 50px auto;
   }
 
-  .card-body
+  .donateCardBody
   {
     border-bottom-left-radius: 25%;
     border-bottom-right-radius: 5px;

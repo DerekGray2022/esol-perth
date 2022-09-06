@@ -17,8 +17,8 @@ const Board = () => {
                 <Row className="memberRow">
                 {BoardMembers.map((member, id) => {
                     return (
-                            <Col xs={12} md={6}>
-                                <div className='memberCard' key={id}>
+                        <Col key={id} xs={12} md={6}>
+                                <div className='memberCard'>
 
                                     {/* Image */}
                                     <img

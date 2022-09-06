@@ -7,8 +7,8 @@ import Card from 'react-bootstrap/Card';
 function Donate() {
     return (
 
-        <Card>
-            <Card.Body>
+        <Card className='donateCard'>
+            <Card.Body className='donateCardBody'>
                 <Container>
                     <Row>
 

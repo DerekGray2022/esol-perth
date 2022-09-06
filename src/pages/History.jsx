@@ -55,7 +55,7 @@ const History = () => {
                     </Card.Title>
 
                         <Card.Text className='historyText'>
-                            <p className='listPara'>
+                            <div className='listPara'>
                                 <ul className='list'>
                                     <li>
                                         Inclusion, empowerment, and independence for our students
@@ -67,7 +67,7 @@ const History = () => {
                                         Respect for the culture and beliefs of our students
                                     </li>
                                 </ul>
-                            </p>
+                            </div>
                         </Card.Text>
                     </Card.Body>
                 </Card>
