@@ -10,7 +10,7 @@ const Tutors = () => {
             {/*         INTRODUCTION         */}
             <div className='introTitle'>
                 {/*         TITLE        */}
-                <h1>Tutors</h1>
+                <h1>Esol Perth Tutors</h1>
             </div>
 
             <div>

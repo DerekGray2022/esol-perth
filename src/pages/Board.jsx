@@ -12,7 +12,7 @@ const Board = () => {
         <div>
             <Container fluid>
                 {/* HEADER */}
-                <Row className="memberHead"><h1>esolperth Board Members</h1></Row>
+                <Row className="memberHead"><h1>Esol Perth Board Members</h1></Row>
                 {/* BOARD MEMBER */}
                 <Row className="memberRow">
                 {BoardMembers.map((member, id) => {

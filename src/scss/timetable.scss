@@ -28,7 +28,7 @@
         border: 1px solid var(--vDarkBlue);
         border-radius: 10px;
         width: 14.3%;
-        box-shadow: 4px 4px 8px 0 var(--mapBG);
+        box-shadow: 4px 4px 8px 0 var(--vDarkBlue);
     }
 
     .btn:hover
@@ -53,7 +53,7 @@
     .timetableCardTitle
     {
       border: 1px solid var(--vDarkBlue);
-      border-radius: 25px;
+      border-radius: 25px 25px 10px 10px;
       background-color: rgba(0, 0, 0, 0.25);
     }
 
@@ -98,7 +98,7 @@
 
         .BLbox
         {
-            border-bottom-left-radius: 10px;
+            border-bottom-left-radius: 25px;
         }
     }
 
@@ -132,7 +132,7 @@
 
         .BRbox
         {
-            border-bottom-right-radius: 10px !important;
+            border-bottom-right-radius: 25px;
         }
     }
 }

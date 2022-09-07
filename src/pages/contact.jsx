@@ -21,7 +21,8 @@ const Contact = () => {
 
                     <p><b>07427689797</b> (in the UK)</p>
 
-                    <p><b>email:</b> esolperth@gmail.com</p>
+                    <p><b>email: </b>esolperth@gmail.com</p>
+                    <p><b>What3words: </b>forget.spun.metro</p>
                 </Row>
                 <Row>
                     <EsolMap />

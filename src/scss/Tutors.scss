@@ -36,7 +36,7 @@
         {
             background-color: var(--mapBG);
             color: var(--page);
-            width: 175px;
+            width: 200px;
             border: 1px solid var(--page);
             border-top-left-radius: 25px;
             border-bottom-right-radius: 25px;
@@ -63,10 +63,12 @@
     border-radius: 30px !important;
     margin: 10px;
 
-    h4
+    h3, h4
     {
+        color: var(--page);
         margin: 10px auto 20px;
         font-weight: 700;
+        text-shadow: 5px 5px 3px var(--vDarkBlue);
     }
 
     p
