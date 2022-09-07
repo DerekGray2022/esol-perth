@@ -4,7 +4,6 @@ const Footer = () => {
     return (
 
 
-        <Container fluid>
             <Navbar
                 id="footer"
                 className="footer"
@@ -28,13 +27,12 @@ const Footer = () => {
                                 6 Scott Street,<br />
                                 Perth PH1 5EJ<br />
                                 +44(0)742 768 9797<br />
-                                <a href="#footer">esolperth@gmail.com</a>
+                            <a href="mailto:esolperth@gmail.com?subject=Website%20Query" >esolperth@gmail.com</a>
                             </p>
                         </Navbar>
                     </Col>
                 </Row>
             </Navbar>
-        </Container>
 
 
     );

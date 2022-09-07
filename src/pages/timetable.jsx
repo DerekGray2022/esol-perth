@@ -23,7 +23,7 @@ const Timetable = () => {
         <div className="page">
             <Container fluid>
 
-                <h1 id="season">September - December 2022</h1>
+                <h1 className="season">September - December 2022</h1>
 
                 {/*         WEEKDAY BUTTONS      */}
                 <div className="timetableHead">

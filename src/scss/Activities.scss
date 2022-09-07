@@ -1,0 +1,83 @@
+.blue
+{
+    background-color: var(--darkBlue);
+    color: var(--background);
+}
+
+.activitiesHeader
+{
+    padding: 50px 0;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 5px 5px 3px var(--vDarkBlue);
+}
+
+.activitiesTextContainer
+{
+    background-color: var(--whiteTint);
+    color: var(--vDarkBlue);
+    width: 80vw;
+    margin: 25px auto;
+    padding: 20px 20px 10px;
+    border-radius: 15px;
+    text-shadow: 3px 3px 10px var(--darkBlue);
+    box-shadow: 5px 5px 5px var(--vDarkBlue);
+
+    .activitiesText
+    {
+        p
+        {
+            color: var(--background);
+        }
+    }
+}
+
+.activitiesFacebook
+{
+  justify-content: center;
+  background-color: var(--vDarkBlue);
+  color: var(--darkBlue);
+  width: 100vw;
+  margin: 100px auto;
+  padding: 35px 1vw 30px;
+  text-shadow: 2px 1px 3px var(--darkShadow), -1px 0px 3px var(--strongWhiteTint);
+  box-shadow: -3px 10px 20px var(--vDarkBlue), -3px -5px 20px var(--vDarkBlue);
+
+    h4
+    {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+}
+
+.activitiesContainer
+{
+    width: 75vw;
+    margin: 80px auto 20px;
+    padding: 30px;
+    text-align: center;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25%;
+    border-bottom-left-radius: 25%;
+    box-shadow: 5px 5px 20px var(--vDarkBlue), 5px -5px 5px var(--vDarkBlue);
+
+    h2
+    {
+        padding: 10px 0 30px;
+        text-align: center;
+        text-shadow: 5px 5px 3px var(--vDarkBlue);
+    }
+
+    p
+    {
+        color: var(--vDarkBlue);
+        font-weight: 700;
+    }
+}
+
+.activitiesSpacer
+{
+    height: 100px;
+    background-color: var(--darkBlue);
+}

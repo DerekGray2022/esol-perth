@@ -82,12 +82,16 @@ button.toggle.navbar-toggler
 .intro
 {
   background-color: var(--lightBlue);
-  padding: 25px;
+  padding: 25px 0 100px 0;
 
   .row
   {
     display: flex;
     justify-content: center;
+  }
+  .header
+  {
+    margin: 25px auto 100px;
   }
 
   h1
@@ -112,29 +116,18 @@ button.toggle.navbar-toggler
 .bodyText
 {
   margin: 30px auto;
+  text-align: left;
 }
 
 //    WORKSHOP CAROUSEL
-.workshop
+.carouselContainer
 {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  margin: 0 auto;
-  padding: 0;
-  z-index: 0;
-  box-shadow: 10px 10px 20px var(--lightBlueShadow);
-  border-radius: 50px;
+  margin: auto 2vw;
 
   .carousel-inner, .carousel-item-start, .carousel-item-next
   {
     border-radius: 50px;
   }
-}
-
-.carouselContainer
-{
-  margin: 4vw auto 2vw;
 }
 
 //    SUMMARY TIMETABLE
@@ -227,36 +220,23 @@ button.toggle.navbar-toggler
   box-shadow: 0px 10px 10px #777, 0px -5px 10px var(--lightBlueShadow);
 }
 
-.activitiesFacebook
-{
-  justify-content: center;
-  background-color: var(--lightBlue);
-  color: #023f8f;
-  margin-top: 40px;
-  padding: 10px;
-}
-
 // AD CAROUSEL
 .adBanner
 {
-  padding: 0;
+  padding: 50px auto;
 
-  .card, .card-body
+  .card
   {
+    padding: 0;
+    margin: 100px auto;
     border-radius: 15px;
+
+    .card-body
+    {
+      width: 100%;
+      border-radius: 15px;
+    }
   }
-}
-
-.adBanner > .card
-{
-  width: 55vw;
-  padding: 0;
-  margin: 50px auto;
-}
-
-.adBanner > .card-body
-{
-  padding: 0 !important;
 }
 
 //    REGISTER
@@ -312,12 +292,6 @@ button.toggle.navbar-toggler
 }
 
 ////    OTHER PAGES
-.page
-{
-  display: block;
-  height: 100%;
-}
-
 .spacer
 {
   height: 100vh;

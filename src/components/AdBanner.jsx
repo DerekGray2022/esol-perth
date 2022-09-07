@@ -5,11 +5,10 @@ import Card from 'react-bootstrap/Card';
 
 const AdBanner = () => {
     return (
-        <Card>
-            <Card.Body>
-                <Container>
+        <Card className='adCard'>
+            <Card.Body className='adCardBody'>
                     <h3>We'd like to thank all our sponsors:</h3>
-                    <Carousel controls={false} indicators={false}>
+                    <Carousel className='adCarousel' controls={false} indicators={false}>
 
                         <Carousel.Item>
                             <img
@@ -44,7 +43,6 @@ const AdBanner = () => {
                         </Carousel.Item>
 
                     </Carousel>
-                </Container>
             </Card.Body>
         </Card>
     );

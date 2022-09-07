@@ -13,32 +13,37 @@ const Home = () => {
             {/* INTRO DIVISION */}
             <div className="intro">
                 <Container>
-
-                    <Row>
+                    {/*         Header       */}
+                    <Row className='header'>
                         <h1>esolperth</h1>
                     </Row>
-
+                    
                     <Row>
-                        {/* WORKSHOP CAROUSEL */}
-                        <div className="carouselContainer">
+                        <Col>
+                            {/*     Intro Text      */}
+                                <p className='bodyText'>esolperth provides English lessons to speakers of other languages.  The lessons are free for those who live in the council area of Perth & Kinross.<br />
+                                    We run weekly activities to encourage a community spirit through the speaking of English...
+                                </p>
+                                <p className="bodyText"><b>...so if you want to improve your English come along and start learning!</b>
+                                </p>
+                        </Col>
+                        
+                        <Col>
                             <Row>
-                                <FadeCarousel />
+                                {/*      Workshop Carousel       */}
+                                <div className="carouselContainer">
+                                    <Row>
+                                        <FadeCarousel />
+                                    </Row>
+                                </div>
                             </Row>
-                        </div>
-                    </Row>
-
-                    <Row>
-                        <p className='bodyText'>esolperth provides English lessons to speakers of other languages.  The lessons are free for those who live in the council area of Perth & Kinross.<br />
-                            We run weekly activities to encourage a community spirit through the speaking of English...
-                        </p>
-                        <p className="bodyText"><b>so if you want to improve your English come along and start learning!</b>
-                        </p>
+                    </Col>
                     </Row>
                 </Container>
             </div>
 
-            {/*         SUMMARY TIMETABLE */}
-            <div className="lessonsTimetable">
+            {/* SUMMARY TIMETABLE */}
+            <div>
                 <LessonsTimetable />
             </div>
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 
-import '../scss/Tutors.scss';
+import '../scss/Timetable.scss';
 
 
 const Tutors = () => {
@@ -37,24 +37,24 @@ const Tutors = () => {
 
                 {/*         TUTOR LIST       */}
                 <Container>
-                    <Card className='tutorCard'>
+                    <Card className='timetableContainer'>
 
-                        {/*         Senior Tutor       */}
-                        <Card.Title>
-                            <Card className='tutorBox'>
-                                <h3><b>Senior English Language Tutor</b></h3><p>Linda El-Miligy</p>
-                            </Card>
-                        </Card.Title>
+                        <Card.Body className='timetableCardBody'>
 
-                        {/*     Tutors */}
-                        <Card.Text>
-                            <Row>
-                                
-                                {/*         English Language Tutors       */}
-                                <Col>
+                            {/*         Senior Tutor       */}
+                            <Card.Title className='timetableCardTitle'>
+                                    <h2>Senior English Language Tutor</h2><p>Linda El-Miligy</p>
+                            </Card.Title>
 
-                                    <Card className='tutorBox'>
-                                        <h4>English Language Tutors</h4>
+                            {/*     Tutors */}
+                            <Card.Text>
+                                <Row>
+
+                                    {/*         English Language Tutors       */}
+                                    <Col>
+
+                                        <Card className='tutorBox'>
+                                            <h4>English Language Tutors</h4>
                                             <p>Liz Auld</p>
                                             <p>Alice Carbone</p>
                                             <p>Michael Ellacott</p>
@@ -69,42 +69,44 @@ const Tutors = () => {
                                             <p>Shona Robertson</p>
                                             <p>Lily Scott</p>
                                             <p>Fiona Smith</p>
-                                    </Card>
+                                        </Card>
 
-                                </Col>
+                                    </Col>
 
-                                {/*         Support Workers      */}
-                                <Col>
+                                    {/*         Support Workers      */}
+                                    <Col>
 
-                                    {/*         Voice Coaches       */}
-                                    <Card className='tutorBox'>
-                                        <div>
-                                            <h4>Voice Coaches</h4>
+                                        {/*         Voice Coaches       */}
+                                        <Card className='tutorBox'>
+                                            <div>
+                                                <h4>Voice Coaches</h4>
                                                 <p>Edna Auld</p>
                                                 <p>Heather Knudtsen</p>
-                                        </div>
-                                    </Card>
+                                            </div>
+                                        </Card>
 
-                                    {/*         Playworker       */}
-                                    <Card className='tutorBox'>
-                                        <div>
-                                            <h4>Playworker</h4>
+                                        {/*         Playworker       */}
+                                        <Card className='tutorBox'>
+                                            <div>
+                                                <h4>Playworker</h4>
                                                 <p>Elsa Tesfamichael</p>
-                                        </div>
-                                    </Card>
+                                            </div>
+                                        </Card>
 
-                                    {/*         Administrator        */}
-                                    <Card className='tutorBox'>
-                                        <div>
-                                            <h4>Administrator</h4>
+                                        {/*         Administrator        */}
+                                        <Card className='tutorBox'>
+                                            <div>
+                                                <h4>Administrator</h4>
                                                 <p>Jess Jack</p>
-                                        </div>
-                                    </Card>
+                                            </div>
+                                        </Card>
 
-                                </Col>
+                                    </Col>
 
-                            </Row>
-                        </Card.Text>
+                                </Row>
+                            </Card.Text>
+
+                        </Card.Body>
 
                     </Card>
 
