@@ -40,7 +40,7 @@ const Activities = () => {
         <div className="activitiesContainer">
           <h2>Daytrips</h2>
           <p>
-            We explore Scotland on coach trips.  Past visits have been to Glasgow, Edinburgh, Sta Andrews, Stirling and Blair Atholl!
+            We explore Scotland on coach trips.  Past visits have been to Glasgow, Edinburgh, St. Andrews, Stirling and Blair Atholl!
           </p>
         </div>
 

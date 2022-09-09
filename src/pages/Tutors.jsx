@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 
 import '../scss/Timetable.scss';
+import '../scss/Tutors.scss';
 
 
 const Tutors = () => {
@@ -36,7 +37,7 @@ const Tutors = () => {
 
 
                 {/*         TUTOR LIST       */}
-                <Container>
+                {/* <Container> */}
                     <Card className='timetableContainer'>
 
                         <Card.Body className='timetableCardBody'>
@@ -110,7 +111,7 @@ const Tutors = () => {
 
                     </Card>
 
-                </Container>
+                {/* </Container> */}
 
             </div>
         </>

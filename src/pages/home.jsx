@@ -30,7 +30,7 @@ const Home = () => {
                         
                         <Col>
                             <Row>
-                                {/*      Workshop Carousel       */}
+                                {/*      WORKSHOP CAROUSEL       */}
                                 <div className="carouselContainer">
                                     <Row>
                                         <FadeCarousel />

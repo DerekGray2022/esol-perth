@@ -107,8 +107,8 @@
     .activity
     {
       color: var(--page);
-      border-top-right-radius: 10px;
-      border-bottom-right-radius: 10px;
+      // border-top-right-radius: 10px;
+      // border-bottom-right-radius: 10px;
       
        .row
         {
@@ -138,99 +138,50 @@
     }
 }
 
-//    TUTOR PAGE    //////////////////////
-//      Title
-.introTitle
-{
-    padding: 50px;
-
-    h1
-    {
-    font-weight: 700;
-    font-stretch: extra-expanded;
-    color: var(--vDarkBlue);
-    text-shadow: 3px 3px 9px var(--vDarkBlue);
-    }
-}
-
-//      Introduction
-.introHeader
-{
-    padding-bottom: 100px;
-
-    .introCol
-    {
-        font-weight: 600;
-        font-stretch: extra-expanded;
-        text-align: left;
-        margin: auto 10px;
-        color: var(--darkBlue);
-        text-shadow: 3px 3px 9px var(--vDarkBlue);
-    }
-
-    .introCardCol
-    {
-        display: flex;
-        justify-content: center;
-
-        .introCard, .introCardBody
-        {
-            background-color: var(--mapBG);
-            color: var(--page);
-            width: 200px;
-            border: 1px solid var(--page);
-            border-top-left-radius: 25px;
-            border-bottom-right-radius: 25px;
-            border-top-right-radius: 5px;
-            border-bottom-left-radius: 5px;
-            box-shadow: 5px 5px 10px var(--shadow);
-        }
-    }
-}
-
-//    Tutor Cards
-.tutorBox
-{
-    color: var(--background);
-    background-color: rgba(0, 0, 0, 0.25) !important;
-    border: 1px solid var(--vDarkBlue) !important;
-    border-radius: 30px !important;
-    margin: 10px;
-
-    h3, h4
-    {
-        color: var(--page);
-        margin: 10px auto 20px;
-        font-weight: 700;
-        text-shadow: 5px 5px 3px var(--vDarkBlue);
-    }
-
-    p
-    {
-        margin: 5px auto;
-    }
-    
-    li
-    {
-    text-align: center;
-        list-style: none;
-    }
-}
 
 
 ////        MEDIA QUERIES       ////////////////////////////
 /* Galaxy Fold devices (300px and down) */
 @media only screen and (max-width: 300px)
 {
+  .time
+  {
+    .row
+    {
+      span, b
+      {
+        font-size: 14px !important;
+      }
+    }
+
+  }
+
   .activity
   {
-    font-size: 4vw;
+    .row
+    {
+      span, b
+      {
+        font-size: 14px !important;
+      }
+    }
   }
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) 
 {
+  .activity
+  {
+    .row
+    {
+      span
+      {
+        font-size: 12px !important;
+      }
+    }
+  }
+
   .timetableHead > .btn
   {
     font-size: 3vw;

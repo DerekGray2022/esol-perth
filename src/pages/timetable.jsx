@@ -45,7 +45,6 @@ const Timetable = () => {
                         </Card.Title>
 
 
-                        <Card.Text>
                             <Row>
                                 {/*         Time of Day      */}
                                 <Col className='time' xs={6} sm={5} md={4} lg={3}>
@@ -67,7 +66,6 @@ const Timetable = () => {
                                     <Row className='BRbox'><span>{day.evening}</span></Row>
                                 </Col>
                             </Row>
-                        </Card.Text>
                     </Card.Body>
                 </Card>
 

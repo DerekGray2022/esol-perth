@@ -39,7 +39,7 @@
   color: var(--darkBlue);
   width: 100vw;
   margin: 100px auto;
-  padding: 35px 1vw 30px;
+  padding: 35px 5vw 30px;
   text-shadow: 2px 1px 3px var(--darkShadow), -1px 0px 3px var(--strongWhiteTint);
   box-shadow: -3px 10px 20px var(--vDarkBlue), -3px -5px 20px var(--vDarkBlue);
 
@@ -54,11 +54,11 @@
 {
     width: 75vw;
     margin: 80px auto 20px;
-    padding: 30px;
+    padding: 40px;
     text-align: center;
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
-    border-bottom-right-radius: 25%;
+    border-bottom-right-radius: 50%;
     border-bottom-left-radius: 25%;
     box-shadow: 5px 5px 20px var(--vDarkBlue), 5px -5px 5px var(--vDarkBlue);
 
