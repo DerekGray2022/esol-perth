@@ -1,0 +1,223 @@
+//      MAIN CONTAINER      ////////////////
+.friendsContainer
+{
+    width: 100vw;
+    padding: 0 !important;
+    margin: 0 auto !important;
+
+    //      TITLE       //////////////////////
+    .friendsTitle
+    {
+        
+        h1
+        {
+            color: var(--darkBlue);
+            font-weight: 700;
+            margin: 50px auto;
+            padding: 0;
+        }
+    }
+
+    //      HEADER      ///////////////////
+    .friendsHeader
+    {
+        width: 70vw;
+        padding: 25px;
+        margin: 25px auto !important;
+
+        h5
+        {
+            color: var(--darkBlue);
+            font-weight: 700;
+            padding: 0;
+        }
+    }
+
+    //      PARTNERS        ///////////////
+    .friendsPartners
+    {
+        margin: 25px auto !important;
+        padding: 0 !important;
+
+        //      PARTNER LOGO        ///////////////
+        .friendsLogoCol
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1vw 3vw;
+            background-color: var(--lightBlue);
+
+            .logo
+            {
+                width: 10vw;
+            }
+        }
+
+        //      LETHAM LOGO     //////////////////
+        .lethamLogoCol
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1vw 3vw;
+            background-color: var(--esolBlue);
+
+            .logo
+            {
+                height: 5vw;
+                width: auto;
+            }
+        }
+
+        //      PARTNER LINKS       ////////////////////
+        .friendsLinkCol
+        {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            text-align: left;
+            background-color: var(--esolBlue);
+
+            a
+            {
+                text-decoration: none;
+            
+                h5
+                {
+                    margin: 0 !important;
+                    font-weight: 700;
+                    color: var(--darkBlue);
+                }
+            }
+        }
+    }
+
+    //      STUDENT COMMENTS        ///////////////////////
+    .friendsComments
+    {
+        width: 90%;
+        padding: 50px;
+        margin: 100px auto;
+        background-color: var(--darkOrange);
+        border: 1px solid black;
+
+        h3
+        {
+            margin: 20px auto 70px;
+            color: var(--darkOrange);
+            text-align: center;
+            font-weight: 700;
+        }
+
+        p
+        {
+            padding: 10px;
+            border-radius: 15px;
+            background-color: var(--blackTint);
+            border: 1px solid var(--darkOrange);
+            color: var(--darkOrange);
+            font-weight: 700;
+            text-align: left;
+        }
+    }
+}
+
+
+// .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9
+// {
+//     border: 1px solid var(--strongbackground);
+// }
+
+
+
+
+
+
+////        MEDIA QUERIES       /////////////////////////
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) 
+{
+    .friendsPartners
+    {
+        width: 70vw;
+
+        .friendsLinkCol
+        {
+            H5
+            {
+                font-size: 10px !important;
+            }
+        }
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) 
+{
+    .friendsPartners
+    {
+        width: 80vw;
+
+        .friendsLinkCol
+        {
+            H5
+            {
+                font-size: 15px !important;
+            }
+        }
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+    .friendsPartners
+    {
+        width: 80vw;
+
+        .friendsLinkCol
+        {
+            H5
+            {
+                font-size: 18px !important;
+            }
+        }
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) 
+{
+    .friendsPartners
+    {
+        width: 80vw;
+
+        .friendsLinkCol
+        {
+            H5
+            {
+                font-size: 22px !important;
+            }
+        }
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) 
+{
+    .friendsPartners
+    {
+        width: 80vw;
+
+        .friendsLinkCol
+        {
+            H5
+            {
+                font-size: 24px !important;
+            }
+        }
+    }
+} 
+
+

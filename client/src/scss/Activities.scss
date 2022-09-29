@@ -1,0 +1,72 @@
+.blue
+{
+    background-color: var(--background);
+    color: var(--background);
+}
+
+.activitiesHeader
+{
+    padding: 50px 0;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.activitiesTextContainer
+{
+    background-color: var(--background);
+    color: var(--darkBlue);
+    width: 80vw;
+    margin: 25px auto;
+    padding: 20px 20px 10px;
+
+    .activitiesText
+    {
+        p
+        {
+            color: var(--darkBlue);
+        }
+    }
+}
+
+.activitiesFacebook
+{
+  justify-content: center;
+  background-color: var(--darkBlue);
+  color: var(--esolBlue);
+  width: 100vw;
+  margin: 100px auto;
+  padding: 35px 5vw 30px;
+
+    h4
+    {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+}
+
+.activitiesContainer
+{
+    width: 75vw;
+    margin: 80px auto 20px;
+    padding: 40px;
+    text-align: center;
+
+    h2
+    {
+        padding: 10px 0 30px;
+        text-align: center;
+        color: var(--darkBlue);
+    }
+
+    p
+    {
+        color: var(--esolBlue);
+        font-weight: 700;
+    }
+}
+
+.activitiesSpacer
+{
+    height: 100px;
+    background-color: var(--darkBlue);
+}
