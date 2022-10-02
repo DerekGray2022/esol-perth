@@ -2,6 +2,8 @@ import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import Card from 'react-bootstrap/Card';
 
+import "../scss/AdBanner.scss"
+
 const AdBanner = () => {
     return (
         <Card className='adCard'>

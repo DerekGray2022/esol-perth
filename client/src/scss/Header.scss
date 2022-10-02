@@ -1,16 +1,15 @@
 .bg-esolDarkBlue
 {
-  background-color: var(--darkBlue);
+  background-color: var(--background);
 }
 
 .headBar
 {
   padding: 1rem;
-  // box-shadow: 0 0 20px var(--darkBlue);
 
   .brand
   {
-    color: var(--background);
+    color: var(--esolBlue);
     font-size: 2rem;
     font-weight: 700;
   }
@@ -26,17 +25,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   a
   {
     margin-right: 10px;
     text-decoration: none;
-    background-color: var(--darkBlue);
+    color: var(--darkBlue);
+    background-color: var(--background);
   }
 
   .dropdown-menu.show
   {
     width: 200px;
-    background-color: var(--darkBlue);
+    color: var(--darkBlue);
+    background-color: var(--background);
     border: none;
     text-align: center;
   }

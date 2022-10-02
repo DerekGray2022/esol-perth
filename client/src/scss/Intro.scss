@@ -30,7 +30,6 @@
           position: relative;
           background-color: var(--bgTint);
           padding: 1px 20px;
-          z-index: 99;
 
           p
           {
@@ -55,50 +54,90 @@
 /// ///////////////////////////////
 ////    MEDIA QUERIES   /////////////////
 /// ///////////////////////////////
+  
+/*Galaxy Fold ----------- */
+@media (min-width: 280px) and (max-width: 320px) 
+{
+  .introText
+  {
+    margin: 50px 0;
+    display: block;
+    z-index: 0;
+  }
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) 
 {
-  .introText
+  h1
   {
-    justify-content: center;
-    left: 15vw;
-    bottom: 0px;
-    width: 70vw;
+    font-size: 10vw;
+    font-weight: 700;
+  }
+
+  .col
+  {
+    align-items: flex-start;
+  }
+
+  .introContainer
+  {
+    .introText
+    {
+      justify-content: center;
+      left: 15vw;
+      bottom: 0px;
+      margin-top: 50px;
+      width: 70vw;
+      z-index: 0;
+    }
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) 
 {
-  .introContainer
+  .intro
   {
-    display: block;
+    margin-bottom: 50vw;
 
-    .introText
+    .introContainer
     {
-      left: 15vw;
-      bottom: 5vw;
-      width: 70vw;
-      height: 20vw;
-      margin-bottom: 50px;
+      display: block;
+
+      .introText
+      {
+        left: 15vw;
+        bottom: 5vw;
+        width: 70vw;
+        height: 20vw;
+        margin-bottom: 50px;
+        z-index: 1;
+      }
     }
   }
+  
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) 
 {
   
-  .introCarousel, .introContainer
+  .intro
   {
-    height: 700px;
+    margin-bottom: 30px;
 
-    .introText
+    .introCarousel, .introContainer
     {
-      left: 20vw;
-      bottom: 10vw;
-      width: 60vw;
+      height: 700px;
+
+      .introText
+      {
+        left: 20vw;
+        bottom: 10vw;
+        width: 60vw;
+        z-index: 1;
+      }
     }
   }
 }
@@ -106,13 +145,19 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) 
 {
-  .introContainer
+  .intro
   {
-    .introText
+    margin-bottom: 20px;
+
+    .introContainer
     {
-      left: 35vw;
-      bottom: 15vw;
-      width: 40vw;
+      .introText
+      {
+        left: 35vw;
+        bottom: 15vw;
+        width: 40vw;
+        z-index: 1;
+      }
     }
   }
 }
@@ -120,15 +165,22 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) 
 {
+  .container-fluid
+  {
     .introContainer
     {
-      .introText
+      .introCarousel
       {
-        left: 50vw;
-        bottom: 15vw;
-        width: 40vw;
+        .introText
+        {
+          left: 50vw;
+          bottom: 12vw;
+          width: 40vw;
+          z-index: 1;
+        }
       }
     }
+  }
 }
 
 

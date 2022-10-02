@@ -27,57 +27,25 @@ body
   background-color: var(--background);
 }
 
-//    HEADER
-.bg-esolDarkBlue
+.btn
 {
-  background-color: var(--background);
-}
-
-.headBar
-{
-  padding: 1rem;
-
-  .brand
-  {
-    color: var(--esolBlue);
-    font-size: 2rem;
-    font-weight: 700;
-  }
-
-    .justify-content-end
-  {
-    justify-content: end;
-  }
-}
-
-.navbar-nav
-{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  a
-  {
-    margin-right: 10px;
-    text-decoration: none;
-    color: var(--darkBlue);
-    background-color: var(--background);
-  }
-
-  .dropdown-menu.show
-  {
-    width: 200px;
-    color: var(--darkBlue);
-    background-color: var(--background);
-    border: none;
-    text-align: center;
-  }
-}
-
-button.toggle.navbar-toggler
-{
+  background-color: var(--darkOrange);
+  color: var(--background);
+  margin: 25px auto;
+  font-size: 1.5rem;
+  font-weight: 700;
   border: none;
 }
+
+.btn:hover
+{
+  background-color: var(--darkBlue);
+  color: var(--background);
+}
+
+
+
+////    COMPONENTS    //////////////
 
 //    INTRO & REGISTER DIVISIONS
 .intro
@@ -86,38 +54,9 @@ button.toggle.navbar-toggler
   justify-content: flex-start;
 }
 
-.register
-{
-  background-color: var(--esolBlue);
-  padding: 25px;
-
-    .donateButton
-    {
-      background-color: var(--darkOrange);
-      color: var(--background);
-      margin: 50px auto;
-      font-size: 1.5rem;
-      font-weight: 700;
-      border: none;
-    }
-
-    .donateButton:hover
-    {
-      background-color: var(--darkBlue);
-      color: var(--background);
-    }
-}
-
-.bodyText
-{
-  margin: 30px auto;
-  text-align: left;
-}
-
 //    SUMMARY TIMETABLE
 .summaryTimetable
 {
-  height: 100px; // TODO - Temporary
   margin: 0px auto;
 }
 
@@ -131,54 +70,6 @@ button.toggle.navbar-toggler
   width: 100vw !important;
   margin: 0 auto;
   padding: 30px 0px;
-
-  .container
-  {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .donateCard
-  {
-    width: 50vw;
-    margin: 50px auto;
-  }
-
-  h2
-  {
-    margin: 10px 0;
-    font-weight: 700;
-    color: var(--darkBlue);
-  }
-
-  p
-  {
-    margin: 0;
-  }
-
-  .donateButtonContainer
-  {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .donateButton
-    {
-      background-color: var(--darkOrange);
-      color: var(--background);
-      margin: 50px auto;
-      font-size: 1.5rem;
-      font-weight: 700;
-      border: none;
-    }
-
-    .donateButton:hover
-    {
-      background-color: var(--darkBlue);
-      color: var(--background);
-    }
-  }
 }
 
   //    FACEBOOK DIVISION
@@ -189,91 +80,20 @@ button.toggle.navbar-toggler
   padding: 25px;
 }
 
-// AD CAROUSEL
+// AD BANNER
 .adBanner
 {
-  padding: 50px auto;
-
-  .card
-  {
-    padding: 0;
-    margin: 100px auto;
-
-    .card-body
-    {
-      width: 100%;
-    }
-  }
+  padding: 50px 0;
 }
 
 //    REGISTER
 .register
 {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-    
-  h2
-  {
-    font-weight: 700;
-    color: var(--black);
-    margin-top: 50px;
-  }
-
-  .registerForm
-  {
-    width: 50vw !important;
-    min-width: 300px;
-    margin: 0 auto;
-  }
-
-  .donateButton
-  {
-    background-color: var(--darkOrange);
-    color: var(--background);
-    margin: 25px auto;
-    font-size: 1.5rem;
-    font-weight: 700;
-    border: none;
-  }
-
-  .donateButton:hover
-  {
-    background-color: var(--darkOrange);
-    color: var(--orange);
-  }
-}
-
-//    FOOTER
-.footer
-{
-  .row
-  {
-    width: 100vw;
-  }
-
-  .footBar, .brand
-  {
-    padding: 10px;
-  }
-
-  a
-  {
-    color: var(--darkBlue);
-    font-weight: 700;
-    text-decoration: none;
-  }
-}
-
-.bg-esolOrange
-{
-  background-color: var(--darkOrange);
-}
-
-////    OTHER PAGES
-.spacer
-{
-  height: 100vh;
+  background-color: var(--esolBlue);
+  padding: 25px 0;
 }
 
 
@@ -283,35 +103,31 @@ button.toggle.navbar-toggler
 ////        MEDIA QUERIES       ////////////////////////////
 /// /////////////////////////////////////////////
 
+/*Galaxy Fold ----------- */
+@media only screen and (min-width: 280px) and (max-width: 320px) 
+{
+  .intro  
+  {
+    margin-bottom: 50vw;
+  }
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) 
 {
-  .intro, .register
-  {
-    // display: block;
-    h1
-    {
-      font-size: 10vw;
-      font-weight: 700;
-    }
-
-    .col
-    {
-      align-items: flex-start;
-    }
-  }
-
   .intro
   {
     margin-bottom: 50vw;
   }
 
-  .donate, .adBanner
+  .donate
   {
-    .card, .card-body
-    {
-        width: 80vw;
-    }
+    width: 70vw;
+
+  //   .card, .card-body
+  // {
+  //     width: 70vw;
+  // }
   }
 
   .workshop
@@ -324,32 +140,11 @@ button.toggle.navbar-toggler
   {
     margin: 0 auto;
   }
-
-  .adBanner > .card
-  {
-    width: 70vw;
-  }
-
-    .register > .container
-  {
-    width: 90vw;
-  }
-
-  .foot-text .footBar
-  {
-    justify-content: center;
-    text-align: center;
-  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) 
 {
-  .intro, .summary, .donate, .facebook, .adBanner, .register
-  {
-    display: block;
-  }
-
   .intro, .register
   {
     h1
@@ -374,9 +169,12 @@ button.toggle.navbar-toggler
     width: 70vw;
   }
 
-  .register > .container
+  .register
   {
-    width: 80vw;
+    .container
+    {
+      width: 80vw;
+    }
   }
 
   .foot-text .footBar
@@ -391,6 +189,7 @@ button.toggle.navbar-toggler
 {
   .intro, .register
   {
+    
     h1
     {
       font-size: 7vw;
@@ -398,19 +197,26 @@ button.toggle.navbar-toggler
     }
   }
 
-  .workshop{
+  .workshop
+  {
     width: 55vw;
   }
 
-  .register > .container
+  .register
   {
-    width: 70vw;
+    .container
+    {
+      width: 70vw;
+    }
   }
 
-  .foot-text .footBar
+  .foot-text
   {
-    justify-content: center;
-    text-align: center;
+    .footBar
+    {
+      justify-content: center;
+      text-align: center;
+    }
   }
 
   .donateCardBody
@@ -455,6 +261,10 @@ button.toggle.navbar-toggler
     text-align: end;
   }
 }
+
+
+
+
 
 
   

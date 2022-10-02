@@ -1,5 +1,7 @@
 import { Row, Col, Navbar } from "react-bootstrap";
 
+import "../scss/Footer.scss";
+
 const Footer = () => {
     return (
 
@@ -11,7 +13,7 @@ const Footer = () => {
                 variant="dark"
                 sticky="bottom"
             >
-                <Row>
+                <Row className="footerRow">
                     <Col xs={12} sm={12} md={12} lg={3}>
                         <Navbar.Brand className="brand">
                             <img src="assets/images/ESOLPERTH-logo.png" width="300px" alt="Logo" />

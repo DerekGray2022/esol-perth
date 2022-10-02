@@ -30,6 +30,7 @@ import './scss/App.scss';
 const App = () => {
   return (
     <div className="App">
+      
       <Header />
 
       {/* Router */}

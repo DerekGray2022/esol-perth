@@ -14,18 +14,18 @@ const LessonsTimetable = () => {
                     </Card.Title>
 
                     <Card.Text>
-                        <Row>
+                        <Row className='contentRow'>
                             {/*     Time of Day      */}
                             <Col className='time' xs={6} sm={4} lg={3}>
-                                <Row className='TLbox'><span>Monday-Thursday</span></Row>
+                                <Row><span>Monday-Thursday</span></Row>
                                 <Row><span>Friday</span></Row>
                                 <Row><span>Saturday & Sunday</span></Row>
-                                <Row className='BLbox'><span>Monday-Thursday</span></Row>
+                                <Row><span>Monday-Thursday</span></Row>
                             </Col>
 
                             {/*         Activities       */}
                             <Col className='activity' xs={6} sm={8} lg={9}>
-                                <Row className='TRbox'>
+                                <Row>
                                     <span><b>Beginners and Intermediate</b></span>
                                     <span>10:00-12.00 & 18:00-19.00</span>
                                 </Row>
@@ -37,7 +37,7 @@ const LessonsTimetable = () => {
                                     <span><b>beginners and intermediate</b></span>
                                     <span>10:00 - 12.00</span>
                                 </Row>
-                                <Row className='BRbox'>
+                                <Row>
                                     <span><b>Discussion classes</b></span>
                                     <span>13:00 - 14.30</span>
                                 </Row>

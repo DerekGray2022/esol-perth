@@ -23,11 +23,9 @@ const Home = () => {
             </Container>
 
             {/* DONATE DIVISION */}
-            {/* <div> */}
             <Container fluid className="donate">
                 <Donate />
             </Container>
-            {/* </div> */}
 
             {/* FACEBOOK DIVISION */}
             <Container fluid className="facebook">

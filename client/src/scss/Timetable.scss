@@ -39,31 +39,29 @@
 //      CONTENT     //////////////////////
 .timetableContainer
 {
-    width: 75vw;
-    margin: 50px auto;
-    background-color: var(--esolBlue) !important;
-    // border: 1px solid var(--darkBlue) !important;
+  width: 75vw;
+  margin: 50px auto;
+  background-color: var(--esolBlue) !important;
+  border: 1px solid var(--darkBlue) !important;
 
-    .timetableCardTitle
-    {
-      border: 1px solid var(--darkBlue);
-      background-color: var(--esolBlue);
-      color: var(--background);
-    }
+  .timetableCardTitle
+  {
+    border: 1px solid var(--darkBlue);
+    background-color: var(--esolBlue);
+    color: var(--background);
+  }
 
-    .timetableCardBody
-    {
-        // background-color: var(--esolBlue) !important;
-        // border: 1px dotted var(--esolBlue);
-    }
+  h2
+  {
+      color: var(--black);
+      margin: 20px;
+      font-size: 2.5rem;
+      font-weight: 900;
+  }
 
-    h2
-    {
-        color: var(--black);
-        margin: 20px;
-        font-size: 2.5rem;
-        font-weight: 900;
-    }
+  .contentRow
+  {
+        // width: 100vw;
 
     //      Time of Day     //
     .time
@@ -77,8 +75,6 @@
           text-align: left;
           height: 75px;
           padding: 10px 0 0 10px;
-          // border: 1px solid var(--darkBlue);
-          // background-color: rgba(0, 0, 0, 0.25);
         }
     }
 
@@ -86,21 +82,21 @@
     .activity
     {
       color: var(--black);
+      width: 50vw;
       
-       .row
-        {
-          text-align: left;
-          height: 75px;
-          padding: 10px 0 0 10px;
-          // border: 1px solid var(--darkBlue);
-          // background-color: rgba(0, 0, 0, 0.25);
-        }
+      .row
+      {
+        text-align: left;
+        height: 75px;
+        padding: 10px 0 0 10px;
+      }
 
-        .lunch
-        {
-            font-weight: 700;
-        }
+      .lunch
+      {
+          font-weight: 700;
+      }
     }
+  }
 }
 
 

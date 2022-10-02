@@ -1,0 +1,51 @@
+h2
+  {
+    font-weight: 700;
+    color: var(--black);
+    margin-top: 50px;
+  }
+
+  .registerForm
+  {
+    width: 40vw !important;
+    min-width: 250px;
+    margin: 0 auto;
+  }
+
+
+
+
+/// ///////////////////////////////
+////    MEDIA QUERIES   /////////////////
+/// ///////////////////////////////
+
+/*Galaxy Fold ----------- */
+@media (min-width: 280px) and (max-width: 320px) 
+{
+  
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) 
+{
+  h1
+  {
+    font-size: 10vw;
+    font-weight: 700;
+  }
+
+  .col
+  {
+    align-items: flex-start;
+  }
+
+  .container
+  {
+    width: 90vw;
+  }
+}
+
+
+
+
+

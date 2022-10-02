@@ -1,0 +1,36 @@
+.card
+  {
+    padding: 0;
+    margin: 100px auto;
+
+    .card-body
+    {
+      width: 100%;
+    }
+  }
+
+
+
+/////////////////////////////////////////////////
+////        MEDIA QUERIES       ////////////////////////////
+/// /////////////////////////////////////////////
+
+/*Galaxy Fold ----------- */
+@media (min-width: 280px) and (max-width: 320px) 
+{
+  
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) 
+{
+  .card, .card-body
+  {
+      width: 100vw;
+  }
+}
+
+
+
+
+

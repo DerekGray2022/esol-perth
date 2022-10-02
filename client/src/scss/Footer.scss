@@ -1,0 +1,30 @@
+.footerRow
+{
+    width: 100vw;
+
+    .footBar, .brand
+    {
+        padding: 20px;
+    }
+
+    a
+    {
+        color: var(--darkBlue);
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    .footBar
+    {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+.bg-esolOrange
+{
+    background-color: var(--darkOrange);
+}
+
+
+
