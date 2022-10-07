@@ -1,0 +1,42 @@
+.ourAimContainer
+{
+    background-color: var(--background);
+    height: 100%;
+    margin-bottom: 100px;
+
+    p
+    {
+        text-align: left;
+    }
+
+    .ourAimCard
+    {
+        background-color: var(--background);
+        border: 1px solid transparent;
+        margin: 50px auto;
+
+        .ourAimBody
+        {
+            background-color: var(--background);
+
+            .ourAimText
+            {
+                padding: 10px;
+            }
+        }
+    }
+
+    //      HISTORY IMAGE CONTAINER     //
+    .ourAimImageContainer
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+
+        .ourAimImage
+        {
+            width: 100%;
+        }
+    }
+}

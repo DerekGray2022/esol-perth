@@ -1,0 +1,42 @@
+.ourObjectivesContainer
+{
+    background-color: var(--background);
+    height: 100%;
+    margin-bottom: 100px;
+
+    p
+    {
+        text-align: left;
+    }
+
+    .ourObjectivesCard
+    {
+        background-color: var(--background);
+        border: 1px solid transparent;
+        margin: 50px auto;
+
+        .ourObjectivesBody
+        {
+            background-color: var(--background);
+
+            .ourObjectivesText
+            {
+                padding: 10px;
+            }
+        }
+    }
+
+    //      HISTORY IMAGE CONTAINER     //
+    .ourObjectivesImageContainer
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+
+        .ourObjectivesImage
+        {
+            width: 50%;
+        }
+    }
+}

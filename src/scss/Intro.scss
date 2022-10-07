@@ -1,0 +1,198 @@
+//    INTRO & REGISTER DIVISIONS
+.intro
+{
+  height: 100vh;
+
+  .container-fluid
+  {
+
+    .introContainer
+    {
+        position: relative;
+        display: flex;
+        padding: 0;
+
+      .introCarousel
+      {
+        position: relative;
+        justify-content: flex-start;
+        width: 100vw;
+        height: 100%;
+        background-color: var(--background);
+
+        .carousel-inner
+        {
+          width: 100vw;
+        }
+
+        .introText
+        {
+          position: relative;
+          background-color: var(--bgTint);
+          padding: 20px;
+
+          p
+          {
+            text-align: center;
+          }
+
+          span
+          {
+            font-weight: 700;
+          }
+
+          b
+          {
+            color: var(--darkBlue);
+          }
+        }
+      }
+    }
+  }
+}
+
+/// ///////////////////////////////
+////    MEDIA QUERIES   /////////////////
+/// ///////////////////////////////
+  
+/*Galaxy Fold ----------- */
+@media only screen and (min-width: 280px) and (max-width: 330px) 
+{
+  .introContainer
+  {
+    // height: 280vw;
+
+    .introText
+    {
+      margin: 50px 0;
+      display: block;
+      z-index: 0;
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 400) and (max-width: 600px) 
+{
+  .introContainer
+  {
+      // height: 280vw;
+
+    .introText
+    {
+      justify-content: center;
+      left: 15vw;
+      bottom: 0px;
+      margin-top: 50px;
+      width: 70vw;
+      z-index: 0;
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) 
+{
+  .intro
+  {
+    // height: 90vw;
+
+    .introContainer
+    {
+
+      .introText
+      {
+        left: 15vw;
+        bottom: 5vw;
+        width: 70vw;
+        height: 20vw;
+        margin-bottom: 50px;
+        z-index: 1;
+      }
+    }
+  }
+  
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+  .intro
+  {
+    height: 70vw;
+
+    .introCarousel, .introContainer
+    {
+      height: 70vw;
+
+      .introText
+      {
+        left: 7vw;
+        bottom: 10vw;
+        width: 60vw;
+        z-index: 1;
+      }
+    }
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) 
+{
+  .intro
+  {
+    // height: 90vw;
+
+    .introContainer
+    {
+      .introText
+      {
+        left: 35vw;
+        bottom: 12vw;
+        width: 40vw;
+        z-index: 1;
+      }
+    }
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) 
+{
+  .intro
+  {
+    // height: 100vw;
+
+    .introContainer
+    {
+      height: 60vw;
+
+      .introCarousel
+      {
+        .introText
+        {
+          left: 50vw;
+          bottom: 14vw;
+          width: 40vw;
+          z-index: 1;
+        }
+      }
+    }
+  }
+}
+
+
+
+////    ANIMATION   /////////////////
+.introText
+{
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+
+
+
+

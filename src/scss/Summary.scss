@@ -1,0 +1,289 @@
+.summaryContainer
+{
+  width: 75vw;
+  margin: 50px auto;
+  background-color: var(--esolBlue) !important;
+  border: 1px solid var(--darkBlue) !important;
+
+  .summaryCardTitle
+  {
+    border: 1px solid var(--darkBlue);
+    background-color: var(--esolBlue);
+    color: var(--background);
+
+    h2
+    {
+      color: var(--black);
+      margin: 20px;
+      font-size: 2.5rem;
+      font-weight: 900;
+    }
+  }
+
+  .contentRow
+  {
+
+    //      Time of Day     //
+    .time
+    {
+      font-weight: 700;
+      color: var(--black);
+
+
+      .row
+      {
+        text-align: left;
+        height: 75px;
+        padding: 10px 0 0 10px;
+      }
+    }
+
+    //      Activities      //
+    .activity
+    {
+      color: var(--black);
+      
+      .row
+      {
+        text-align: left;
+        height: 75px;
+        padding: 10px 0 0 10px;
+      }
+
+      .lunch
+      {
+          font-weight: 700;
+      }
+    }
+  }
+}
+
+
+
+////        MEDIA QUERIES       ////////////////////////////
+/* Galaxy Fold devices (300px and down) */
+@media only screen and (min-width: 270px) and (max-width: 330px)
+{
+  .summaryContainer
+  {
+    .summaryCardBody
+    {
+      .summaryCardTitle
+      {
+        h2
+        {
+          font-size: 1.5rem;
+        }
+      }
+
+      .contentRow
+      {
+        .time
+        {
+          .row
+          {
+            span, b
+            {
+              font-size: 14px !important;
+            }
+          }
+        }
+
+        .activity
+        {
+          .row
+          {
+            span, b
+            {
+              font-size: 10px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) 
+{
+  .summaryCardTitle
+  {
+    h2
+    {
+      font-size: 0.5rem;
+    }
+  }
+
+  .contentRow
+  {
+    .time
+    {
+      .row
+      {
+        span, b
+        {
+          font-size: 14px !important;
+        }
+      }
+    }
+
+    .activity
+    {
+      .row
+      {
+        span, b
+        {
+          font-size: 14px !important;
+        }
+      }
+    }
+  }
+
+  .summaryHead
+  {
+    .btn
+    {
+      font-size: 3vw;
+    }
+  }
+
+  .summaryContainer
+  {
+    h2
+    {
+      font-size: 6vw;
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) 
+{
+  .contentRow
+  {
+    .time
+    {
+      .row
+      {
+        span, b
+        {
+          font-size: 14px !important;
+        }
+      }
+    }
+
+    .activity
+    {
+      .row
+      {
+        span, b
+        {
+          font-size: 14px !important;
+        }
+      }
+    }
+  }
+
+  .summaryHead
+  {
+    .btn
+    {
+      font-size: 2.5vw;
+    }
+  }
+
+  .summaryContainer
+  {
+    h2
+    {
+      font-size: 5vw;
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+  .contentRow
+  {
+    .time
+    {
+      .row
+      {
+        span, b
+        {
+          font-size: 14px !important;
+        }
+      }
+    }
+
+    .activity
+    {
+      .row
+      {
+        span, b
+        {
+          font-size: 14px !important;
+        }
+      }
+    }
+  }
+
+  .summaryHead > .btn
+  {
+    font-size: 2vw;
+  }
+
+  .summaryContainer
+  {
+    h2
+    {
+      font-size: 4vw;
+    }
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) 
+{
+  .contentRow
+  {
+    .time
+    {
+      .row
+      {
+        span, b
+        {
+          font-size: 14px !important;
+        }
+      }
+    }
+
+    .activity
+    {
+      .row
+      {
+        span, b
+        {
+          font-size: 14px !important;
+        }
+      }
+    }
+  }
+
+  .summaryHead > .btn
+  {
+    font-size: 1.5vw;
+  }
+
+  .summaryContainer
+  {
+    h2
+    {
+      font-size: 3vw;
+    }
+  }
+}
+
+

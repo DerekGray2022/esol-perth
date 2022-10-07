@@ -1,0 +1,36 @@
+.adCard
+  {
+    padding: 0;
+    margin: 100px auto;
+
+    .adCardBody
+    {
+      width: 100%;
+    }
+  }
+
+
+
+/////////////////////////////////////////////////
+////        MEDIA QUERIES       ////////////////////////////
+/// /////////////////////////////////////////////
+
+/*Galaxy Fold ----------- */
+@media (min-width: 280px) and (max-width: 320px) 
+{
+  
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) 
+{
+  .adCard, .adCardBody
+  {
+      width: 100vw;
+  }
+}
+
+
+
+
+

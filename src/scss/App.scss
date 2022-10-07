@@ -1,0 +1,283 @@
+@import "~bootstrap/scss/bootstrap";
+
+//    GENERAL
+body
+{
+  font-family: 'Quicksand';
+  font-size: 1.2rem;
+}
+
+.App 
+{
+  text-align: center;
+}
+
+.spacer
+{
+  height: 100vh;
+}
+
+.container-fluid
+{
+  padding: 0;
+}
+
+.card-body
+{
+  background-color: var(--background);
+}
+
+.btn
+{
+  background-color: var(--darkOrange);
+  color: var(--background);
+  margin: 25px auto;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border: none;
+}
+
+.btn:hover
+{
+  background-color: var(--darkBlue);
+  color: var(--background);
+}
+
+
+
+////    COMPONENTS    //////////////
+
+//    INTRO DIVISION
+.intro
+{
+  display: flex;
+  justify-content: flex-start;
+}
+
+//    SUMMARY TIMETABLE
+.summary
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 100vw;
+}
+
+//    DONATE DIVISION
+.donate
+{
+  background-color: var(--background);
+  background-image: url("../Images/Donate/DonateBG.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw !important;
+  margin: 0 auto;
+  padding: 100px 20px;
+}
+
+  //    FACEBOOK DIVISION
+.facebook
+{
+  background-color: var(--darkBlue);
+
+  a
+  {
+    color: var(--background);
+    padding: 25px;
+    text-decoration: none;
+  }
+
+  a:hover
+  {
+    color: var(--esolBlue);
+  }
+}
+
+// AD BANNER
+.adBanner
+{
+  padding: 50px 0;
+}
+
+//    REGISTER
+.register
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--esolBlue);
+  padding: 25px 0;
+}
+
+
+
+
+/////////////////////////////////////////////////
+////        MEDIA QUERIES       ////////////////////////////
+/// /////////////////////////////////////////////
+
+/*Galaxy Fold ----------- */
+@media only screen and (min-width: 270px) and (max-width: 330px)
+{
+  .donate
+  {
+    align-items: flex-start;
+    justify-content: center;
+    width: 100vw;
+    padding: 0;
+    margin-bottom: 100px;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) 
+{
+  .donate
+  {
+    margin-bottom: 100px;
+  }
+
+  .workshop
+  {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .sidebar
+  {
+    margin: 0 auto;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) 
+{
+  .donate
+  {
+    width: 90vw;
+  }
+
+  .adBanner
+  {
+    width: 90vw;
+
+    .card
+    {
+      width: 70vw;
+    }
+  }
+
+  .workshop
+  {
+    width: 70vw;
+  }
+
+  .register
+  {
+    .container
+    {
+      width: 80vw;
+
+      h2
+      {
+        font-size: 8vw;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .foot-text .footBar
+  {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+  .workshop
+  {
+    width: 55vw;
+  }
+
+  .register
+  {
+    .container
+    {
+      width: 70vw;
+
+      h2
+      {
+        font-size: 7vw;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .foot-text
+  {
+    .footBar
+    {
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
+  .donateCardBody
+  {
+    .row
+    {
+      justify-content: center;
+    }
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) 
+{
+  .donate
+  {
+    width: 50vw;
+  }
+  
+  .adBanner, .adBanner > .card
+  {
+    width: 40vw;
+  }
+
+  .register
+  {
+    .container
+    {
+      width: 55vw;
+    
+      h1
+      {
+        font-size: 5vw;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .foot-text .footBar
+  {
+    justify-content: flex-end;
+    text-align: end;
+  }
+}
+
+
+
+
+
+
+  
+
+  
+
+

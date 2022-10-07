@@ -1,0 +1,184 @@
+.donateCard
+{
+  background-color: var(--background);
+  margin: 50px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  .donateText
+  {
+    padding: 30px;
+
+    h2
+    {
+      font-weight: 700;
+    }
+  }
+
+  .donateButtonContainer
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+
+    .donateButton
+    {
+      background-color: var(--darkOrange);
+      color: var(--background);
+      margin: 50px auto;
+      font-size: 1.5rem;
+      font-weight: 700;
+      border: none;
+    }
+
+    .donateButton:hover
+    {
+      background-color: var(--darkBlue);
+      color: var(--background);
+    }
+  }
+}
+
+
+
+/////////////////////////////////////////////////
+////        MEDIA QUERIES       ////////////////////////////
+/// /////////////////////////////////////////////
+
+/*Galaxy Fold ----------- */
+@media only screen and (min-width: 270px) and (max-width: 349px)
+{
+  .donateImage
+  {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    left: 100px;
+    top: 40px;
+    width: 90vw;
+  }
+  
+  .donateCard
+  {
+    display: block;
+    width: 90vw;
+    padding: 0;
+    left: -120px;
+    top: 120px;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 350px) and (max-width: 600px) 
+{
+  .donateImage
+  {
+    width: 90vw;
+    left: 38vw;
+    top: -200px;
+  }
+  
+  .donateCard
+  {
+    width: 80vw;
+    padding: 0;
+    flex-direction: column;
+    top: 150px;
+    left: -50vw;
+
+    .donateText
+    {
+      width: 90vw;
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) 
+{
+  .donateImage
+  {
+    width: 80vw;
+    left: 40vw;
+  }
+  
+  .donateCard
+  {
+    width: 80vw;
+    padding: 0;
+    left: -42vw;
+    
+    .donateText
+    {
+      width: 90vw;
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+  .donateImage
+  {
+    width: 70vw;
+    left: 35vw;
+    top: -40vw;
+  }
+  
+  .donateCard
+  {
+    width: 80vw;
+    padding: 0;
+    
+    .donateText
+    {
+      width: 60vw;
+    }
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) 
+{
+  .donateImage
+  {
+    width: 220%;
+  }
+  
+  .donateCard
+  {
+    width: 60vw;
+    padding: 0;
+    
+    .donateText
+    {
+      width: 90vw;
+    }
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) 
+{
+  .donateImage
+  {
+    width: 60vw;
+    left: 150px;
+  }
+
+  .donateCard
+  {
+    width: 60vw;
+    left: -250px;
+  }
+} 
+
+
+
+
+
+
+

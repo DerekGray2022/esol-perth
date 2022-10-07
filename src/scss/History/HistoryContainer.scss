@@ -1,0 +1,42 @@
+.historyContainer
+{
+    background-color: var(--background);
+    height: 100%;
+    margin-bottom: 100px;
+
+    p
+    {
+        text-align: left;
+    }
+
+    .historyCard
+    {
+        background-color: var(--background);
+        border: 1px solid transparent;
+        margin: 50px auto;
+
+        .historyBody
+        {
+            background-color: var(--background);
+
+            .historyText
+            {
+                padding: 10px;
+            }
+        }
+    }
+
+    //      HISTORY IMAGE CONTAINER     //
+    .historyImageContainer
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+
+        .historyImage
+        {
+            width: 75%;
+        }
+    }
+}
