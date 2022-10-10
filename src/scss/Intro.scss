@@ -1,7 +1,9 @@
 //    INTRO & REGISTER DIVISIONS
 .intro
 {
-  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  height: 100%;
 
   .container-fluid
   {
@@ -76,7 +78,6 @@
 {
   .introContainer
   {
-      // height: 280vw;
 
     .introText
     {
@@ -95,7 +96,7 @@
 {
   .intro
   {
-    // height: 90vw;
+    margin-bottom: 100px;
 
     .introContainer
     {
@@ -119,7 +120,7 @@
 {
   .intro
   {
-    height: 70vw;
+    margin-bottom: 100px;
 
     .introCarousel, .introContainer
     {
@@ -141,7 +142,6 @@
 {
   .intro
   {
-    // height: 90vw;
 
     .introContainer
     {

@@ -29,12 +29,12 @@ const Home = () => {
 
             {/* FACEBOOK DIVISION */}
             <Container fluid className="facebook">
-                <a href="https://www.facebook.com/search/top?q=esolperth" target="blank">
-                    <h2>
+                <h2>
+                    <a href="https://www.facebook.com/search/top?q=esolperth" target="blank">
                         <i className="fa-brands fa-facebook" />
                         &nbsp; Find us on Facebook
+                    </a>
                     </h2>
-                </a>
             </Container>
 
             {/* AD BANNER DIVISION */}

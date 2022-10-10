@@ -6,7 +6,7 @@ import "../scss/Register.scss";
 const Register = () => {
     return (
         <>
-            <Form id='form' className='registerForm' action='#form'>
+            <Form className='registerForm' id='form' action='#form'>
                 
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Control type="email" placeholder="Enter email" />

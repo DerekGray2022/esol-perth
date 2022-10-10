@@ -47,23 +47,6 @@ body
 
 ////    COMPONENTS    //////////////
 
-//    INTRO DIVISION
-.intro
-{
-  display: flex;
-  justify-content: flex-start;
-}
-
-//    SUMMARY TIMETABLE
-.summary
-{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70vh;
-  width: 100vw;
-}
-
 //    DONATE DIVISION
 .donate
 {
@@ -74,6 +57,7 @@ body
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
   width: 100vw !important;
   margin: 0 auto;
   padding: 100px 20px;
@@ -83,6 +67,8 @@ body
 .facebook
 {
   background-color: var(--darkBlue);
+  padding: 20px 0;
+  width: 100vw;
 
   a
   {
@@ -93,24 +79,8 @@ body
 
   a:hover
   {
-    color: var(--esolBlue);
+    color: var(--darkOrange);
   }
-}
-
-// AD BANNER
-.adBanner
-{
-  padding: 50px 0;
-}
-
-//    REGISTER
-.register
-{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--esolBlue);
-  padding: 25px 0;
 }
 
 
@@ -140,17 +110,6 @@ body
   {
     margin-bottom: 100px;
   }
-
-  .workshop
-  {
-    width: 400px;
-    margin: 0 auto;
-  }
-
-  .sidebar
-  {
-    margin: 0 auto;
-  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -171,25 +130,6 @@ body
     }
   }
 
-  .workshop
-  {
-    width: 70vw;
-  }
-
-  .register
-  {
-    .container
-    {
-      width: 80vw;
-
-      h2
-      {
-        font-size: 8vw;
-        font-weight: 700;
-      }
-    }
-  }
-
   .foot-text .footBar
   {
     justify-content: center;
@@ -200,22 +140,11 @@ body
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) 
 {
-  .workshop
+  .donateCardBody
   {
-    width: 55vw;
-  }
-
-  .register
-  {
-    .container
+    .row
     {
-      width: 70vw;
-
-      h2
-      {
-        font-size: 7vw;
-        font-weight: 700;
-      }
+      justify-content: center;
     }
   }
 
@@ -225,14 +154,6 @@ body
     {
       justify-content: center;
       text-align: center;
-    }
-  }
-
-  .donateCardBody
-  {
-    .row
-    {
-      justify-content: center;
     }
   }
 }
@@ -248,20 +169,6 @@ body
   .adBanner, .adBanner > .card
   {
     width: 40vw;
-  }
-
-  .register
-  {
-    .container
-    {
-      width: 55vw;
-    
-      h1
-      {
-        font-size: 5vw;
-        font-weight: 700;
-      }
-    }
   }
 
   .foot-text .footBar

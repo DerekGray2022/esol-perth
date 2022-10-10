@@ -4,7 +4,6 @@ import HistoryContainer from '../components/History/HistoryContainer';
 import OurAimsContainer from '../components/History/OurAimsContainer';
 import OurObjectives from '../components/History/OurObjectives';
 
-// import Spacer from "../components/Spacer";
 
 import '../scss/History.scss';
 
@@ -28,8 +27,6 @@ const History = () => {
             </div>
 
             <OurObjectives />
-
-            {/* <Spacer /> */}
         </>
     );
 };

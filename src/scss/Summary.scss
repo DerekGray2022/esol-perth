@@ -1,287 +1,103 @@
-.summaryContainer
+.summary
 {
-  width: 75vw;
-  margin: 50px auto;
-  background-color: var(--esolBlue) !important;
-  border: 1px solid var(--darkBlue) !important;
-
-  .summaryCardTitle
-  {
-    border: 1px solid var(--darkBlue);
-    background-color: var(--esolBlue);
-    color: var(--background);
-
-    h2
-    {
-      color: var(--black);
-      margin: 20px;
-      font-size: 2.5rem;
-      font-weight: 900;
-    }
-  }
-
-  .contentRow
-  {
-
-    //      Time of Day     //
-    .time
-    {
-      font-weight: 700;
-      color: var(--black);
-
-
-      .row
-      {
-        text-align: left;
-        height: 75px;
-        padding: 10px 0 0 10px;
-      }
-    }
-
-    //      Activities      //
-    .activity
-    {
-      color: var(--black);
-      
-      .row
-      {
-        text-align: left;
-        height: 75px;
-        padding: 10px 0 0 10px;
-      }
-
-      .lunch
-      {
-          font-weight: 700;
-      }
-    }
-  }
-}
-
-
-
-////        MEDIA QUERIES       ////////////////////////////
-/* Galaxy Fold devices (300px and down) */
-@media only screen and (min-width: 270px) and (max-width: 330px)
-{
-  .summaryContainer
-  {
-    .summaryCardBody
-    {
-      .summaryCardTitle
-      {
-        h2
-        {
-          font-size: 1.5rem;
-        }
-      }
-
-      .contentRow
-      {
-        .time
-        {
-          .row
-          {
-            span, b
-            {
-              font-size: 14px !important;
-            }
-          }
-        }
-
-        .activity
-        {
-          .row
-          {
-            span, b
-            {
-              font-size: 10px !important;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) 
-{
-  .summaryCardTitle
-  {
-    h2
-    {
-      font-size: 0.5rem;
-    }
-  }
-
-  .contentRow
-  {
-    .time
-    {
-      .row
-      {
-        span, b
-        {
-          font-size: 14px !important;
-        }
-      }
-    }
-
-    .activity
-    {
-      .row
-      {
-        span, b
-        {
-          font-size: 14px !important;
-        }
-      }
-    }
-  }
-
-  .summaryHead
-  {
-    .btn
-    {
-      font-size: 3vw;
-    }
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 
   .summaryContainer
   {
-    h2
-    {
-      font-size: 6vw;
-    }
-  }
-}
+    width: 50vw;
+    margin: 50px auto 200px;
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) 
-{
-  .contentRow
-  {
-    .time
+    .summaryCardTitle
     {
-      .row
+      border: 1px solid var(--darkBlue);
+      background-color: var(--esolBlue);
+
+      h2
       {
-        span, b
-        {
-          font-size: 14px !important;
-        }
+        color: var(--black);
+        margin: 20px;
+        font-size: 2.5rem;
+        font-weight: 900;
+        color: var(--background);
       }
     }
 
-    .activity
+    .contentRow
     {
-      .row
+      border: 1px solid var(--darkBlue);
+
+      //    Time    //
+      .time
       {
-        span, b
+        border: 1px solid var(--darkBlue);
+        font-weight: 700;
+        color: var(--black);
+        
+        span
         {
-          font-size: 14px !important;
+          padding: 10px;
         }
       }
-    }
-  }
 
-  .summaryHead
-  {
-    .btn
-    {
-      font-size: 2.5vw;
-    }
-  }
-
-  .summaryContainer
-  {
-    h2
-    {
-      font-size: 5vw;
-    }
-  }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) 
-{
-  .contentRow
-  {
-    .time
-    {
-      .row
+      //    Activities      //
+      .activity
       {
-        span, b
+        color: var(--black);
+        margin: 20px;
+        
+        span
         {
-          font-size: 14px !important;
-        }
-      }
-    }
-
-    .activity
-    {
-      .row
-      {
-        span, b
-        {
-          font-size: 14px !important;
+          padding: 10px;
         }
       }
     }
   }
 
-  .summaryHead > .btn
+
+
+  ////        MEDIA QUERIES       ////////////////////////////
+  /* Galaxy Fold devices (300px and down) */
+  @media only screen and (min-width: 270px) and (max-width: 330px)
   {
-    font-size: 2vw;
+    
   }
 
-  .summaryContainer
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) 
   {
-    h2
+    .summaryContainer
     {
-      font-size: 4vw;
-    }
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) 
-{
-  .contentRow
-  {
-    .time
-    {
-      .row
-      {
-        span, b
-        {
-          font-size: 14px !important;
-        }
-      }
-    }
-
-    .activity
-    {
-      .row
-      {
-        span, b
-        {
-          font-size: 14px !important;
-        }
-      }
+      width: 90vw;
     }
   }
 
-  .summaryHead > .btn
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) 
   {
-    font-size: 1.5vw;
+    .summaryContainer
+    {
+      width: 90vw;
+    }
   }
 
-  .summaryContainer
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) 
   {
-    h2
+    .summaryContainer
     {
-      font-size: 3vw;
+      width: 90vw;
+    }
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) 
+  {
+    .summaryContainer
+    {
+      width: 70vw;
     }
   }
 }
