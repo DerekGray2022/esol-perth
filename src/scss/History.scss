@@ -5,18 +5,18 @@
     top: 100px;
     color: var(--black);
     margin-bottom: 50px;
-}
 
-.historyHeader::before, .historyHeader::after
-{
-    background-color: var(--black);
-    bottom: .125rem;
-    content: "";
-    display: inline-block;
-    height: 1px;
-    position: relative;
-    vertical-align: middle;
-    width: 45%;
+    &::before, &::after
+    {
+        background-color: var(--black);
+        bottom: .125rem;
+        content: "";
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 45%;
+    }
 }
 
 
@@ -27,18 +27,18 @@
     top: 100px;
     color: var(--black);
     margin-bottom: 50px;
-}
 
-.ourObjectivesHeader::before, .ourObjectivesHeader::after
-{
-    background-color: var(--black);
-    bottom: .125rem;
-    content: "";
-    display: inline-block;
-    height: 1px;
-    position: relative;
-    vertical-align: middle;
-    width: 100%;
+    &::before, &::after
+    {
+        background-color: var(--black);
+        bottom: .125rem;
+        content: "";
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 100%;
+    }
 }
 
 

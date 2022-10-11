@@ -25,13 +25,13 @@
     padding: 10px 3px;
     border: 1px solid var(--darkBlue);
     width: 14.3%;
-  }
 
-  .btn:hover
-  {
-    background-color: var(--lightBlue);
-    border: none;
-    color: var(--darkBlue);
+    &:hover
+    {
+      background-color: var(--lightBlue);
+      border: none;
+      color: var(--darkBlue);
+    }
   }
 }
 

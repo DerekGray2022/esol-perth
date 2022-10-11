@@ -1,18 +1,6 @@
-.bg-esolDarkBlue
-{
-  background-color: var(--background);
-}
-
 .headBar
 {
   padding: 1rem;
-
-  .brand
-  {
-    color: var(--esolBlue);
-    font-size: 2rem;
-    font-weight: 700;
-  }
 
     .justify-content-end
   {
@@ -30,14 +18,14 @@
   {
     margin-right: 10px;
     text-decoration: none;
-    color: var(--darkBlue);
+    color: var(--black);
     background-color: var(--background);
   }
 
   .dropdown-menu.show
   {
     width: 200px;
-    color: var(--darkBlue);
+    color: var(--black);
     background-color: var(--background);
     border: none;
     text-align: center;
@@ -52,6 +40,12 @@ button.toggle.navbar-toggler
   {
     border: none;
   }
+}
+
+.navbar-toggler:focus, button:focus:not(:focus-visible)
+{
+  outline: none;
+  box-shadow: none;
 }
 
 
@@ -82,3 +76,8 @@ button.toggle.navbar-toggler
 {
   
 }
+
+
+
+
+

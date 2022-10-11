@@ -5,6 +5,7 @@ body
 {
   font-family: 'Quicksand';
   font-size: 1.2rem;
+  background-color: var(--background);
 }
 
 .App 
@@ -35,12 +36,12 @@ body
   font-size: 1.5rem;
   font-weight: 700;
   border: none;
-}
 
-.btn:hover
-{
-  background-color: var(--darkBlue);
-  color: var(--background);
+  &:hover
+  {
+    background-color: var(--darkBlue);
+    color: var(--background);
+  }
 }
 
 
@@ -75,11 +76,11 @@ body
     color: var(--background);
     padding: 25px;
     text-decoration: none;
-  }
 
-  a:hover
-  {
-    color: var(--darkOrange);
+    &:hover
+    {
+      color: var(--darkOrange);
+    }
   }
 }
 
@@ -130,10 +131,13 @@ body
     }
   }
 
-  .foot-text .footBar
+  .foot-text
   {
-    justify-content: center;
-    text-align: center;
+    .footBar
+    {
+      justify-content: center;
+      text-align: center;
+    }
   }
 }
 
@@ -171,10 +175,14 @@ body
     width: 40vw;
   }
 
-  .foot-text .footBar
+  .foot-text
   {
-    justify-content: flex-end;
-    text-align: end;
+    .footBar
+    {
+      justify-content: flex-end;
+      text-align: end;
+    }
+    
   }
 }
 
