@@ -1,76 +1,145 @@
 //    TUTOR PAGE    //////////////////////
-//      Title
-.introTitle
-{
-    padding: 50px;
-
-    h1
-    {
-    font-weight: 700;
-    font-stretch: extra-expanded;
-    color: var(--darkBlue);
-    }
-}
 
 //      Introduction
-.introHeader
+.introContainer
 {
-    width: 75vw !important;
-    padding-bottom: 100px;
+    
+        margin: 50px auto 100px;
 
-    .introCol
-    {
-        font-weight: 600;
-        font-stretch: extra-expanded;
-        text-align: left;
-        margin: auto 10px;
-        color: var(--darkBlue);
-    }
-
-    .introCardCol
+    .introHeader
     {
         display: flex;
-        justify-content: right;
+        flex-direction: row;
+        align-items: center;
+        background-image: url("../Images/Tutors/IntroImage.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 90vw !important;
+        padding-bottom: 250px;
 
-        .introCard, .introCardBody
+        .introCol
         {
-            background-color: var(--esolBlue);
-            color: var(--background);
-            width: 200px;
-            border: 1px solid var(--background);
+            font-weight: 600;
+            font-stretch: extra-expanded;
+            text-align: left;
+            margin: 50px;
+            color: var(--black);
+            width: 40vw;
+        }
+
+        .introCardCol
+        {
+            display: flex;
+            justify-content: right;
+            margin: 20px;
+
+            .introCard, .introCardBody
+            {
+                background-color: var(--esolBlueTint);
+                color: var(--background);
+                width: 200px;
+                top: 15vw;
+            }
         }
     }
 }
 
-//    Tutor Cards
-.tutorBox
+//    Tutors
+//      Senior
+.seniorContainer
 {
-    color: var(--background);
-    background-color: rgba(0, 0, 0, 0.25) !important;
-    border: 1px solid var(--darkBlue) !important;
-    margin: 10px;
+    display: block;
+    justify-content: center;
+    height: 100%;
+    width: 100vw;
+    // background-color: var(--esolBlueTint);
 
-    h3, h4
+     .senior
     {
-        color: var(--page);
-        margin: 10px auto 20px;
-        font-weight: 700;
-    }
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 450px;
+        margin: 50px auto;
+        // background-color: springgreen;
 
-    p
-    {
-        margin: 5px auto;
+        img
+        {
+            height: 75%;
+        }
+
+        .seniorText
+        {
+            text-align: center;
+            padding: 10px;
+            border: 1px solid var(--black);
+        }
     }
-    
-    li
+}
+//      Tutors
+.tutorContainer
+{
+    // background-color: rgb(200, 182, 23);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    padding: 50px 0;
+
+    .tutorList
     {
         text-align: center;
-        list-style: none;
+        padding: 10px;
+        // border: 1px solid var(--black);
+
+        h4
+        {
+            margin-bottom: 30px;
+        }
+    }
+
+    img
+    {
+        height: 60vw;
+    }
+}
+
+//      Support
+.supportContainer
+{
+    height: 100%;
+    // background-color: rgb(50, 50, 150);
+    margin: 50px auto;
+
+    h3
+    {
+        color: var(--black);
+        padding-top: 50px;
+    }
+
+    .supportRow
+    {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100vw;
+        margin: 50px auto;
+
+        .card
+        {
+            margin-bottom: 100px;
+            border: 1px solid transparent;
+        }
     }
 }
 
 
+
+
+/////////////////////////////////////////////////
 ////        MEDIA QUERIES       ////////////////////////////
+/////////////////////////////////////////////////
+
 /* Galaxy Fold devices (300px and down) */
 @media only screen and (max-width: 300px)
 {
@@ -80,34 +149,205 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) 
 {
-  .introCardCol
-  {
-    margin-top: 50px !important;
-  }
+    .introContainer
+    {
 
-  .timetableContainer
-  {
-    width: 90vw;
-    margin: 30px auto;
-  }
+        .introHeader
+        {
+            .introCol
+            {
+                text-align: center;
+                margin: 20px auto 100px;
+                width: 60vw;
+            }
+
+            .introCardCol
+            {
+                justify-content: center;
+                align-items: flex-end;
+                margin: 20px auto;
+
+                .introCard
+                {
+                    top: 50vw;
+                }
+            }
+        }
+    }
+
+    .seniorContainer
+    {
+        .senior
+        {
+            flex-direction: column;
+            align-items: center;
+
+            .seniorText
+            {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .tutorContainer
+    {
+        flex-direction: column;
+
+        .tutorList
+        {
+            margin-top: 30px;
+        }
+
+        img
+        {
+            height: 100%;
+        }
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) 
 {
-  
+    .introContainer
+    {
+        .introHeader
+        {
+            .introCardCol
+            {
+                .introCard
+                {
+                    top: 40vw;
+                }
+            }
+        }
+    }
+
+    .seniorContainer
+    {
+        .senior
+        {
+            flex-direction: column;
+            align-items: center;
+
+            .seniorText
+            {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .tutorContainer
+    {
+        flex-direction: row;
+        justify-content: center;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) 
 {
-  
+    .introContainer
+    {
+        .introHeader
+        {
+            .introCardCol
+            {
+                .introCard
+                {
+                    top: 30vw;
+                }
+            }
+        }
+    }
+
+    .seniorContainer
+    {
+        .senior
+        {
+            flex-direction: row;
+            align-items: center;
+
+            .seniorText
+            {
+                margin-right: 30px;
+            }
+        }
+    }
+
+    .tutorContainer
+    {
+        // flex-direction: row;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) 
 {
-  
+    .introContainer
+    {
+        .introHeader
+        {
+            .introCardCol
+            {
+                .introCard
+                {
+                    top: 15vw;
+                }
+            }
+        }
+    }
+
+    .tutorContainer
+    {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 }
+
+
+
+
+
+
+
+
+
+// .tutorBox
+// {
+//     color: var(--background);
+//     background-color: rgba(0, 0, 0, 0.25) !important;
+//     border: 1px solid var(--darkBlue) !important;
+//     margin: 10px;
+
+//     h3, h4
+//     {
+//         color: var(--page);
+//         margin: 10px auto 20px;
+//         font-weight: 700;
+//     }
+
+//     p
+//     {
+//         margin: 5px auto;
+//     }
+    
+//     li
+//     {
+//         text-align: center;
+//         list-style: none;
+//     }
+// }
+
+
+//   .introCardCol
+//   {
+//     margin-top: 50px !important;
+//   }
+
+//   .timetableContainer
+//   {
+//     width: 90vw;
+//     margin: 30px auto;
+//   }
 
 
