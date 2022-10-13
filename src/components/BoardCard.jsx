@@ -90,7 +90,7 @@ const BoardCard = () => {
                         src={num === 0 ? Andrew : num === 1 ? Paul : Rob}
                         alt={member[num].name}
                         height="100%"
-                        width={150}
+                        width={300}
                     />
                     <Modal.Title>{member[num].name}</Modal.Title>
                 </Modal.Header>
