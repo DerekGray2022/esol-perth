@@ -12,7 +12,7 @@ const Tutors = () => {
             <div className='introContainer'>
                 {/*         HEADER       */}
                 <Container className='introHeader'>
-                    {/* <Row> */}
+                    <Row>
                         <Col className='introCol'>
                             We know that learning is easier when you have an excellent teacher. That's why our tutors keep their qualifications up to date with continuous professional development every year.
                         </Col>
@@ -26,7 +26,7 @@ const Tutors = () => {
                                 </Card.Body>
                             </Card>
                         </Col>
-                    {/* </Row> */}
+                    </Row>
                 </Container>
 
             </div>

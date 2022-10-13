@@ -2,11 +2,6 @@
 {
   padding: 1rem;
   background-color: var(--background) !important;
-
-    .justify-content-end
-  {
-    justify-content: end;
-  }
 }
 
 .navbar-nav
@@ -30,16 +25,6 @@
     background-color: var(--background);
     border: none;
     text-align: center;
-  }
-}
-
-button.toggle.navbar-toggler
-{
-  border: none;
-
-  :focus
-  {
-    border: none;
   }
 }
 

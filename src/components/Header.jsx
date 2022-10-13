@@ -10,7 +10,7 @@ const Header = () => {
                 bg="light"
                 variant="light"
                 sticky="top"
-                expand="lg"
+                expand="xl"
                 collapseOnSelect
             >
 
