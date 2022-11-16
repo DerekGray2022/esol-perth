@@ -1,82 +1,119 @@
-import React, { /*useState*/ } from 'react';
-// import Container from 'react-bootstrap/Container';
-// import Row from 'react-bootstrap/Row';
-// import Col from 'react-bootstrap/Col';
-// import Button from 'react-bootstrap/Button';
-// import Card from 'react-bootstrap/Card';
+import React, { useState } from 'react';
 
-import Spacer from "../components/Spacer";
+import Days from "../Json/Timetable.json";
 
-// import Days from "../Json/Timetable.json";
+import "../scss/Timetable.scss";
 
-import '../scss/Timetable.scss';
+//      VARIABLES       ////
+let lastElement = null;
 
+const NewTimetable = () => {
 
+    //      USE STATES      ////
+    const [day, setDay] = useState(Days[0]);
+    // const [active, setActive] = useState("");
 
-const Timetable = () => {
-
-    // const [day, setDay] = useState(Days[0]);
-
-    // const handleSelect = (selectedDay) => {
-    //     setDay(Days[selectedDay]);
-    // };
+    //      FUNCTIONS       ////
+    const handleClick = (e, num) => {
+        //  Set lastElement to "Mon" button on initial click
+        if (lastElement === null) {
+            lastElement = document.querySelector(".monButton");
+        }
+        //  Removes "active" from previous button className
+        lastElement.classList.remove("active");
+        //  Sets lastElement to current button
+        lastElement = e.target;
+        //  Loads Classes for selcted day
+        setDay(Days[num]);
+        //  Adds "active" to current button className
+        e.target.classList.add("active");
+    }
 
     return (
-        <div className="page">
-            <h1>Timetable</h1>
-            <Spacer />
+        <>
+            <div className="timetableContainer">
+                {/***       HEADER      ***/}
+                <div className="header"><h1>Timetable</h1></div>
 
-            {/* <Container fluid>
+                {/***       SEASON      ***/}
+                <h1 className="newSeason">September - December 2022</h1>
 
-                <h1 className="season">September - December 2022</h1> */}
+                {/***       BUTTONS     ***/}
+                <div className="monButton buttons active" onClick={(e) => {handleClick(e, 0);}}>
+                    Mon
+                </div>
 
-                {/*         WEEKDAY BUTTONS      */}
-                {/* <div className="timetableHead">
-                    <Button variant='none' id='button01' onClick={() => { handleSelect(0) }}>MON</Button>
-                    <Button variant='none' onClick={() => { handleSelect(1) }}>TUE</Button>
-                    <Button variant='none' onClick={() => { handleSelect(2) }}>WED</Button>
-                    <Button variant='none' onClick={() => { handleSelect(3) }}>THU</Button>
-                    <Button variant='none' onClick={() => { handleSelect(4) }}>FRI</Button>
-                    <Button variant='none' onClick={() => { handleSelect(5) }}>SAT</Button>
-                    <Button variant='none' id='button02' onClick={() => { handleSelect(6) }}>SUN</Button>
-                </div> */}
+                <div className="tueButton buttons " onClick={(e) => { handleClick(e, 1) }}>
+                    Tue
+                </div>
 
-                {/*         CONTENT      */}
-                {/* <Card className='timetableContainer'>
-                    <Card.Body className='timetableCardBody'>
+                <div className="wedButton buttons " onClick={(e) => { handleClick(e, 2) }}>
+                    Wed
+                </div>
 
-                        <Card.Title className='timetableCardTitle'>
-                            <h2>{day.day}</h2>
-                        </Card.Title>
+                <div className="thuButton buttons " onClick={(e) => { handleClick(e, 3) }}>
+                    Thu
+                </div>
 
+                <div className="friButton buttons " onClick={(e) => { handleClick(e, 4) }}>
+                    Fri
+                </div>
 
-                            <Row> */}
-                                {/*         Time of Day      */}
-                                {/* <Col className='time' xs={6} sm={5} md={4} lg={3}>
-                                    <Row className='TLbox'><span>10:00 - 11:00</span></Row>
-                                    <Row><span>11:00 - 12:00</span></Row>
-                                    <Row><span>12:00 - 13:00</span></Row>
-                                    <Row><span>13:00 - 14:30</span></Row>
-                                    <Row><span>15:30 - 17:00</span></Row>
-                                    <Row className='BLbox'><span>18:00</span></Row>
-                                </Col> */}
+                <div className="satButton buttons " onClick={(e) => { handleClick(e, 5) }}>
+                    Sat
+                </div>
 
-                                {/*         Activities       */}
-                                {/* <Col className='activity' xs={6} sm={7} md={8} lg={9}>
-                                    <Row className='TRbox'><span>{day.earlyMorn}</span></Row>
-                                    <Row><span>{day.lateMorn}</span></Row>
-                                    <Row className='lunch'><span>LUNCH</span></Row>
-                                    <Row title={day.title}><span>{day.earlyAft}</span></Row>
-                                    <Row><span>{day.lateAft}</span></Row>
-                                    <Row className='BRbox'><span>{day.evening}</span></Row>
-                                </Col>
-                            </Row>
-                    </Card.Body>
-                </Card>
+                <div className="sunButton buttons " onClick={(e) => { handleClick(e, 6) }}>
+                    Sun
+                </div>
 
-            </Container> */}
-        </div>
+                {/***       DAY TITLE     ***/}
+                <div className="dayTitle"><h1>{day.day}</h1></div>
+
+                {/***       TIMES       ***/}
+                <div className="time earlyAM">
+                    <span>10:00 - 11:00</span>
+                </div>
+                <div className="time lateAM">
+                    <span>11:00 - 12:00</span>
+                </div>
+                <div className="time lunch">
+                    <span>12:00 - 13:00</span>
+                </div>
+                <div className="time earlyPM">
+                    <span>13:00 - 14:30</span>
+                </div>
+                <div className="time latePM">
+                    <span>15:30 - 17:00</span>
+                </div>
+                <div className="time evening">
+                    <span>18:00</span>
+                </div>
+
+                {/***       CLASSES       ***/}
+                <div className={day.earlyAM === "NO CLASSES" ? "class earlyAM noClass" : "class earlyAM"}>
+                    {day.earlyAM}
+                </div>
+
+                <div className={day.lateAM === "NO CLASSES" ? "class lateAM noClass" : "class lateAM"}>
+                    {day.lateAM}
+                </div> 
+
+                <div className="class lunch">LUNCH</div> 
+
+                <div className={day.earlyPM === "NO CLASSES" ? "class earlyPM noClass" : "class earlyPM"}>
+                    {day.earlyPM}
+                </div> 
+
+                <div className={day.latePM === "NO CLASSES" ? "class latePM noClass" : "class latePM"}>
+                    {day.latePM}
+                </div> 
+
+                <div className={day.evening === "NO CLASSES" ? "class evening noClass" : "class evening"}>{day.evening}</div> 
+
+            </div>
+        </>
     );
 };
 
-export default Timetable;
+export default NewTimetable;

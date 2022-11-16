@@ -11,8 +11,6 @@ const Intro = () => {
                 
                 <div className="carousel">
                     <FadeCarousel />
-
-                    
                 </div>
 
                 <div className="introText">
