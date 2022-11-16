@@ -48,7 +48,7 @@
     }
 }
 
-.active
+.dayPicked
 {
     background-color: var(--darkBlue);
     color: var(--background);
@@ -120,7 +120,7 @@
     font-weight: 700;
     font-size: 1rem;
     border: 1px solid var(--darkBlue);
-    height: 75px;
+    height: 100px;
 }
 
 .earlyAM
@@ -142,6 +142,15 @@
 .earlyPM
 {
     grid-row: 10/12;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.classTitle
+{
+    display: none;
+    font-size: 1rem;
 }
 
 .latePM
@@ -164,7 +173,7 @@
     font-weight: 700;
     font-size: 1rem;
     border: 1px solid var(--darkBlue);
-    height: 75px;
+    height: 100px;
 }
 
 .noClass
@@ -217,6 +226,11 @@
         grid-column: 6/15;
         font-size: 1.2rem;
     }
+
+    .classTitle
+    {
+        display: flex;
+    }
 }
 
 @media only screen and (min-width: 992px)
@@ -243,7 +257,7 @@
         font-size: 1.8rem;
     }
 
-    .active:hover
+    .dayPicked:hover
     {
         font-size: 1.5rem;
     }

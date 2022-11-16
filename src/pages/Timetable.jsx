@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Days from "../Json/Timetable.json";
 
@@ -11,22 +11,23 @@ const NewTimetable = () => {
 
     //      USE STATES      ////
     const [day, setDay] = useState(Days[0]);
-    // const [active, setActive] = useState("");
+
+    //  Set lastElement to "Mon" button on page loading
+    useEffect(() => {
+        lastElement = document.querySelector(".monButton");
+    }, [])
+
 
     //      FUNCTIONS       ////
     const handleClick = (e, num) => {
-        //  Set lastElement to "Mon" button on initial click
-        if (lastElement === null) {
-            lastElement = document.querySelector(".monButton");
-        }
         //  Removes "active" from previous button className
-        lastElement.classList.remove("active");
+        lastElement.classList.remove("dayPicked");
+        //  Adds "active" to current button className
+        e.target.classList.add("dayPicked");
         //  Sets lastElement to current button
         lastElement = e.target;
-        //  Loads Classes for selcted day
+        //  Loads events for selected day
         setDay(Days[num]);
-        //  Adds "active" to current button className
-        e.target.classList.add("active");
     }
 
     return (
@@ -39,7 +40,7 @@ const NewTimetable = () => {
                 <h1 className="newSeason">September - December 2022</h1>
 
                 {/***       BUTTONS     ***/}
-                <div className="monButton buttons active" onClick={(e) => {handleClick(e, 0);}}>
+                <div className="monButton buttons dayPicked" onClick={(e) => { handleClick(e, 0); }}>
                     Mon
                 </div>
 
@@ -97,19 +98,20 @@ const NewTimetable = () => {
 
                 <div className={day.lateAM === "NO CLASSES" ? "class lateAM noClass" : "class lateAM"}>
                     {day.lateAM}
-                </div> 
+                </div>
 
-                <div className="class lunch">LUNCH</div> 
+                <div className="class lunch">LUNCH</div>
 
                 <div className={day.earlyPM === "NO CLASSES" ? "class earlyPM noClass" : "class earlyPM"}>
                     {day.earlyPM}
-                </div> 
+                    <p className="classTitle">{day.title}</p>
+                </div>
 
                 <div className={day.latePM === "NO CLASSES" ? "class latePM noClass" : "class latePM"}>
                     {day.latePM}
-                </div> 
+                </div>
 
-                <div className={day.evening === "NO CLASSES" ? "class evening noClass" : "class evening"}>{day.evening}</div> 
+                <div className={day.evening === "NO CLASSES" ? "class evening noClass" : "class evening"}>{day.evening}</div>
 
             </div>
         </>
