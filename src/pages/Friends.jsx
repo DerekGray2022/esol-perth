@@ -4,6 +4,7 @@ import React from 'react';
 
 // import PartnerGrid from '../components/PartnerGrid';
 
+import Spacer from "../components/Spacer";
 
 import '../scss/Friends.scss';
 
@@ -14,7 +15,7 @@ const Friends = () => {
 
                 <Row className="friendsTitle"> */}
             <h1>Friends and Feedback</h1>
-            <div className="spacer"></div>
+            <Spacer />
                 {/* </Row>
 
                 <Row className="friendsHeader">

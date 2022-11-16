@@ -17,7 +17,7 @@ const HistoryContainer = () => {
 
                                 <Card.Text className='historyText'>
                                     <p>
-                                        ESOL PERTH is an English language learning environment. However, we have a structure that encourages social integration at a family friendly level.
+                                        Esolperth is an English language learning environment. However, we have a structure that encourages social integration at a family friendly level.
                                     </p>
 
                                     <p>

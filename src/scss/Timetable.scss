@@ -48,7 +48,7 @@
     }
 }
 
-.dayPicked
+.active
 {
     background-color: var(--darkBlue);
     color: var(--background);
@@ -141,9 +141,9 @@
 
 .earlyPM
 {
-    grid-row: 10/12;
     display: flex;
     flex-direction: column;
+    grid-row: 10/12;
     padding: 1rem;
 }
 
@@ -257,10 +257,8 @@
         font-size: 1.8rem;
     }
 
-    .dayPicked:hover
+    .active:hover
     {
         font-size: 1.5rem;
     }
 }
-
-

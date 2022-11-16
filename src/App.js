@@ -19,8 +19,6 @@ import Ielts from './pages/Ielts';
 import Friends from './pages/Friends';
 import Contact from './pages/Contact';
 
-import NewTimetable from './pages/Timetable';
-
 
 // BOOTSTRAP CSS & JS   //////
 import 'bootstrap/dist/css/bootstrap.css';
@@ -49,7 +47,6 @@ const App = () => {
           <Route path='/Advanced' element={<Advanced />} />
           <Route path='/Friends' element={<Friends />} />
           <Route path='/Ielts' element={<Ielts />} />
-          <Route path='/newtimetable' element={<NewTimetable />} />
         </Routes>
         {/* End Router */}
 

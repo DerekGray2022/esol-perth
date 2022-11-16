@@ -1,5 +1,7 @@
 import { Container } from "react-bootstrap";
 
+import Spacer from "../components/Spacer";
+
 import '../scss/Activities.scss';
 
 const Activities = () => {
@@ -10,7 +12,7 @@ const Activities = () => {
         {/*     HEADER     */}
         <h1>Activities</h1>
         {/* className="activitiesHeader" */}
-        <div className="spacer"></div>
+        <Spacer />
 
         {/*     INTRODUCTION     */}
         {/* <div className="activitiesTextContainer">

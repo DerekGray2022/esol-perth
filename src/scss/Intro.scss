@@ -1,3 +1,4 @@
+//    INTRO & REGISTER DIVISIONS
 .intro
 {
   display: flex;
@@ -19,7 +20,7 @@
         justify-content: flex-start;
         width: 100vw;
         height: 100%;
-        // background-color: var(--background);
+        background-color: var(--background);
 
         .carousel-inner
         {
@@ -160,6 +161,8 @@
 {
   .intro
   {
+    // height: 100vw;
+
     .introContainer
     {
       height: 60vw;

@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
+import { useEffect } from 'react';
 
 import Days from "../Json/Timetable.json";
 
@@ -12,7 +13,7 @@ const NewTimetable = () => {
     //      USE STATES      ////
     const [day, setDay] = useState(Days[0]);
 
-    //  Set lastElement to "Mon" button on page loading
+    //  Set lastElement to "Mon" button on page load
     useEffect(() => {
         lastElement = document.querySelector(".monButton");
     }, [])
@@ -21,12 +22,12 @@ const NewTimetable = () => {
     //      FUNCTIONS       ////
     const handleClick = (e, num) => {
         //  Removes "active" from previous button className
-        lastElement.classList.remove("dayPicked");
+        lastElement.classList.remove("active");
         //  Adds "active" to current button className
-        e.target.classList.add("dayPicked");
+        e.target.classList.add("active");
         //  Sets lastElement to current button
         lastElement = e.target;
-        //  Loads events for selected day
+        //  Loads events for selcted day
         setDay(Days[num]);
     }
 
@@ -40,7 +41,7 @@ const NewTimetable = () => {
                 <h1 className="newSeason">September - December 2022</h1>
 
                 {/***       BUTTONS     ***/}
-                <div className="monButton buttons dayPicked" onClick={(e) => { handleClick(e, 0); }}>
+                <div className="monButton buttons active" onClick={(e) => { handleClick(e, 0); }}>
                     Mon
                 </div>
 
