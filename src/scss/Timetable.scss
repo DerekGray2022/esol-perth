@@ -48,7 +48,7 @@
     }
 }
 
-.active
+.dayPicked
 {
     background-color: var(--darkBlue);
     color: var(--background);
@@ -257,7 +257,7 @@
         font-size: 1.8rem;
     }
 
-    .active:hover
+    .dayPicked:hover
     {
         font-size: 1.5rem;
     }

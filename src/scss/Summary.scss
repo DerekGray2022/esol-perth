@@ -1,105 +1,96 @@
-.summary
+.summaryContainer
 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5, 1fr);
 
-  .summaryContainer
-  {
-    width: 50vw;
-    margin: 50px auto 200px;
+    height: 100%;
+    width: 90vw;
+    max-width: 900px;
+    margin: 0 auto 200px;
 
-    .summaryCardTitle
+    div
     {
-      border: 1px solid var(--darkBlue);
-      background-color: var(--esolBlue);
-
-      h2
-      {
-        color: var(--black);
-        margin: 20px;
-        font-size: 2.5rem;
-        font-weight: 900;
-        color: var(--background);
-      }
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .contentRow
+    .summaryHeader
     {
-      border: 1px solid var(--darkBlue);
+        grid-column: 1/13;
 
-      //    Time    //
-      .time
-      {
+        background-color: var(--esolBlue);
+        color: var(--background);
+        font-weight: 700;
+        padding: 1em;
+        border: 1px solid var(--darkBlue);
+    }
+
+    //      COLUMNS     ////
+    .sumDay
+    {
+        grid-column: 1/5;
+
+        height: 100px;
         border: 1px solid var(--darkBlue);
         font-weight: 700;
-        color: var(--black);
-        
-        span
+    }
+
+    .sumEvent
+    {
+        grid-column: 5/13;
+        flex-direction: column;
+
+        height: 100px;
+        border: 1px solid var(--darkBlue);
+        font-weight: 700;
+
+        p
         {
-          padding: 10px;
+            font-weight: 400;
         }
-      }
-
-      //    Activities      //
-      .activity
-      {
-        color: var(--black);
-        margin: 20px;
-        
-        span
-        {
-          padding: 10px;
-        }
-      }
     }
-  }
 
-
-
-  ////        MEDIA QUERIES       ////////////////////////////
-  /* Galaxy Fold devices (300px and down) */
-  @media only screen and (min-width: 270px) and (max-width: 330px)
-  {
-    
-  }
-
-  /* Extra small devices (phones, 600px and down) */
-  @media only screen and (max-width: 600px) 
-  {
-    .summaryContainer
+    //      ROWS        ////
+    .one
     {
-      width: 90vw;
+        grid-row: 2/3;
     }
-  }
-
-  /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 600px) 
-  {
-    .summaryContainer
+    .two
     {
-      width: 90vw;
+        grid-row: 3/4;
     }
-  }
-
-  /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) 
-  {
-    .summaryContainer
+    .three
     {
-      width: 90vw;
+        grid-row: 4/5;
     }
-  }
-
-  /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) 
-  {
-    .summaryContainer
+    .four
     {
-      width: 70vw;
+        grid-row: 5/6;
     }
-  }
 }
+
+
+
+//////////////////////////////////
+//      MEDIA QUERIES       ////////////////
+/////////////////////////////////
+@media only screen and (min-width: 992px)
+{
+    .summaryContainer
+    {
+        .sumDay
+        {
+            grid-column: 1/4;
+        }
+
+        .sumEvent
+        {
+            grid-column: 4/13;
+        }
+    }
+}
+
 
 

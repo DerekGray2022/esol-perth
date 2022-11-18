@@ -8,7 +8,7 @@ import "../scss/Timetable.scss";
 //      VARIABLES       ////
 let lastElement = null;
 
-const NewTimetable = () => {
+const Timetable = () => {
 
     //      USE STATES      ////
     const [day, setDay] = useState(Days[0]);
@@ -22,9 +22,9 @@ const NewTimetable = () => {
     //      FUNCTIONS       ////
     const handleClick = (e, num) => {
         //  Removes "active" from previous button className
-        lastElement.classList.remove("active");
+        lastElement.classList.remove("dayPicked");
         //  Adds "active" to current button className
-        e.target.classList.add("active");
+        e.target.classList.add("dayPicked");
         //  Sets lastElement to current button
         lastElement = e.target;
         //  Loads events for selcted day
@@ -41,7 +41,7 @@ const NewTimetable = () => {
                 <h1 className="newSeason">September - December 2022</h1>
 
                 {/***       BUTTONS     ***/}
-                <div className="monButton buttons active" onClick={(e) => { handleClick(e, 0); }}>
+                <div className="monButton buttons dayPicked" onClick={(e) => { handleClick(e, 0); }}>
                     Mon
                 </div>
 
@@ -119,4 +119,4 @@ const NewTimetable = () => {
     );
 };
 
-export default NewTimetable;
+export default Timetable;
