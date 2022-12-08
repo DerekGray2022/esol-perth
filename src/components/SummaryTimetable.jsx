@@ -9,7 +9,7 @@ const SummaryTimetable = () => {
         <div className='summaryContainer'>
 
             {/***       HEADER      ***/}
-            <div className="summaryHeader"><h1>Lessons Timetable</h1></div>
+            <div className="summaryHeader"><h1><b>Lessons Timetable</b></h1></div>
 
             {/***       DAYS        ***/}
             {Days.map((day) => {

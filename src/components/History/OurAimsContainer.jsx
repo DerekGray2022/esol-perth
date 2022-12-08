@@ -25,7 +25,7 @@ const OurAimsContainer = () => {
                             <Card.Body className='ourAimBody'>
                                 <Card.Text className='ourAimText'>
                                     <p>
-                                        The main aim of esolperth is to improve the quality of life for people from other countries by teaching them how to <b>speak, read and write in English.</b>
+                                        The main aim of ESOLPERTH is to improve the quality of life for people from other countries by teaching them how to <span>speak, read and write in English.</span>
                                     </p>
                                 </Card.Text>
                             </Card.Body>

@@ -1,0 +1,175 @@
+//      GENERAL     ////
+.image
+{
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+
+    padding: 0 1rem;
+    
+    img
+    {
+        width: 100%;
+        height: 300px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.75);
+    }
+}
+
+//      BEGINNER PAGE       ////
+.beginnersContainer
+{
+    display: grid;
+    grid-template-rows: 1fr, repeat(2, 1fr);
+    margin-top: 50px;
+
+    .red, .orange
+    {
+        display: grid;
+        justify-content: center;
+        grid-template-rows: 1fr 4fr 100%;
+
+        margin: 50px auto 0;
+        width: 90vw;
+        max-width: 400px;
+    }
+
+    .redHead, .orangeHead
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-weight: 700;
+        padding: 0;
+    }
+
+    .redHead
+    {
+        color: rgb(190, 36, 46);
+    }
+
+    .orangeHead
+    {
+        color: rgb(209, 112, 24);
+    }
+
+    .redBody, .orangeBody
+    {
+        padding: 1rem;
+        font-weight: 500;
+    }
+}
+
+//      OTHER PAGES        ////
+.lessonsContainer
+{
+    margin-top: 50px;
+
+    .poster
+    {
+        display: grid;
+        justify-content: center;
+        grid-template-rows: 1fr 4fr 3fr;
+
+        margin: 50px auto;
+        width: 90vw;
+        max-width: 400px;
+
+        .posterBody
+        {
+            padding: 1rem;
+            font-weight: 500;
+        }
+        
+        .greenHead
+        {
+            color: rgb(162, 189, 39);
+            font-weight: 700;
+        }
+
+        .blueHead
+        {
+            color: rgb(23, 154, 208);
+            font-weight: 700;
+        }
+
+        .ieltsHead
+        {
+            color: var(--darkBlue);
+            font-weight: 700;
+        }
+
+        .ieltsPS
+        {
+            font-style: italic;
+
+            span
+            {
+                font-weight: 600;
+                color: var(--darkBlue);
+            }
+        }
+    }
+}
+
+//      ADVANCED        ////
+.advancedContainer
+{
+    margin-top: 50px;
+
+    .blue
+    {
+        display: grid;
+        justify-content: center;
+        grid-template-rows: 1fr 4fr 3fr;
+
+        margin: 50px auto;
+        width: 90vw;
+        max-width: 400px;
+
+        .blueHead
+        {
+            color: rgba(0, 0, 255, 1);
+            font-weight: 700;
+        }
+
+        .blueBody
+        {
+            padding: 1rem;
+            font-weight: 500;
+        }
+    }
+}
+
+
+
+//////////////////////////////////
+//      MEDIA QUERIES       ////////////////
+/////////////////////////////////
+@media only screen and (min-width: 820px)
+{
+    .beginnersContainer
+    {
+        grid-template-rows: 1;
+        grid-template-columns: repeat(2, 1fr);
+
+        .beginHead
+        {
+            grid-column: 1/3;
+        }
+
+        .red
+        {
+            grid-column: 1/2;
+        }
+
+        .orange
+        {
+            grid-column: 2/3;
+        }
+    }
+}
+
+
+
+

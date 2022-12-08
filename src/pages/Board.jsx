@@ -10,7 +10,7 @@ const Board = () => {
     return (
         <>
             <div>
-                <h5 className='boardHeader'> ESOL PERTH Board </h5>
+                <h5 className='boardHeader'> ESOLPERTH Board </h5>
             </div>
 
             <Container fluid className='boardContainer'>

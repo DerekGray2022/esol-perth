@@ -36,17 +36,17 @@ const App = () => {
       {/* Router */}
         <Routes>
           <Route path='/' exact element={<Home />} />
-          <Route path='/History' element={<History />} />
-          <Route path='/Tutors' element={<Tutors />} />
-          <Route path='/Board' element={<Board />} />
-          <Route path='/Timetable' element={<Timetable />} />
-          <Route path='/Activities' element={<Activities />} />
-          <Route path='/Contact' element={<Contact />} />
-          <Route path='/Beginners' element={<Beginners />} />
-          <Route path='/Intermediate' element={<Intermediate />} />
-          <Route path='/Advanced' element={<Advanced />} />
-          <Route path='/Friends' element={<Friends />} />
-          <Route path='/Ielts' element={<Ielts />} />
+          <Route path='/history' element={<History />} />
+          <Route path='/tutors' element={<Tutors />} />
+          <Route path='/board' element={<Board />} />
+          <Route path='/timetable' element={<Timetable />} />
+          <Route path='/activities' element={<Activities />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/beginners' element={<Beginners />} />
+          <Route path='/intermediate' element={<Intermediate />} />
+          <Route path='/advanced' element={<Advanced />} />
+          <Route path='/friends' element={<Friends />} />
+          <Route path='/ielts' element={<Ielts />} />
         </Routes>
         {/* End Router */}
 

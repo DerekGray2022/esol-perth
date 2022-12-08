@@ -75,7 +75,7 @@ const BoardCard = () => {
 
             </Row>
 
-            {/*         MODAL        */}
+            {/***         MODAL        ***/}
             <Modal
                 size='lg'
                 show={show}

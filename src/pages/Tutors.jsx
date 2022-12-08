@@ -1,69 +1,50 @@
 import React from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
 
-
-import '../scss/Timetable.scss';
 import '../scss/Tutors.scss';
 
 
-const Tutors = () => {
+const XTutors = () => {
     return (
         <>
-            <div className='introContainer'>
-                {/*         HEADER       */}
-                <Container className='introHeader'>
-                    <Row>
-                        <Col className='introCol'>
-                            We know that learning is easier when you have an excellent teacher. That's why our tutors keep their qualifications up to date with continuous professional development every year.
-                        </Col>
+            <div className='splashBox'>
+                {/*         INTRODUCTION       */}
+                <div className='splashRow'>
+                    <div className='splashCol'>
+                        We know that learning is easier when you have an excellent teacher. That's why our tutors keep their qualifications up to date with continuous professional development every year.
+                    </div>
 
-                        <Col className='introCardCol'>
-                            <Card className='introCard'>
-                                <Card.Body className='introCardBody'>
-                                    <Card.Text>
-                                        <b>Our tutors are passionate about their subject and they bring this enthusiasm into their lessons.</b>
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                    </Row>
-                </Container>
+                    <div className='splashCard'>
+                        <b>Our tutors are passionate about their subject and they bring this enthusiasm into their lessons.</b>
+                    </div>
+                </div>
 
             </div>
 
             {/*         TUTOR LIST       */}
             {/* Senior Tutor */}
-            <Container className="seniorContainer">
+            <div className="seniorContainer">
 
-                <div className="senior">
+                <div className="seniorText">
+                    <h3>Senior English Language Tutor</h3>
+                    <p>Linda El-Miligy</p>
+                </div>
 
-                    <div className="seniorText">
-                        <h3>Senior English Language Tutor</h3>
-                        <p>Linda El-Miligy</p>
-                    </div>
-
+                <div className="seniorImg">
                     <img
                         src="assets/Tutors/Linda-with-student.jpg"
                         alt="Linda with Student"
                     />
-
                 </div>
 
-            </Container>
+            </div>
 
 
             {/* Class Tutors */}
             <div className="tutorContainer">
 
-                <div className="tutorImage">
-                    <img
-                        src="assets/Tutors/Whiteboard.jpg"
-                        alt="Tutor"
-                    />
-                </div>
+                <h4>English Language Tutors</h4>
 
-                <div className="tutorList">
-                    <h4>English Language Tutors</h4>
+                <div className="tutorList1">
                     <p>Liz Auld</p>
                     <p>Alice Carbone</p>
                     <p>Michael Ellacott</p>
@@ -71,6 +52,9 @@ const Tutors = () => {
                     <p>Sarah Jamieson</p>
                     <p>Helen Kirk</p>
                     <p>Kasia McGregor</p>
+                </div>
+
+                <div className="tutorList2">
                     <p>Louise Milne</p>
                     <p>Joshua Olewole</p>
                     <p>Agi Parzniewska</p>
@@ -80,57 +64,55 @@ const Tutors = () => {
                     <p>Fiona Smith</p>
                 </div>
 
+                <div className="tutorImage">
+                    <img
+                        src="assets/Tutors/Whiteboard.jpg"
+                        alt="Tutor"
+                    />
+                </div>
+
             </div>
 
             {/* Support Staff */}
             <div className="supportContainer">
                 <h3>Support Workers</h3>
-                <Row className="supportRow">
 
-                    <Card style={{ width: '18rem' }}>
-                        <Card.Img
-                            variant="top"
-                            src="assets/Tutors/Support/VoiceCoaches.jpg"
-                        />
-                        <Card.Body>
-                            <Card.Title><b>Voice Coaches</b></Card.Title>
-                            <Card.Text>
-                                <p>Edna Auld</p>
-                                <p>Heather Knudtsen</p>
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
+                <div className='supportCard voiceCoach'>
+                    <img
+                        src="assets/Tutors/Support/VoiceCoaches.jpg"
+                        alt="Voice Coaches"
+                    />
+                    <div className="supportInfo">
+                        <h5>Voice Coaches</h5>
+                        <p>Edna Auld<br />Heather Knudtsen</p>
+                    </div>
+                </div>
 
-                    <Card style={{ width: '18rem' }}>
-                        <Card.Img 
-                        variant="top"
-                            src="assets/Tutors/Support/Playworker.jpg"
-                         />
-                        <Card.Body>
-                            <Card.Title><b>Playworker</b></Card.Title>
-                            <Card.Text>
-                                <p>Elsa Tesfamichael</p>
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
+                <div className='supportCard playWork'>
+                    <img
+                        src="assets/Tutors/Support/Playworker.jpg"
+                        alt="Playworker"
+                    />
+                    <div className="supportInfo">
+                        <h5>Playworker</h5>
+                        <p>Elsa Tesfamichael</p>
+                    </div>
+                </div>
 
-                    <Card style={{ width: '18rem' }}>
-                        <Card.Img 
-                        variant="top"
-                            src="assets/Tutors/Support/Administrator.jpg"
-                         />
-                        <Card.Body>
-                            <Card.Title><b>Administrator</b></Card.Title>
-                            <Card.Text>
-                                <p>Jess Jack</p>
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
+                <div className='supportCard admin'>
+                    <img
+                        src="assets/Tutors/Support/Administrator.jpg"
+                        alt="Administrator"
+                    />
+                    <div className="supportInfo">
+                        <h5>Administrator</h5>
+                        <p>Jess Jack</p>
+                    </div>
+                </div>
 
-                </Row>
             </div>
         </>
     );
 };
 
-export default Tutors;
+export default XTutors;

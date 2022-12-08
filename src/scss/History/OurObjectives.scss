@@ -22,11 +22,17 @@
             .ourObjectivesText
             {
                 padding: 10px;
+
+                li
+                {
+                    margin-bottom: 2rem;
+                    font-weight: 600;
+                }
             }
         }
     }
 
-    //      HISTORY IMAGE CONTAINER     //
+    //      OBJECTIVES IMAGE CONTAINER     //
     .ourObjectivesImageContainer
     {
         display: flex;

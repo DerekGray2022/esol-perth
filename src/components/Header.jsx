@@ -7,8 +7,6 @@ const Header = () => {
         <>
             <Navbar
                 className="headBar"
-                bg="light"
-                variant="light"
                 sticky="top"
                 expand="xl"
                 collapseOnSelect
@@ -50,7 +48,7 @@ const Header = () => {
                         {/*     Lessons DropDown        */}
                         <b><NavDropdown variant="dark" title="English Lessons">
                             <LinkContainer to="/beginners">
-                                <Nav.Link>Beginners' Lessons</Nav.Link>
+                                <Nav.Link>Beginner Lessons</Nav.Link>
                             </LinkContainer>
                             <LinkContainer to="/intermediate">
                                 <Nav.Link>Intermediate Lessons</Nav.Link>

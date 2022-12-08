@@ -11,7 +11,7 @@ function Donate() {
                 {/* Text */}
                 <div className='donateText'>
                     <h2>
-                        ESOL PERTH is a charity
+                        ESOLPERTH is a charity
                     </h2>
                     <p>
                         We rely on funding from other charities and the public

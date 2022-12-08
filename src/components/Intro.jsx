@@ -19,7 +19,7 @@ const Intro = () => {
                     
                     <p className='bodyText'>
                         <span>
-                        ESOL PERTH provides English lessons to speakers of other languages.  The lessons are free for those who live in the council area of Perth & Kinross.
+                        ESOLPERTH provides English lessons to speakers of other languages.  The lessons are free for those who live in the council area of Perth & Kinross.
                         </span>
                         <br />
                         We run weekly activities to encourage a community spirit through the speaking of English...

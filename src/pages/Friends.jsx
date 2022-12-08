@@ -1,22 +1,21 @@
 import React from 'react';
-// import Container from 'react-bootstrap/Container';
-// import Row from 'react-bootstrap/Row';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 
-// import PartnerGrid from '../components/PartnerGrid';
+import PartnerGrid from '../components/PartnerGrid';
 
-import Spacer from "../components/Spacer";
 
 import '../scss/Friends.scss';
 
 const Friends = () => {
     return (
         <>
-            {/* <Container className="friendsContainer">
+            <Container className="friendsContainer">
 
-                <Row className="friendsTitle"> */}
+                <Row className="friendsTitle">
             <h1>Friends and Feedback</h1>
-            <Spacer />
-                {/* </Row>
+            {/* <Spacer /> */}
+                </Row>
 
                 <Row className="friendsHeader">
                     <h5>
@@ -43,7 +42,7 @@ const Friends = () => {
                     
                 </Row>
 
-            </Container> */}
+            </Container>
         </>
     );
 };

@@ -17,7 +17,7 @@ const HistoryContainer = () => {
 
                                 <Card.Text className='historyText'>
                                     <p>
-                                        Esolperth is an English language learning environment. However, we have a structure that encourages social integration at a family friendly level.
+                                        ESOLPERTH is an English language learning environment. However, we have a structure that encourages social integration at a family friendly level.
                                     </p>
 
                                     <p>
@@ -28,10 +28,8 @@ const HistoryContainer = () => {
                                         We try to teach the individual person and we adapt to meet their needs. We have a group of enthusiastic volunteer and paid tutors. We also have a part-time administrator and more volunteers, including our Board members, who support our activities.
                                     </p>
 
-                                    <p>
-                                        <b>
+                                    <p className='emph'>
                                             All our lessons are free to those living in Perth and Kinross.  We look for funding from grant-giving bodies including other charities.
-                                        </b>
                                     </p>
                                 </Card.Text>
                             </Card.Body>
