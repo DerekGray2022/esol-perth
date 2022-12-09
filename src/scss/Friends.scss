@@ -11,7 +11,7 @@
         
         h1
         {
-            color: var(--darkBlue);
+            color: var(--black);
             font-weight: 700;
             margin: 50px auto;
             padding: 0;
@@ -27,7 +27,7 @@
 
         h5
         {
-            color: var(--darkBlue);
+            color: var(--black);
             font-weight: 700;
             padding: 0;
         }
@@ -94,14 +94,17 @@
     //      STUDENT COMMENTS        ///////////////////////
     .friendsComments
     {
+        background-image: url('../Images/FriendsFeedback/TestimonialBG.jpg');
+        background-size: cover;
         width: 90%;
         padding: 50px;
         margin: 100px auto;
+        border-radius: 5px;
 
         h3
         {
             margin: 20px auto 70px;
-            color: var(--darkOrange);
+            color: var(--background);
             text-align: center;
             font-weight: 700;
         }
@@ -109,24 +112,15 @@
         p
         {
             padding: 10px;
-            border-radius: 15px;
+            border-radius: 5px;
             background-color: var(--blackTint);
-            border: 1px solid var(--darkOrange);
-            color: var(--darkOrange);
-            font-weight: 700;
+            border: 1px solid var(--background);
+            color: var(--background);
+            font-weight: 400;
             text-align: left;
         }
     }
 }
-
-
-// .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9
-// {
-//     border: 1px solid var(--strongbackground);
-// }
-
-
-
 
 
 

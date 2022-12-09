@@ -14,7 +14,6 @@ const Friends = () => {
 
                 <Row className="friendsTitle">
             <h1>Friends and Feedback</h1>
-            {/* <Spacer /> */}
                 </Row>
 
                 <Row className="friendsHeader">
@@ -35,11 +34,6 @@ const Friends = () => {
                     <p>“I really liked the trip.  Thanks to esolperth for the opportunity to visit other places in this beautiful country.  We saw interesting and very beautiful places.  Thanks to the people of Scotland for their kindness and cordiality.”</p>
                     <p>“What was good?  Teachers and lessons, great excursions, kind help.”</p>
                     <p>“Good teachers, good books, attention, care, excursions, I liked everything very much.”</p>
-                    
-                    
-                    
-                    
-                    
                 </Row>
 
             </Container>
