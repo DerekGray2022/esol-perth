@@ -14,7 +14,7 @@ const SummaryTimetable = () => {
             {/***       DAYS        ***/}
             {Days.map((day) => {
                 return (
-                    <div className={"sumDay " + day.id}>
+                    <div className={"sumDay " + day.id} key={day.id}>
                         {day.day}
                     </div>
                 )
@@ -24,7 +24,7 @@ const SummaryTimetable = () => {
             {Days.map((day) => {
                 return (
                     <>
-                        <div className={"sumEvent " + day.id}>
+                        <div className={"sumEvent " + day.id} key={day.id}>
                             {day.title}
                             <p className={"sumTime" + day.id}>
                                 {day.time}

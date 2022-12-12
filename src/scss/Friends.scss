@@ -96,6 +96,7 @@
     {
         background-image: url('../Images/FriendsFeedback/TestimonialBG.jpg');
         background-size: cover;
+        background-repeat: no-repeat;
         width: 90%;
         padding: 50px;
         margin: 100px auto;
@@ -113,7 +114,6 @@
         {
             padding: 10px;
             border-radius: 5px;
-            background-color: var(--blackTint);
             border: 1px solid var(--background);
             color: var(--background);
             font-weight: 400;

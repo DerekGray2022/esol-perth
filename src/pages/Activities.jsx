@@ -9,18 +9,17 @@ const Activities = () => {
       <Container fluid>
         {/*     HEADER     */}
         <h1 className="activitiesHeader">Activities</h1>
-        {/* <Spacer /> */}
 
         {/*     INTRODUCTION     */}
         <div className="activitiesTextContainer">
-          <p className="activitiesText">
+          <div className="activitiesText">
             <h5>
               <b>Each week our volunteers run activities to help our students mingle with each other.</b>
             </h5>
             <p>
               Some activities happen on a regular weekly basis, where others are one off or opportunistic.
             </p>
-          </p>
+          </div>
         </div>
 
         {/*     FACESPOOK BANNER     */}
@@ -29,28 +28,39 @@ const Activities = () => {
             &nbsp; - see our Facebook page for updates</h4>
         </div>
 
-        {/*     INTERNATIONAL CAFE     */}
-        <div className="activitiesContainer">
-          <h2>International Café</h2>
-          <p>
-            Usually held at 7pm on the second Monday of each month.  This is an opportunity for people from different nations to socialise and make friends.  There is a different focus or topic for each session.
-          </p>
-        </div>
+        {/***    ACTIVITIES GRID   ***/}
+        <div className="activitiesGrid">
 
-        {/*     DAY TRIPS    */}
-        <div className="activitiesContainer">
-          <h2>Daytrips</h2>
-          <p>
-            We explore Scotland on coach trips.  Past visits have been to Glasgow, Edinburgh, St. Andrews, Stirling and Blair Atholl!
-          </p>
-        </div>
+          {/*     INTERNATIONAL CAFE     */}
+          <div className="activitiesContainer cafe">
+            <div className="actContText">
+              <h2>International Café</h2>
+              <p>
+                Usually held at 7pm on the second Monday of each month.  This is an opportunity for people from different nations to socialise and make friends.  There is a different focus or topic for each session.
+              </p>
+            </div>
+          </div>
 
-        {/*     CITY WALKS     */}
-        <div className="activitiesContainer">
-          <h2>City walks</h2>
-          <p>
-            A chance to explore the place in which we live.
-          </p>
+          {/*     DAY TRIPS    */}
+          <div className="activitiesContainer dayTrips">
+            <div className="actContText">
+              <h2>Daytrips</h2>
+              <p>
+                We explore Scotland on coach trips.  Past visits have been to Glasgow, Edinburgh, St. Andrews, Stirling and Blair Atholl!
+              </p>
+            </div>
+          </div>
+
+          {/*     CITY WALKS     */}
+          <div className="activitiesContainer cityWalks">
+            <div className="actContText">
+              <h2>City walks</h2>
+              <p>
+                A chance to explore the place in which we live.
+              </p>
+            </div>
+          </div>
+
         </div>
 
       </Container>

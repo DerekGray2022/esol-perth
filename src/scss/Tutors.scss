@@ -71,7 +71,7 @@
         img
         {
             width: 75vw;
-            max-width: 20rem;
+            max-width: 18rem;
         }
     }
 }
@@ -190,6 +190,12 @@
         }
     }
 
+    //      SENIOR
+    .seniorContainer
+    {
+        margin-bottom: 15rem;
+    }
+
     //      TUTORS
     .tutorContainer
     {
@@ -197,8 +203,8 @@
     }
 }
 
-////        MIN-WIDTH: 500px        ////////
-@media only screen and (min-width: 500px)
+////        MIN-WIDTH: 600px        ////////
+@media only screen and (min-width: 600px)
 {
     //      SPLASH
     .splashBox

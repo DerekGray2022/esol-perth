@@ -1,3 +1,4 @@
+//      HEADER
 .activitiesHeader
 {
     padding: 50px 0;
@@ -17,11 +18,13 @@
     {
         p
         {
-            color: var(--darkBlue);
+            color: var(--black);
+            font-weight: 500;
         }
     }
 }
 
+//      FACESPOOK BANNER
 .activitiesFacebook
 {
   justify-content: center;
@@ -38,29 +41,192 @@
     }
 }
 
-.activitiesContainer
+//      ACTIVITIES
+.activitiesGrid
 {
-    width: 75vw;
-    margin: 80px auto 20px;
-    padding: 40px;
-    text-align: center;
-
-    h2
+    .activitiesContainer
     {
-        padding: 10px 0 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 80vw;
+        max-width: 440px;
+        margin: 80px auto 20px;
         text-align: center;
-        color: var(--darkBlue);
+        background-color: var(--esolBlue);
+
+        .actContText
+        {
+            h2
+            {
+                padding: 20px 0;
+                text-align: center;
+                color: var(--darkBlue);
+            }
+
+            p
+            {
+                color: var(--black);
+                font-weight: 700;
+                padding: 0 1rem;
+            }
+        }
     }
 
-    p
+    //      INDIVIDUAL CARDS
+    .cafe
     {
-        color: var(--esolBlue);
-        font-weight: 700;
+        background-image: url(../Images/Activities/Activities03_Ver.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: var(--esolBlue);
+        padding-top: 17rem;
+    }
+
+    .dayTrips
+    {
+        background-image: url(../Images/Activities/Activities01_Ver.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: var(--esolBlue);
+        padding-top: 15rem;
+    }
+
+    .cityWalks
+    {
+        background-image: url(../Images/Activities/Activities02_Ver.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: var(--esolBlue);
+        padding-top: 8rem;
+        margin-bottom: 5rem;
     }
 }
 
-.activitiesSpacer
+
+
+//////////////////////////////////
+////        MEDIA QUERIES       /////////////
+/// //////////////////////////////
+
+//      MIN-WIDTH: 300px        ////
+@media only screen and (min-width: 300px)
 {
-    height: 100px;
-    background-color: var(--darkBlue);
+    .activitiesGrid
+    {
+        .activitiesContainer
+        {
+            .actContText
+            {
+                p
+                {
+                    padding: 0 2rem;
+                }
+            }
+        }
+
+        .cafe
+        {
+            padding-top: 23rem;
+        }
+
+        .dayTrips
+        {
+            padding-top: 20rem;
+        }
+
+        .cityWalks
+        {
+            padding-top: 12rem;
+        }
+    }
 }
+
+//      MIN-WIDTH: 400px        ////
+@media only screen and (min-width: 400px)
+{
+    .activitiesGrid
+    {
+        .cafe
+        {
+            padding-top: 28rem;
+        }
+
+        .dayTrips
+        {
+            padding-top: 25rem;
+        }
+
+        .cityWalks
+        {
+            padding-top: 15rem;
+        }
+    }
+}
+
+//      MIN-WIDTH: 500px        ////
+@media only screen and (min-width: 500px)
+{
+    .activitiesGrid
+    {
+        .cafe
+        {
+            padding-top: 30rem;
+        }
+
+        .dayTrips
+        {
+            padding-top: 28rem;
+        }
+
+        .cityWalks
+        {
+            padding-top: 16rem;
+        }
+    }
+}
+
+//      MIN-WIDTH: 768px        ////
+@media only screen and (min-width: 768px)
+{
+    .activitiesGrid
+    {
+        .activitiesContainer
+        {
+            max-width: 650px;
+
+            .actContText
+            {
+                h2, p
+                {
+                    text-align: left;
+                    padding: 1rem 0 0 1rem;
+                    width: 70%;
+                }
+            }
+        }
+
+        .cafe
+        {
+            background-image: url(../Images/Activities/Activities03_Hor.jpg);
+            background-position: right;
+            padding: 0 5rem 0 1rem;
+        }
+
+        .dayTrips
+        {
+            background-image: url(../Images/Activities/Activities01_Hor.jpg);
+            background-position: right;
+            padding: 0 5rem 0 1rem;
+        }
+
+        .cityWalks
+        {
+            background-image: url(../Images/Activities/Activities02_Hor.jpg);
+            background-position: right;
+            padding: 0 5rem 0 1rem;
+        }
+    }
+}
+
+
