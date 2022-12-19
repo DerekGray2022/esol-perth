@@ -24,8 +24,26 @@ const Activities = () => {
 
         {/*     FACESPOOK BANNER     */}
         <div className="activitiesFacebook">
-          <h4><i className="fa-brands fa-facebook"></i>
-            &nbsp; - see our Facebook page for updates</h4>
+          <a href="https://www.facebook.com/search/top?q=esolperth" target="blank">
+          <h4>
+            <i className="fa-brands fa-facebook"></i>
+            &nbsp;
+              - see our Facebook page for updates
+            </h4>
+          </a>
+        </div>
+
+        {/*     INSTAGRAM BANNER     */}
+        <div className="activitiesInstagram">
+          <a href="https://www.instagram.com/explore/locations/389478557923021/esolperth/">
+          <h4>
+            <i className="fa-brands fa-instagram"></i>
+            &nbsp;
+            <span className="gradient-text">
+              - see our Instagram page for updates
+            </span>
+            </h4>
+          </a>
         </div>
 
         {/***    ACTIVITIES GRID   ***/}

@@ -37,6 +37,19 @@ const Home = () => {
                     </h2>
             </Container>
 
+            {/*     INSTAGRAM BANNER     */}
+            <Container fluid className="instagram">
+                <a href="https://www.instagram.com/explore/locations/389478557923021/esolperth/">
+                    <h4>
+                        <i className="fa-brands fa-instagram"></i>
+                        &nbsp;
+                        <span className="gradient-text">
+                            - Find us on Instagram
+                        </span>
+                    </h4>
+                </a>
+            </Container>
+
             {/* AD BANNER DIVISION */}
             <Container fluid className="adBanner">
                 <AdBanner />
