@@ -35,7 +35,7 @@ const Activities = () => {
 
         {/*     INSTAGRAM BANNER     */}
         <div className="activitiesInstagram">
-          <a href="https://www.instagram.com/explore/locations/389478557923021/esolperth/">
+          <a href="https://www.instagram.com/explore/locations/389478557923021/esolperth/" target="blank">
           <h4>
             <i className="fa-brands fa-instagram"></i>
             &nbsp;

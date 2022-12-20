@@ -2,94 +2,68 @@
 .friendsContainer
 {
     width: 100vw;
-    padding: 0 !important;
-    margin: 0 auto !important;
+    padding: 5rem 0;
 
-    //      TITLE       //////////////////////
-    .friendsTitle
-    {
-        
-        h1
-        {
-            color: var(--black);
-            font-weight: 700;
-            margin: 50px auto;
-            padding: 0;
-        }
-    }
-
-    //      HEADER      ///////////////////
-    .friendsHeader
-    {
-        width: 70vw;
-        padding: 25px;
-        margin: 25px auto !important;
-
-        h5
-        {
-            color: var(--black);
-            font-weight: 700;
-            padding: 0;
-        }
-    }
-
-    //      PARTNERS        ///////////////
+    //      PARTNERS GRID       //////////////
     .friendsPartners
     {
-        margin: 25px auto !important;
-        padding: 0 !important;
+        margin: 5rem 0;
+        justify-content: center;
 
-        //      PARTNER LOGO        ///////////////
-        .friendsLogoCol
+        .friendsGrid
         {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 1vw 3vw;
-            background-color: var(--lightBlue);
+            display: grid;
 
+            width: 80vw;
+            margin-bottom: 5rem;
+
+            //      Logos
             .logo
             {
-                width: 10vw;
+                margin-bottom: 2rem;
+
+                img
+                {
+                    margin: auto;
+                    max-width: 15rem;
+                }
             }
-        }
 
-        //      LETHAM LOGO     //////////////////
-        .lethamLogoCol
-        {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 1vw 3vw;
-
-            .logo
+            //      Links
+            .link
             {
-                height: 5vw;
-                width: auto;
-            }
-        }
+                margin-bottom: 5rem;
 
-        //      PARTNER LINKS       ////////////////////
-        .friendsLinkCol
-        {
-            display: flex;
-            justify-content: left;
-            align-items: center;
-            text-align: left;
-
-            a
-            {
-                text-decoration: none;
-            
                 h5
                 {
-                    margin: 0 !important;
+                    font-size: 1.5rem;
                     font-weight: 700;
-                    color: var(--darkBlue);
+                    color: var(--black);
+
+                    &:hover
+                    {
+                        color: var(--esolBlue);
+                    }
+                }
+
+                a
+                {
+                    text-decoration: none;
+                }
+            }
+
+            //      Letham
+            .lethamFC
+            {
+                img
+                {
+                    height: 9rem;
+                    width: 9rem;
                 }
             }
         }
     }
+    
 
     //      STUDENT COMMENTS        ///////////////////////
     .friendsComments
@@ -123,91 +97,41 @@
 }
 
 
-
-////        MEDIA QUERIES       /////////////////////////
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) 
-{
-    .friendsPartners
-    {
-        width: 70vw;
-
-        .friendsLinkCol
-        {
-            H5
-            {
-                font-size: 10px !important;
-            }
-        }
-    }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) 
-{
-    .friendsPartners
-    {
-        width: 80vw;
-
-        .friendsLinkCol
-        {
-            H5
-            {
-                font-size: 15px !important;
-            }
-        }
-    }
-}
-
+//////////////////////////////////////////////
+////        MEDIA QUERIES       //////////////////////////
+//////////////////////////////////////////////
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) 
 {
-    .friendsPartners
+    .friendsGrid
     {
-        width: 80vw;
+        grid-template-columns: 10rem 20rem;
+        grid-template-rows: repeat(7, 1fr);
 
-        .friendsLinkCol
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10rem;
+        
+        .logo
         {
-            H5
+            grid-column: 1/2;
+
+            justify-content: center;
+            margin: auto !important;
+
+            img
             {
-                font-size: 18px !important;
+                width: 10rem;
             }
+        }
+
+        .link
+        {
+            grid-column: 2/3;
+            margin: auto !important;
+            width: 20rem;
         }
     }
 }
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) 
-{
-    .friendsPartners
-    {
-        width: 80vw;
-
-        .friendsLinkCol
-        {
-            H5
-            {
-                font-size: 22px !important;
-            }
-        }
-    }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) 
-{
-    .friendsPartners
-    {
-        width: 80vw;
-
-        .friendsLinkCol
-        {
-            H5
-            {
-                font-size: 24px !important;
-            }
-        }
-    }
-} 
 
 
