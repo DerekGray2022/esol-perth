@@ -20,7 +20,6 @@ const PartnerGrid = () => {
                 <div className="perthMuseum link">
                     <a href="http://www.culturepk.org.uk/museums-and-galleries/perth-museum-and-art-gallery/" target="_blank" rel="noreferrer">
                         <h5>Perth Museum</h5>
-                        {/*   Freight Sans Pro   */}
                     </a>
                 </div>
 
@@ -32,7 +31,6 @@ const PartnerGrid = () => {
                 <div className="buttonsBows link">
                     <a href="https://perthbabybank.org/" target="_blank" rel="noreferrer">
                         <h5>Buttons and Bows<br />Baby Bank</h5>
-                        {/*     Roboto      */ }
                     </a>
                 </div>
 
@@ -44,7 +42,6 @@ const PartnerGrid = () => {
                 <div className="policeScotland link">
                     <a href="http://www.scotland.police.uk/your-community/tayside/perth-and-kinross/" target="_blank" rel="noreferrer">
                         <h5>Police Scotland</h5>
-                        {/*     Open Sans       */}
                     </a>
                 </div>
 
@@ -56,7 +53,6 @@ const PartnerGrid = () => {
                 <div className="rasac link">
                     <a href="https://www.rasacpk.org.uk/" target="_blank" rel="noreferrer">
                         <h5>RASAC</h5>
-                        {/*     Slate W01, Arial, Helvetica        */}
                     </a>
                 </div>
 
@@ -68,7 +64,6 @@ const PartnerGrid = () => {
                 <div className="perthPlayhouse link">
                     <a href="https://theperthplayhouse.co.uk/" target="_blank" rel="noreferrer">
                         <h5>Perth Playhouse</h5>
-                        {/*     Antonio     */}
                     </a>
                 </div>
 
@@ -80,7 +75,6 @@ const PartnerGrid = () => {
                 <div className="perthTheatre link">
                     <a href="https://www.horsecross.co.uk/" target="_blank" rel="noreferrer">
                         <h5>Perth Theatre</h5>
-                        {/*     Merriweather, Helvetica     */}
                     </a>
                 </div>
 
@@ -92,123 +86,10 @@ const PartnerGrid = () => {
                 <div className="lethamFC link">
                     <a href="https://lethamfc.co.uk/" target="_blank" rel="noreferrer">
                         <h5>Letham Football Club</h5>
-                        {/*     Arial, Helvetica        */}
                     </a>
                 </div>
 
             </div>
-
-
-        {/* <Container className='friendsContainer'> */}
-
-            {/*         Perth Museum         */}
-            {/* <Row>
-                <Col xs={2} sm={3} lg={4}></Col>
-
-                <Col xs={4} sm={3} lg={2} className='friendsLogoCol topLeft'>
-                        <img className='logo' src="assets/Partners/PerthMuseum.png" alt="Perth Museum Logo" />
-                </Col>
-
-                <Col xs={6} className='friendsLinkCol topRight'>
-                    <a href="http://www.culturepk.org.uk/museums-and-galleries/perth-museum-and-art-gallery/" target="_blank" rel="noreferrer">
-                        <h5>Perth Museum</h5>
-                    </a>
-                </Col>
-            </Row> */}
-
-            {/*         Buttons & Bows      */}
-            {/* <Row>
-                <Col xs={2} sm={3} lg={4}></Col>
-
-                <Col xs={4} sm={3} lg={2} className='friendsLogoCol'>
-                    <img className='logo' src="assets/Partners/ButtonsBows.png" alt="Buttons & Bows Logo" />
-                </Col>
-
-                <Col xs={6} className='friendsLinkCol'>
-                    <a href="https://perthbabybank.org/" target="_blank" rel="noreferrer">
-                        <h5>Buttons and Bows Baby Bank</h5>
-                    </a>
-                </Col>
-            </Row> */}
-
-            {/*         Police Scotland      */}
-            {/* <Row>
-                <Col xs={2} sm={3} lg={4}></Col>
-
-                <Col xs={4} sm={3} lg={2} className='friendsLogoCol'>
-                    <img className='logo' src="assets/Partners/PoliceScotland.png" alt="Police Scotland Logo" />
-                </Col>
-
-                <Col xs={6} className='friendsLinkCol'>
-                    <a href="http://www.scotland.police.uk/your-community/tayside/perth-and-kinross/" target="_blank" rel="noreferrer">
-                        <h5>Police Scotland</h5>
-                    </a>
-                </Col>
-            </Row> */}
-
-            {/*         RASAC        */}
-            {/* <Row>
-                <Col xs={2} sm={3} lg={4}></Col>
-
-                <Col xs={4} sm={3} lg={2} className='friendsLogoCol'>
-                    <img className='logo' src="assets/Partners/RASAC.png" alt="RASAC Logo" />
-                </Col>
-
-                <Col xs={6} className='friendsLinkCol'>
-                    <a href="https://www.rasacpk.org.uk/" target="_blank" rel="noreferrer">
-                        <h5>RASAC</h5>
-                    </a>
-                </Col>
-            </Row> */}
-
-            {/*         Perth Playhouse      */}
-            {/* <Row>
-                <Col xs={2} sm={3} lg={4}></Col>
-
-                <Col xs={4} sm={3} lg={2} className='friendsLogoCol'>
-                    <img className='logo' src="assets/Partners/PerthPlayhouse-solid.png" alt="Perth Playhouse Logo" />
-                </Col>
-
-                <Col xs={6} className='friendsLinkCol'>
-                    <a href="https://theperthplayhouse.co.uk/" target="_blank" rel="noreferrer">
-                        <h5>Perth Playhouse</h5>
-                    </a>
-                </Col>
-
-            </Row> */}
-
-            {/*         Perth Theatre        */}
-            {/* <Row>
-                <Col xs={2} sm={3} lg={4}></Col>
-
-                <Col xs={4} sm={3} lg={2} className='friendsLogoCol'>
-                    <img className='logo' src="assets/Partners/PerthTheatre-solid.png" alt="Perth Theatre Logo" />
-                </Col>
-
-                <Col xs={6} className='friendsLinkCol'>
-                    <a href="https://www.horsecross.co.uk/" target="_blank" rel="noreferrer">
-                        <h5>Perth Theatre</h5>
-                    </a>
-                </Col>
-
-            </Row> */}
-
-            {/*         Letham FC        */}
-            {/* <Row>
-                <Col xs={2} sm={3} lg={4}></Col>
-
-                <Col xs={4} sm={3} lg={2} className='lethamLogoCol bottomLeft'>
-                    <img className='logo' src="assets/Partners/LethamFC-solid.png" alt="Letham FC Logo" />
-                </Col>
-
-                <Col xs={6} className='friendsLinkCol bottomRight'>
-                    <a href="https://lethamfc.co.uk/" target="_blank" rel="noreferrer">
-                        <h5>Letham Football Club</h5>
-                    </a>
-                </Col>
-
-            </Row> */}
-            {/* </Container> */}
         </>
     );
 };

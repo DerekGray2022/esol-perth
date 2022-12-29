@@ -8,10 +8,10 @@ const Activities = () => {
 
       <Container fluid>
         {/*     HEADER     */}
-        <h1 className="activitiesHeader">Activities</h1>
-
-        {/*     INTRODUCTION     */}
         <div className="activitiesTextContainer">
+          <h1 className="activitiesHeader">Activities</h1>
+
+          {/*     INTRODUCTION     */}
           <div className="activitiesText">
             <h5>
               <b>Each week our volunteers run activities to help our students mingle with each other.</b>
@@ -25,9 +25,9 @@ const Activities = () => {
         {/*     FACESPOOK BANNER     */}
         <div className="activitiesFacebook">
           <a href="https://www.facebook.com/search/top?q=esolperth" target="blank">
-          <h4>
-            <i className="fa-brands fa-facebook"></i>
-            &nbsp;
+            <h4>
+              <i className="fa-brands fa-facebook"></i>
+              &nbsp;
               - see our Facebook page for updates
             </h4>
           </a>
@@ -36,12 +36,12 @@ const Activities = () => {
         {/*     INSTAGRAM BANNER     */}
         <div className="activitiesInstagram">
           <a href="https://www.instagram.com/explore/locations/389478557923021/esolperth/" target="blank">
-          <h4>
-            <i className="fa-brands fa-instagram"></i>
-            &nbsp;
-            <span className="gradient-text">
-              - see our Instagram page for updates
-            </span>
+            <h4>
+              <i className="fa-brands fa-instagram"></i>
+              &nbsp;
+              <span className="gradient-text">
+                - see our Instagram page for updates
+              </span>
             </h4>
           </a>
         </div>

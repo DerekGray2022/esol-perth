@@ -9,10 +9,22 @@
 .activitiesTextContainer
 {
     background-color: var(--background);
-    color: var(--darkBlue);
-    width: 80vw;
-    margin: 25px auto;
-    padding: 20px 20px 10px;
+    background-image: url(../Images/Activities/Splash.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 80vw;
+    margin: 0 auto 15rem;
+
+    h1
+    {
+        color: var(--background);
+    }
+
+    h5
+    {
+        color: var(--black);
+    }
 
     .activitiesText
     {
@@ -20,6 +32,9 @@
         {
             color: var(--black);
             font-weight: 500;
+            width: 75vw;
+            max-width: 40rem;
+            margin: 0 auto;
         }
     }
 }
@@ -30,7 +45,7 @@
     justify-content: center;
     background-color: #295396;
     width: 100vw;
-    margin: 10rem auto 0;
+    margin: 3rem auto 0;
     padding: 1.5rem 5vw 1rem;
 
     a
@@ -69,6 +84,7 @@
             font-weight: 700;
             color: var(--black);
 
+            //      INSTAGRAM TEXT GRADIENT     ////
             .gradient-text 
             {
             /* Fallback: Set a background color. */
@@ -188,6 +204,21 @@
 //      MIN-WIDTH: 300px        ////
 @media only screen and (min-width: 300px)
 {
+    .activitiesTextContainer
+    {
+        margin: 0 auto 10rem;
+
+        h5
+        {
+            color: var(--background);
+        }
+    }
+
+    .activitiesFacebook
+    {
+        margin: 0 auto;
+    }
+
     .activitiesGrid
     {
         .activitiesContainer
@@ -243,6 +274,23 @@
 //      MIN-WIDTH: 500px        ////
 @media only screen and (min-width: 500px)
 {
+    .activitiesTextContainer
+    {
+        h5
+        {
+            width: 80vw;
+            margin: 0 auto 2rem;
+        }
+        
+        .activitiesText
+        {
+            p
+            {
+                color: var(--background);
+            }
+        }
+    }
+
     .activitiesGrid
     {
         .cafe
@@ -265,6 +313,26 @@
 //      MIN-WIDTH: 768px        ////
 @media only screen and (min-width: 768px)
 {
+    .activitiesTextContainer
+    {
+        margin: 0 auto 0;
+
+        h5
+        {
+            width: 80vw;
+            font-size: 1.5rem;
+            margin: 0 auto 2rem;
+        }
+
+        .activitiesText
+        {
+            p
+            {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
     .activitiesGrid
     {
         .activitiesContainer
