@@ -31,9 +31,30 @@ const XTutors = () => {
 
                 <div className="seniorImg">
                     <img
-                        src="assets/Tutors/Linda-with-student.jpg"
+                        src="assets/Tutors/Linda_profile.jpg"
                         alt="Linda with Student"
                     />
+                </div>
+
+                <div className="seniorBiog">
+                    <p>
+                        <b>Linda has lived in Perth since 1993, she has 3 children, 1 in Glasgow and 2 in Brighton, England.</b>
+                    </p>
+                    <p>
+                        Linda lives in the centre of Perth, near the train station.
+                    </p>
+                    <p>
+                        Linda qualified as a State Registered Nurse in 1974 and as a State Registered Midwife in 1976.
+                    </p>
+                    <p>
+                        After 30 years and more than 1,000 babies delivered into the world, Linda retrained as an ESOL teacher, starting with a BA Honours from the Open University and achieving her CELTA, from Dundee College in 2001.
+                    </p>
+                    <p>
+                        Since 2001 Linda has worked in ESOL, creating ESOLPERTH in 2015 and registering it as a charity in 2016. Linda believes strongly that everyone has the right to an education and ESOLPERTH reflects this ethos.
+                    </p>
+                    <p>
+                        Linda enjoys the theatre and music, particularly the music of Neil Diamond, Rod Stewart and Elvis. Her favourite plays are all those written by Willy Russell and Hamlet! (ask her about Hamlet).
+                    </p>
                 </div>
 
             </div>
@@ -46,7 +67,6 @@ const XTutors = () => {
 
                 <div className="tutorList1">
                     <p>Liz Auld</p>
-                    <p>Alice Carbone</p>
                     <p>Michael Ellacott</p>
                     <p>Karen Guthrie</p>
                     <p>Sarah Jamieson</p>
@@ -58,10 +78,8 @@ const XTutors = () => {
                     <p>Louise Milne</p>
                     <p>Joshua Olewole</p>
                     <p>Agi Parzniewska</p>
-                    <p>Catherine Perrin</p>
                     <p>Shona Robertson</p>
                     <p>Lily Scott</p>
-                    <p>Fiona Smith</p>
                 </div>
 
                 <div className="tutorImage">

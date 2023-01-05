@@ -79,6 +79,26 @@ const Activities = () => {
             </div>
           </div>
 
+          {/*     CHESS CLUB     */}
+          <div className="activitiesContainer chess">
+            <div className="actContText">
+              <h2>Perth Chess Club</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt veniam magni quisquam doloremque cum. Quasi iste officia veritatis nisi?
+              </p>
+            </div>
+          </div>
+
+          {/*     CHILDREN'S HOLIDAY CLUB     */}
+          <div className="activitiesContainer childrensClub">
+            <div className="actContText">
+              <h2>Children's Holiday Club</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quidem soluta, modi quisquam voluptatum ducimus.
+              </p>
+            </div>
+          </div>
+
         </div>
 
       </Container>

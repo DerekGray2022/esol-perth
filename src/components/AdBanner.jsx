@@ -1,15 +1,14 @@
 import React from 'react';
-import Carousel from 'react-bootstrap/Carousel';
-import Card from 'react-bootstrap/Card';
+// import Carousel from 'react-bootstrap/Carousel';
 
 import "../scss/AdBanner.scss"
 
 const AdBanner = () => {
     return (
-        <Card className='adCard'>
-            <Card.Body className='adCardBody'>
-                    <h3>We'd like to thank all our sponsors:</h3>
-                    <Carousel className='adCarousel' controls={false} indicators={false}>
+        <div className='adCard'>
+                <h3>We'd like to thank our sponsors:</h3>
+                <img src="assets/sponsors/AllStrong.jpg" alt="AllStrong Banner" />
+                    {/* <Carousel className='adCarousel' controls={false} indicators={false}>
 
                         <Carousel.Item>
                             <img
@@ -43,9 +42,8 @@ const AdBanner = () => {
                             />
                         </Carousel.Item>
 
-                    </Carousel>
-            </Card.Body>
-        </Card>
+                    </Carousel> */}
+        </div>
     );
 }
 

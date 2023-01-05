@@ -100,6 +100,7 @@
             /* Use the text as a mask for the background. */
             /* This will show the gradient as a text color rather than element bg. */
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent; 
             -moz-background-clip: text;
             -moz-text-fill-color: transparent;
@@ -168,7 +169,7 @@
     //      INDIVIDUAL CARDS
     .cafe
     {
-        background-image: url(../Images/Activities/Activities03_Ver.jpg);
+        background-image: url(../Images/Activities/ActivitiesCafe_Ver.jpg);
         background-size: contain;
         background-repeat: no-repeat;
         background-color: var(--esolBlue);
@@ -177,7 +178,7 @@
 
     .dayTrips
     {
-        background-image: url(../Images/Activities/Activities01_Ver.jpg);
+        background-image: url(../Images/Activities/ActivitiesDaytrip_Ver.jpg);
         background-size: contain;
         background-repeat: no-repeat;
         background-color: var(--esolBlue);
@@ -186,11 +187,31 @@
 
     .cityWalks
     {
-        background-image: url(../Images/Activities/Activities02_Ver.jpg);
+        background-image: url(../Images/Activities/ActivitiesCityWalks_Ver.jpg);
         background-size: contain;
         background-repeat: no-repeat;
         background-color: var(--esolBlue);
         padding-top: 8rem;
+        margin-bottom: 5rem;
+    }
+
+    .chess
+    {
+        background-image: url(../Images/Activities/ActivitiesChess_Ver.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: var(--esolBlue);
+        padding-top: 22rem;
+        margin-bottom: 5rem;
+    }
+
+    .childrensClub
+    {
+        background-image: url(../Images/Activities/ActivitiesChildrensClub_Ver.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: var(--esolBlue);
+        padding-top: 16rem;
         margin-bottom: 5rem;
     }
 }
@@ -244,7 +265,17 @@
 
         .cityWalks
         {
-            padding-top: 12rem;
+            padding-top: 10rem;
+        }
+
+        .chess
+        {
+            padding-top: 15rem;
+        }
+
+        .childrensClub
+        {
+            padding-top: 11rem;
         }
     }
 }
@@ -256,17 +287,27 @@
     {
         .cafe
         {
-            padding-top: 28rem;
+            padding-top: 25rem;
         }
 
         .dayTrips
         {
-            padding-top: 25rem;
+            padding-top: 22rem;
         }
 
         .cityWalks
         {
-            padding-top: 15rem;
+            padding-top: 12rem;
+        }
+
+        .chess
+        {
+            padding-top: 16rem;
+        }
+
+        .childrensClub
+        {
+            padding-top: 12rem;
         }
     }
 }
@@ -304,6 +345,16 @@
         }
 
         .cityWalks
+        {
+            padding-top: 15rem;
+        }
+
+        .chess
+        {
+            padding-top: 21rem;
+        }
+
+        .childrensClub
         {
             padding-top: 16rem;
         }
@@ -352,21 +403,35 @@
 
         .cafe
         {
-            background-image: url(../Images/Activities/Activities03_Hor.jpg);
+            background-image: url(../Images/Activities/ActivitiesCafe_Hor.jpg);
             background-position: right;
             padding: 0 5rem 0 1rem;
         }
 
         .dayTrips
         {
-            background-image: url(../Images/Activities/Activities01_Hor.jpg);
+            background-image: url(../Images/Activities/ActivitiesDaytrip_Hor.jpg);
             background-position: right;
             padding: 0 5rem 0 1rem;
         }
 
         .cityWalks
         {
-            background-image: url(../Images/Activities/Activities02_Hor.jpg);
+            background-image: url(../Images/Activities/ActivitiesCityWalks_Hor.jpg);
+            background-position: right;
+            padding: 0 5rem 0 1rem;
+        }
+
+        .chess
+        {
+            background-image: url(../Images/Activities/ActivitiesChess_Hor.jpg);
+            background-position: right;
+            padding: 0 5rem 0 1rem;
+        }
+
+        .childrensClub
+        {
+            background-image: url(../Images/Activities/ActivitiesChildrensClub_Hor.jpg);
             background-position: right;
             padding: 0 5rem 0 1rem;
         }

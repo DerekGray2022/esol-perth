@@ -50,8 +50,8 @@ const Home = () => {
                 </a>
             </Container>
 
-            {/* AD BANNER DIVISION */}
-            <Container fluid className="adBanner">
+            {/* SPONSOR DIVISION */}
+            <Container fluid className="sponsor">
                 <AdBanner />
             </Container>
 
