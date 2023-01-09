@@ -1,7 +1,9 @@
 const BoardMembers = [
     {
-        "img": "../Images/Board/AndrewParrott.png",
+        "id": 0,
+        "img": "assets/Board/AndrewParrott.jpg",
         "name": "Councillor Andrew Parrott",
+        "firstName": "Andrew",
         "biography":
             [
                 "Born in London, Andrew graduated from Aberdeen University before starting a career in the British Army.",
@@ -15,8 +17,10 @@ const BoardMembers = [
         "intro": 102
     },
     {
-        "img": "assets/Board/PaulCrawford.png",
+        "id": 1,
+        "img": "assets/Board/PaulCrawford.jpg",
         "name": "Dr. Paul Crawford",
+        "firstName": "Paul",
         "biography":
             [
                 "Born in Aberdeen, Paul graduated from the University of Dundee and continued on an academic and engineering career.",
@@ -28,11 +32,14 @@ const BoardMembers = [
         "intro": 114
     },
     {
-        "img": "assets/Board/RobJarvis.png",
+        "id": 2,
+        "img": "assets/Board/RobJarvis.jpg",
         "name": "Dr. Rob Jarvis",
+        "firstName": "Rob",
         "biography":
             [
-                "Rob is a medical doctor and has worked in general practice in Tayside and Fife and at Rachel House children's hospice.  More recently, Rob has worked full time for Dundee University teaching medical students where he's overseen student support in the medical school.",
+                "Rob is a medical doctor and has worked in general practice in Tayside and Fife and at Rachel House children's hospice.",
+                "More recently, Rob has worked full time for Dundee University teaching medical students where he's overseen student support in the medical school.",
                 "He has interests in wellbeing, fairness and global health and he's had fun collecting degrees in human sciences and public health in addition to medicine.  He maintains a healthy interest in international politics, economics, and ethics",
                 "He was fortunate to have a parent who worked for British Airways and as such saw a good part of the world in his youth.  He's spent short but formative episodes in hospital and community healthcare in sub-Saharan Africa and has worked in Maori Mental Health in New Zealand.",
                 "He enjoys the opportunities that Perth supplies for outdoor activities.  He's up on his feet or cycling pretty much every day.  Say hello if you see him on the top of Kinnoull Hill.",

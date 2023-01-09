@@ -7,7 +7,7 @@ const AdBanner = () => {
     return (
         <div className='adCard'>
                 <h3>We'd like to thank our sponsors:</h3>
-                <img src="assets/sponsors/AllStrong.jpg" alt="AllStrong Banner" />
+                <img src="assets/Sponsors/AllStrong.jpg" alt="AllStrong Banner" />
                     {/* <Carousel className='adCarousel' controls={false} indicators={false}>
 
                         <Carousel.Item>

@@ -31,8 +31,8 @@ const XTutors = () => {
 
                 <div className="seniorImg">
                     <img
-                        src="assets/Tutors/Linda_profile.jpg"
-                        alt="Linda with Student"
+                        src="assets/Tutors/Linda_Profile.jpg"
+                        alt="Linda El-Miligy"
                     />
                 </div>
 

@@ -34,7 +34,7 @@ const Footer = () => {
                         <i>Scottish Charity No:</i><b> SC 046650</b>
                     </p>
                     <p className="lwm">
-                        powered by Little Wise Monkey | 2023
+                        powered by Little Wise Monkey 2023
                     </p>
                 </div>
 
