@@ -19,9 +19,9 @@ const Register = () => {
                     </Form.Text>
                 </Form.Group>
                 
-                <Button className='registerButton' type="submit">
+                    <Button className='registerButton' type="submit">
                     Submit
-                </Button>
+                    </Button>
             </Form>
         </>
     );

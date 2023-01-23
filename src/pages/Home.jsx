@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 
 import Donate from '../components/Donate';
 import Register from '../components/Register';
-import AdBanner from '../components/AdBanner';
+import Sponsors from '../components/Sponsors';
 import SummaryTimetable from '../components/SummaryTimetable';
 import Intro from '../components/Intro';
 
@@ -52,7 +52,7 @@ const Home = () => {
 
             {/* SPONSOR DIVISION */}
             <Container fluid className="sponsor">
-                <AdBanner />
+                <Sponsors />
             </Container>
 
             {/* SIGN-UP FORM DIVISION */}

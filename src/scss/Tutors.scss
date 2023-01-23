@@ -44,7 +44,7 @@
 .seniorContainer
 {
     display: grid;
-    grid-template-rows: 7.5rem 22rem 10rem;
+    grid-template-rows: 7.5rem 19rem 37rem;
     row-gap: 2rem;
 
     justify-content: center;
@@ -53,7 +53,8 @@
     max-width: 900px;
     height: 120rem;
 
-    .seniorText
+    //      Header
+    .seniorHead
     {
         grid-row: 1/2;
 
@@ -69,24 +70,25 @@
         }
     }
 
+    //      Image
     .seniorImg
     {
         grid-row: 2/3;
-        align-items: center;
-        // height: 20rem
-    }
         
-    img
-    {
-        height: 100%;
-        max-height: 388px;
+        img
+        {
+            height: 100%;
+            max-height: 300px;
+            width: auto;
+        }
     }
 
+    //      Biography
     .seniorBiog
     {
         grid-row: 3/4;
         width: 80vw;
-        max-width: 750px;
+        max-width: 500px;
         text-align: left;
     }
 }
@@ -227,7 +229,7 @@
         height: 85rem;
         margin: 0 auto;
 
-        .seniorText
+        .seniorHead
         {
             h3
             {
@@ -258,7 +260,7 @@
         height: 75rem;
         margin: 0 auto;
 
-        .seniorText
+        .seniorHead
         {
             h3
             {
@@ -485,7 +487,7 @@
     //  SENIOR
     .seniorContainer
     {
-        height: 50rem;
+        height: 55rem;
     }
 }
 

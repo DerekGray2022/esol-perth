@@ -2,39 +2,81 @@
 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 3fr 0.5fr;
+    grid-template-rows: 1fr 2fr 1fr 0.5fr;
 
     justify-content: center;
     width: 100%;
     background-color: var(--darkOrange);
 
-    a
-    {
-        color: var(--esolBlue);
-        font-weight: 600;
-
-        &:hover
-        {
-            color: var(--background);
-        }
-    }
-
-    .footerLogo
+    //      LOGO & LINKS        ////
+    .logoLink
     {
         grid-column: 1/4;
         grid-row: 1/2;
 
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        margin-top: 1rem;
-
-        img
+        a
         {
-            width: 250px;
+            color: var(--esolBlue);
+            font-weight: 600;
+
+            &:hover
+            {
+                color: var(--background);
+            }
+        }
+        //      LOGO        ////
+        .footerLogo
+        {
+
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            margin-top: 1rem;
+
+            img
+            {
+                width: 250px;
+            }
+        }
+        //      LINKS       ////
+        .footerLinks
+        {
+            display: none;
+            grid-template-columns: repeat(2, 1fr);
+            margin: 2rem;
+
+            width: 15rem;
+            font-size: 0.8rem;
+            text-align: left;
+
+            a
+            {
+                text-decoration: none;
+                color: var(--black);
+
+                &:hover
+                {
+                    color: var(--esolBlue);
+                }
+            }
+
+            .list01
+            {
+                display: flex;
+                flex-direction: column;
+                grid-column: 1/2;
+            }
+
+            .list02
+            {
+                display: flex;
+                flex-direction: column;
+                grid-column: 2/3;
+            }
         }
     }
 
+    //      ADDRESS     ////
     .footerAddress
     {
         grid-column: 1/4;
@@ -44,13 +86,64 @@
         align-items: flex-start;
         justify-content: center;
         text-align: center;
-        margin-top: 1rem;
+        margin-top: 2rem;
+
+        a
+        {
+            color: var(--esolBlue);
+            font-weight: 700;
+            text-decoration: none;
+
+            &:hover
+            {
+                color: var(--background);
+            }
+        }
+    }
+
+    .footerIcons
+    {
+        display: flex;
+        justify-content: center;
+        grid-column: 1/4;
+        grid-row: 3/4;
+
+        h2
+        {
+            margin: 0.5rem;
+        }
+
+        .fa-facebook
+        {
+            color: #295396;
+        }
+
+        .fa-instagram
+        {
+        /* Fallback: Set a background color. */
+        background-color: var(--background);
+        
+        /* Create the gradient. */
+        background-image: linear-gradient(45deg, #face00, #f6060f, #d52053,#7d39b0);
+        
+        /* Set the background size and repeat properties. */
+        background-size: 100%;
+        background-repeat: no-repeat;
+
+        /* Use the text as a mask for the background. */
+        /* This will show the gradient as a text color rather than element bg. */
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+        }
     }
 
     .charityNo
     {
         grid-column: 1/4;
-        grid-row: 3/4;
+        grid-row: 4/5;
 
         font-size: 1rem;
 
@@ -64,8 +157,8 @@
 
 
 /////////////////////////////////////////////////
-////        MEDIA QUERIES       ////////////////////////////
-/// /////////////////////////////////////////////
+////        MEDIA QUERIES       //////
+///////////////////////////////////////////////
 /* Extra small devices (phones, 768px and down) */
 @media only screen and (min-width: 768px) 
 {
@@ -73,15 +166,32 @@
   {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 2fr 0.5fr;
+    grid-template-rows: 3fr 1fr;
 
-    .footerLogo
+    .logoLink
     {
         grid-column: 1/2;
         grid-row: 1/2;
 
-        justify-content: flex-start;
-        margin-left: 1rem;
+        .footerLogo
+        {
+
+            justify-content: flex-start;
+            margin-left: 1rem;
+        }
+        .footerLinks
+        {
+            display: grid;
+        }
+    }
+
+    .footerIcons
+    {
+        grid-column: 2/3;
+        grid-row: 1/2;
+
+        align-items: flex-end;
+        margin-bottom: 2rem;
     }
 
     .footerAddress
@@ -111,20 +221,24 @@
   {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
+    // grid-template-rows: 1fr 0.5fr;
 
-    .footerLogo
+    .logoLink
     {
         grid-column: 1/2;
-        grid-row: 1/2;
+        grid-row: 1/3;
 
-        margin-left: 1rem;
+        .footerLogo
+        {
+
+            margin-left: 1rem;
+        }
     }
 
     .footerAddress
     {
         grid-column: 3/4;
-        grid-row: 1/2;
+        grid-row: 1/3;
 
         text-align: right;
         justify-content: flex-end;
@@ -134,7 +248,7 @@
     .charityNo
     {
         grid-column: 2/3;
-        grid-row: 1/2;
+        grid-row: 2/3;
 
         display: flex;
         flex-direction: column;

@@ -68,7 +68,7 @@ const Header = () => {
                         </LinkContainer>
 
                         {/*     Friends & Feedback      */}
-                        <LinkContainer to="/Friends">
+                        <LinkContainer to="/friends">
                             <Nav.Link><b>Friends &<br />Feedback</b></Nav.Link>
                         </LinkContainer>
 

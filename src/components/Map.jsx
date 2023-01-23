@@ -21,11 +21,11 @@ const EsolMap = () => {
             center: [lng, lat],
             zoom: zoom
         });
-    });
 
-    // const marker1 = new mapboxgl.Marker()
-    //     .setLngLat([-3.4324, 56.3966])
-    //     .addTo(map);
+        // const marker1 = new mapboxgl.Marker({color: "black"})
+        //     .setLngLat([-3.4324, 56.3966])
+        //     .addTo(map);
+    });
 
     //      HANDLE USER INTERACTION
     useEffect(() => {

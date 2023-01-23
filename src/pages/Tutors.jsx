@@ -23,19 +23,19 @@ const XTutors = () => {
             {/*         TUTOR LIST       */}
             {/* Senior Tutor */}
             <div className="seniorContainer">
-
-                <div className="seniorText">
+                {/*         Header       */}
+                <div className="seniorHead">
                     <h3>Senior English Language Tutor</h3>
                     <p>Linda El-Miligy</p>
                 </div>
-
+                {/*         Image        */}
                 <div className="seniorImg">
                     <img
                         src="assets/Tutors/Linda_Profile.jpg"
                         alt="Linda El-Miligy"
                     />
                 </div>
-
+                {/*         Biography        */}
                 <div className="seniorBiog">
                     <p>
                         <b>Linda has lived in Perth since 1993, she has 3 children, 1 in Glasgow and 2 in Brighton, England.</b>

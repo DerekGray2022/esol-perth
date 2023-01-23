@@ -7,17 +7,17 @@ const Ielts = () => {
             {/***       IELTS       ***/}
             <h1 className="head">I E L T S</h1>
 
-            <div className="poster">
+            <div className="ielts">
 
                 <h4 className="ieltsHead">
                     International English Language Test
                 </h4>
 
-                <div className="image">
-                    <img src="assets/Lessons/EnglishForEveryone.jpg" alt="" />
+                <div className="ieltsImage">
+                    <img src="assets/Lessons/IELTS.jpg" alt="" />
                 </div>
 
-                <p className="posterBody">
+                <p className="ieltsBody">
                     This is a required qualification for anyone who wants to attend further education to degree level in the UK. The course is banded from 1 to 9 (9 is the highest) and students must achieve a minimum of 6.5 for most courses at university.
                 </p>
 

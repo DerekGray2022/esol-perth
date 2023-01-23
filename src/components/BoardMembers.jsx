@@ -4,6 +4,7 @@ const BoardMembers = [
         "img": "assets/Board/AndrewParrott.jpg",
         "name": "Councillor Andrew Parrott",
         "firstName": "Andrew",
+        "title": "",
         "biography":
             [
                 "Born in London, Andrew graduated from Aberdeen University before starting a career in the British Army.",
@@ -13,14 +14,14 @@ const BoardMembers = [
                 "After 36 years of service he retired from the Army in summer 2012 and now lives in Perth with his wife, having owned a property in the city since 1999.",
                 "Andrew joined the SNP just prior to the 2011 Scottish Election and was first elected to represent the Perth City Centre Ward in May 2015. He was re- elected for the same ward in May 2017 and May 2022 and was elected Depute Provost of Perth and Kinross on 25 May 2022.",
                 "Andrew's other interests include military history and railway history."
-            ],
-        "intro": 102
+            ]
     },
     {
         "id": 1,
         "img": "assets/Board/PaulCrawford.jpg",
         "name": "Dr. Paul Crawford",
         "firstName": "Paul",
+        "title": "",
         "biography":
             [
                 "Born in Aberdeen, Paul graduated from the University of Dundee and continued on an academic and engineering career.",
@@ -28,24 +29,40 @@ const BoardMembers = [
                 "Later he formed a consultancy company to do work for various organisation in the related areas, such as Eumetsat and the European Space Agency, along with various commercial organisations.",
                 "When the  DSRS was closed following the withdrawal of government funding in 2019 he partnered with another former employee of DSRS to form Dundee Satellite Station Ltd to carry on similar work on a commercial basis and the salvaged DSRS equipment was set up again at the former RAF Errol airfield between Perth and Dundee.",
                 "Hobbies and interests include art and hill walking."
-            ],
-        "intro": 114
+            ]
     },
     {
         "id": 2,
         "img": "assets/Board/RobJarvis.jpg",
         "name": "Dr. Rob Jarvis",
         "firstName": "Rob",
+        "title": "",
         "biography":
             [
                 "Rob is a medical doctor and has worked in general practice in Tayside and Fife and at Rachel House children's hospice.",
                 "More recently, Rob has worked full time for Dundee University teaching medical students where he's overseen student support in the medical school.",
-                "He has interests in wellbeing, fairness and global health and he's had fun collecting degrees in human sciences and public health in addition to medicine.  He maintains a healthy interest in international politics, economics, and ethics",
+                "He has interests in wellbeing, fairness and global health and he's had fun collecting degrees in human sciences and public health in addition to medicine.  He maintains a healthy interest in international politics, economics, and ethics.",
                 "He was fortunate to have a parent who worked for British Airways and as such saw a good part of the world in his youth.  He's spent short but formative episodes in hospital and community healthcare in sub-Saharan Africa and has worked in Maori Mental Health in New Zealand.",
                 "He enjoys the opportunities that Perth supplies for outdoor activities.  He's up on his feet or cycling pretty much every day.  Say hello if you see him on the top of Kinnoull Hill.",
                 "Rob lives in Perth with his wife Laura and two kids, Em and Fin."
-            ],
-        "intro": 117
+            ]
+    },
+    {
+        "id": 3,
+        "img": "assets/Board/JessJack.jpg",
+        "name": "Jess Jack",
+        "firstName": "Jess",
+        "title": "Secretary",
+        "biography":
+            [
+                "Jess has been living in Scotland for 14 years, after moving from the USA to study Postgraduate Social Work in Aberdeen.",
+                "She lives in Perth with her Scottish husband and school-age son.",
+                "Jess loves Scotland and enjoys being active in the beautiful natural surroundings here; green trees and high hills and cold, rushing rivers are a rarity in her native Texas!",
+                "When not indulging in the outdoors, she can be found practicing the Danish art of 'hygge' at home - cosied up on the sofa with a cup of tea and a good book - or, perhaps, baking up a loaf of sourdough bread or a batch of chocolate chip cookies.",
+                "Jess is passionate about meeting people from other cultures, learning about the impact of trauma in people's lives and protecting the most innocent in every community: children. ",
+                "She enjoys helping people to access what they need in order to experience life to the fullest, especially those who have immigrated to Scotland, like herself, and may need support as they adjust to life here. ",
+                "Jess is currently fulfilling the role of Secretary for the Board of Trustees. "
+            ]
     }
 ];
 

@@ -36,13 +36,21 @@ const BoardCard = () => {
 
                                 <img src={person.img} alt={person.name} />
 
-                                <h3>{person.name}</h3>
+                                <div className="memberTitle">
+                                    <h4>{person.title}</h4>
 
-                                <p>{person.biography[0]}</p>
+                                    <h3>{person.name}</h3>
 
-                                <button onClick={() => handleShow(person.id)}>
-                                    Read more about {person.firstName}...
-                                </button>
+                                    <p>{person.biography[0]}</p>
+                                </div>
+
+                                <div className="button">
+                                    <button onClick={() => handleShow(person.id)}>
+                                        Read more about
+                                        <br />
+                                        {person.firstName}
+                                    </button>
+                                </div>
 
                             </div>
                         );
@@ -70,8 +78,14 @@ const BoardCard = () => {
                         height="100%"
                         width={300}
                     />
-                    <Modal.Title>{member[num].name}</Modal.Title>
+                    <Modal.Title>
+                        <h3>{member[num].name}</h3>
+                        <h4 className="title">
+                            {member[num].title}
+                        </h4>
+                    </Modal.Title>
                 </Modal.Header>
+
                 <Modal.Body>
                     {member[num].biography.map((bio, id) => {
                         return (
