@@ -23,8 +23,6 @@ const BoardCard = () => {
     //      RETURN
     return (
         <>
-            <div className="boardContainer">
-
                 <div className="boardMember">
 
                     {member.map((person) => {
@@ -58,7 +56,6 @@ const BoardCard = () => {
 
                 </div>
 
-            </div>
 
 
             {/***         MODAL        ***/}

@@ -8,7 +8,7 @@ const OurAimsContainer = () => {
         <>
             <Container fluid className="ourAimContainer">
                 <Row>
-                    <Col xs={12} md={1}>
+                    <Col className='filler' xs={12} md={1}>
                         &nbsp;
                     </Col>
 
@@ -32,7 +32,7 @@ const OurAimsContainer = () => {
                         </Card>
                     </Col>
 
-                    <Col xs={12} md={1}>
+                    <Col className='filler' xs={12} md={1}>
                         &nbsp;
                     </Col>
                 </Row>

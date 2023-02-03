@@ -6,6 +6,7 @@ import Register from '../components/Register';
 import Sponsors from '../components/Sponsors';
 import SummaryTimetable from '../components/SummaryTimetable';
 import Intro from '../components/Intro';
+import QR from '../components/QR';
 
 const Home = () => {
     return (
@@ -20,6 +21,11 @@ const Home = () => {
             {/* SUMMARY TIMETABLE */}
             <Container fluid className='summary'>
                 <SummaryTimetable />
+            </Container>
+
+            {/* SUMMARY TIMETABLE */}
+            <Container fluid className='qrCode'>
+                <QR />
             </Container>
 
             {/* DONATE DIVISION */}
@@ -44,7 +50,7 @@ const Home = () => {
                         <i className="fa-brands fa-instagram"></i>
                         &nbsp;
                         <span className="gradient-text">
-                            - Find us on Instagram
+                            Find us on Instagram
                         </span>
                     </h4>
                 </a>

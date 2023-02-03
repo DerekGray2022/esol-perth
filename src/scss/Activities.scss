@@ -12,7 +12,7 @@
     background-image: url(../Images/Activities/Splash.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 100vw;
+    width: 100%;
     height: 80vw;
     margin: 0 auto 15rem;
 
@@ -44,7 +44,7 @@
 {
     justify-content: center;
     background-color: #295396;
-    width: 100vw;
+    width: 100%;
     margin: 3rem auto 0;
     padding: 1.5rem 5vw 1rem;
 
@@ -70,7 +70,7 @@
 .activitiesInstagram
 {
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   margin: 0 auto 10rem;
   padding: 1.5rem 5vw 1rem;
 
@@ -163,6 +163,17 @@
                 font-weight: 700;
                 padding: 0 1rem;
             }
+
+            .block
+            {
+                font-weight: 500;
+            }
+
+            .emphasis
+            {
+                font-weight: 900;
+                font-style: italic;
+            }
         }
     }
 
@@ -201,7 +212,17 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-color: var(--esolBlue);
-        padding-top: 22rem;
+        padding-top: 11rem;
+        margin-bottom: 5rem;
+    }
+
+    .speakers
+    {
+        background-image: url(../Images/Activities/ActivitiesSpeakersClub_Ver.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: var(--esolBlue);
+        padding-top: 8rem;
         margin-bottom: 5rem;
     }
 
@@ -211,7 +232,37 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-color: var(--esolBlue);
-        padding-top: 16rem;
+        padding-top: 14rem;
+        margin-bottom: 5rem;
+    }
+
+    .tableTennis
+    {
+        background-image: url(../Images/Activities/ActivitiesTableTennis_Ver.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: var(--esolBlue);
+        padding-top: 8rem;
+        margin-bottom: 5rem;
+    }
+
+    .summerSchool
+    {
+        background-image: url(../Images/Activities/ActivitiesSummerSchool_Ver.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: var(--esolBlue);
+        padding-top: 8rem;
+        margin-bottom: 5rem;
+    }
+
+    .toddlerGroup
+    {
+        background-image: url(../Images/Activities/ActivitiesToddlerGroup_Ver.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: var(--esolBlue);
+        padding-top: 13rem;
         margin-bottom: 5rem;
     }
 }
@@ -273,9 +324,29 @@
             padding-top: 15rem;
         }
 
-        .childrensClub
+        .speakers
         {
             padding-top: 11rem;
+        }
+
+        .childrensClub
+        {
+            padding-top: 18rem;
+        }
+
+        .tableTennis
+        {
+            padding-top: 11rem;
+        }
+
+        .summerSchool
+        {
+            padding-top: 11rem;
+        }
+
+        .toddlerGroup
+        {
+            padding-top: 17rem;
         }
     }
 }
@@ -305,9 +376,24 @@
             padding-top: 16rem;
         }
 
-        .childrensClub
+        .speakers
         {
             padding-top: 12rem;
+        }
+
+        .childrensClub
+        {
+            padding-top: 20rem;
+        }
+
+        .tableTennis
+        {
+            padding-top: 12rem;
+        }
+
+        .toddlerGroup
+        {
+            padding-top: 20rem;
         }
     }
 }
@@ -354,9 +440,29 @@
             padding-top: 21rem;
         }
 
-        .childrensClub
+        .speakers
         {
             padding-top: 16rem;
+        }
+
+        .childrensClub
+        {
+            padding-top: 27rem;
+        }
+
+        .tableTennis
+        {
+            padding-top: 16rem;
+        }
+
+        .summerSchool
+        {
+            padding-top: 15rem;
+        }
+
+        .toddlerGroup
+        {
+            padding-top: 27rem;
         }
     }
 }
@@ -429,11 +535,39 @@
             padding: 0 5rem 0 1rem;
         }
 
+        .speakers
+        {
+            background-image: url(../Images/Activities/ActivitiesSpeakersClub_Hor.jpg);
+            background-position: right;
+            padding: 0 7rem 0 1rem;
+        }
+
         .childrensClub
         {
             background-image: url(../Images/Activities/ActivitiesChildrensClub_Hor.jpg);
             background-position: right;
-            padding: 0 5rem 0 1rem;
+            padding: 0 1rem;
+        }
+
+        .tableTennis
+        {
+            background-image: url(../Images/Activities/ActivitiesTableTennis_Hor.jpg);
+            background-position: right;
+            padding: 0 7rem 0 1rem;
+        }
+
+        .summerSchool
+        {
+            background-image: url(../Images/Activities/ActivitiesSummerSchool_Hor.jpg);
+            background-position: right;
+            padding: 0 7rem 0 1rem;
+        }
+
+        .toddlerGroup
+        {
+            background-image: url(../Images/Activities/ActivitiesToddlerGroup_Hor.jpg);
+            background-position: right;
+            padding: 0 0 0 1rem;
         }
     }
 }

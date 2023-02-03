@@ -9,11 +9,11 @@ const Register = () => {
             <Form className='registerForm' id='form' action='#form'>
                 
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Control type="email" placeholder="Enter email" />
+                    <Form.Control type="text" placeholder="Enter Full Name:" />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Control type="password" placeholder="Password" autoComplete='off' />
+                    <Form.Control type="email" placeholder="Enter Email:" autoComplete='off' />
                     <Form.Text className="text-muted">
                         We'll never share your details with anyone else.
                     </Form.Text>

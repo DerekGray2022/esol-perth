@@ -18,7 +18,7 @@ import Advanced from './pages/Advanced';
 import Ielts from './pages/Ielts';
 import Friends from './pages/Friends';
 import Contact from './pages/Contact';
-
+import CapeWrath from './pages/CapeWrath';
 
 // BOOTSTRAP CSS & JS   //////
 import 'bootstrap/dist/css/bootstrap.css';
@@ -47,6 +47,7 @@ const App = () => {
           <Route path='/advanced' element={<Advanced />} />
           <Route path='/friends' element={<Friends />} />
           <Route path='/ielts' element={<Ielts />} />
+          <Route path='/capeWrath' element={<CapeWrath />} />
         </Routes>
         {/* End Router */}
 

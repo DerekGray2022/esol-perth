@@ -22,11 +22,13 @@
 
     input
     {
+      font-size: 1.2rem;
       background-color: var(--esolBlue);
       border: 1px solid var(--darkBlue);
 
       &::placeholder
       {
+        font-size: 1.2rem;
         color: white !important;
       }
     }
@@ -115,6 +117,14 @@
       {
         font-size: 5vw;
         font-weight: 700;
+      }
+    }
+
+    .registerForm
+    {
+      input::placeholder
+      {
+        font-size: 1.5rem;
       }
     }
   }

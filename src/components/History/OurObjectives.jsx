@@ -8,7 +8,7 @@ const OurObjectives = () => {
         <>
             <Container fluid className="ourObjectivesContainer">
                 <Row>
-                    <Col xs={12} md={1}>
+                    <Col className='filler' xs={12} md={1}>
                         &nbsp;
                     </Col>
 
@@ -44,7 +44,7 @@ const OurObjectives = () => {
                         />
                     </Col>
 
-                    <Col xs={12} md={1}>
+                    <Col className='filler' xs={12} md={1}>
                         &nbsp;
                     </Col>
                 </Row>

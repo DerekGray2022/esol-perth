@@ -8,7 +8,7 @@ const HistoryContainer = () => {
         <>
             <Container fluid className="historyContainer">
                 <Row>
-                    <Col xs={12} md={1}>
+                    <Col className='filler' xs={12} md={1}>
                         &nbsp;
                     </Col>
                     <Col xs={12} md={5}>
@@ -36,14 +36,14 @@ const HistoryContainer = () => {
                         </Card>
                     </Col>
 
-                    <Col className='historyImageContainer' xs={12} md={5} >
+                    <Col className='historyImageContainer' xs={12} md={4} >
                         <img
                             className='historyImage'
                             src="assets/History/History.jpg"
                             alt="historyImage"
                         />
                     </Col>
-                    <Col xs={12} md={1}>
+                    <Col className='filler' xs={12} md={1}>
                         &nbsp;
                     </Col>
                 </Row>

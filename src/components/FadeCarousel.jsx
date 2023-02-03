@@ -1,5 +1,5 @@
 import Carousel from 'react-bootstrap/Carousel';
-import "../scss/FadeCarousel.scss";
+import "../scss/Intro.scss";
 
 const FadeCarousel = () => {
     return (
