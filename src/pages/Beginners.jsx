@@ -1,4 +1,5 @@
 import "../scss/Lessons.scss";
+import { Fade } from 'react-awesome-reveal';
 
 const Beginners = () => {
 
@@ -7,38 +8,56 @@ const Beginners = () => {
 
             <h1 className="beginHead">Beginner Level</h1>
 
-            {/***       BEGINNERS       ***/}
-            <div className="red">
+            <Fade triggerOnce duration={3000}>
+                {/***       BEGINNERS       ***/}
+                <div className="red">
 
-                <h4 className="redHead">
-                    Level 1. Red book
-                </h4>
+                    <div>
+                        <h4 className="redHead">
+                            Level 1. Red book
+                        </h4>
 
-                <div className="image">
-                    <img src="assets/Lessons/BeginnerL01RED.jpg" alt="" />
+                        <a className="redLink" href="https://www.dk.com/uk/book/9780241226315-english-for-everyone-course-book-level-1-beginner/" target="blank">
+                            <h5>
+                                ISBN: 978-0-241-226315
+                            </h5>
+                        </a>
+                    </div>
+
+                    <div className="image">
+                        <img src="assets/Lessons/BeginnerL01RED.jpg" alt="" />
+                    </div>
+
+                    <p className="redBody">
+                        This is suitable for students who are just starting to learn English as well as those who already have a little knowledge of English. It focuses on basic vocabulary and learning the phonetic sounds of English.
+                    </p>
+
                 </div>
 
-                <p className="redBody">
-                    This is suitable for students who are just starting to learn English as well as those who already have a little knowledge of English. It focuses on basic vocabulary and learning the phonetic sounds of English.
-                </p>
+                <div className="orange">
 
-            </div>
+                    <div>
+                        <h4 className="orangeHead">
+                            Level 2. Orange book
+                        </h4>
 
-            <div className="orange">
+                        <a className="orangeLink" href="https://www.dk.com/uk/book/9780241252697-english-for-everyone-course-book-level-2-beginner/" target="blank">
+                            <h5>
+                                ISBN: 978-0-241-252697
+                            </h5>
+                        </a>
+                    </div>
 
-                <h4 className="orangeHead">
-                    Level 2. Orange book
-                </h4>
+                    <div className="image">
+                        <img src="assets/Lessons/BeginnerL02ORG.jpg" alt="" />
+                    </div>
 
-                <div className="image">
-                    <img src="assets/Lessons/BeginnerL02ORG.jpg" alt="" />
+                    <p className="orangeBody">
+                        This level is suitable for those students who already have the basics but need to develop their skills to use English independently.
+                    </p>
+
                 </div>
-
-                <p className="orangeBody">
-                    This level is suitable for those students who already have the basics but need to develop their skills to use English independently.
-                </p>
-
-            </div>
+            </Fade>
 
         </div>
     );

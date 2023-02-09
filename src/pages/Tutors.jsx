@@ -1,11 +1,12 @@
 import React from 'react';
+import { Fade } from 'react-awesome-reveal';
 
 import '../scss/Tutors.scss';
 
 
 const XTutors = () => {
     return (
-        <>
+        <Fade triggerOnce duration={3000}>
             <div className='splashBox'>
                 {/*         INTRODUCTION       */}
                 <div className='splashRow'>
@@ -124,12 +125,12 @@ const XTutors = () => {
                     />
                     <div className="supportInfo">
                         <h5>Administrator</h5>
-                        <p>Jess Jack</p>
+                        <p>Lorem Ipsum</p>
                     </div>
                 </div>
 
             </div>
-        </>
+        </Fade>
     );
 };
 

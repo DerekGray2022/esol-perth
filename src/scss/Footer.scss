@@ -2,7 +2,7 @@
 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 2fr 1fr 0.5fr;
+    grid-template-rows: 100px 300px 200px 50px;
 
     justify-content: center;
     width: 100%;
@@ -38,6 +38,7 @@
                 width: 250px;
             }
         }
+
         //      LINKS       ////
         .footerLinks
         {
@@ -101,21 +102,91 @@
         }
     }
 
+    //      FOOTER ICONS        ////
     .footerIcons
     {
-        display: flex;
-        justify-content: center;
         grid-column: 1/4;
         grid-row: 3/4;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: flex-start ;
+        width: 100%;
 
         h2
         {
             margin: 0.5rem;
         }
 
+        .charityIcons
+        {
+            grid-row: 1/2;
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 1em auto 2em;
+
+            .sm
+            {
+                display: inline;
+            }
+
+            .lg
+            {
+                display: none;
+            }
+
+            img
+            {
+                grid-column: 1/2;
+                height: 1.5em;
+                width: auto;
+                margin: 0 1em 1em 0;
+            }
+
+            .oscr
+            {
+                grid-row: 1/2;
+            }
+
+            .scvo
+            {
+                grid-row: 2/3;
+            }
+
+            a
+            {
+                text-decoration: none;
+                font-size: 1rem;
+                color: var(--black);
+
+                &:hover
+                {
+                    color: var(--esolBlue);
+                }
+            }
+        }
+
+        .smIcons
+        {
+            grid-row: 2/3;
+
+            display: flex;
+            margin: 0 auto;
+        }
+
+        // .fa-brands
+        // {
+        //     margin-right: 1em;
+        // }
+
         .fa-facebook
         {
             color: #295396;
+            margin-right: 1em;
+            
         }
 
         .fa-instagram
@@ -166,7 +237,7 @@
   {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 3fr 1fr;
+    grid-template-rows: 275px 40px;
 
     .logoLink
     {
@@ -191,7 +262,12 @@
         grid-row: 1/2;
 
         align-items: flex-end;
-        margin-bottom: 2rem;
+        margin: 1rem 0 2rem;
+
+        .fa-facebook
+        {
+            margin-right: 2em;
+        }
     }
 
     .footerAddress
@@ -243,6 +319,22 @@
         text-align: right;
         justify-content: flex-end;
         margin-right: 1rem;
+    }
+
+    .footerIcons
+    {
+        .charityIcons
+        {
+            .sm
+            {
+                display: none;
+            }
+
+            .lg
+            {
+                display: inline;
+            }
+        }
     }
 
     .charityNo

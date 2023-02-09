@@ -47,23 +47,6 @@ const BoardMembers = [
                 "Rob lives in Perth with his wife Laura and two kids, Em and Fin."
             ]
     },
-    {
-        "id": 3,
-        "img": "assets/Board/JessJack.jpg",
-        "name": "Jess Jack",
-        "firstName": "Jess",
-        "title": "Secretary",
-        "biography":
-            [
-                "Jess has been living in Scotland for 14 years, after moving from the USA to study Postgraduate Social Work in Aberdeen.",
-                "She lives in Perth with her Scottish husband and school-age son.",
-                "Jess loves Scotland and enjoys being active in the beautiful natural surroundings here; green trees and high hills and cold, rushing rivers are a rarity in her native Texas!",
-                "When not indulging in the outdoors, she can be found practicing the Danish art of 'hygge' at home - cosied up on the sofa with a cup of tea and a good book - or, perhaps, baking up a loaf of sourdough bread or a batch of chocolate chip cookies.",
-                "Jess is passionate about meeting people from other cultures, learning about the impact of trauma in people's lives and protecting the most innocent in every community: children. ",
-                "She enjoys helping people to access what they need in order to experience life to the fullest, especially those who have immigrated to Scotland, like herself, and may need support as they adjust to life here. ",
-                "Jess is currently fulfilling the role of Secretary for the Board of Trustees. "
-            ]
-    }
 ];
 
 export default BoardMembers;

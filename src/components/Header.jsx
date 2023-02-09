@@ -13,7 +13,13 @@ const Header = () => {
             >
 
                 <Navbar.Brand className="brand">
-                    <img src="assets/images/ESOLPERTH-logo.png" width="300px" alt="Logo" />
+
+                    <LinkContainer to="/">
+                        <Nav.Link>
+                            <img src="assets/images/ESOLPERTH-logo.png" width="300px" alt="Logo" />
+                        </Nav.Link>
+                    </LinkContainer>
+
                     {/* esolperth */}
                 </Navbar.Brand>
 

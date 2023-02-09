@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useEffect } from 'react';
+import { Fade } from 'react-awesome-reveal';
 
 import Days from "../Json/Timetable.json";
 
@@ -32,7 +33,7 @@ const Timetable = () => {
     }
 
     return (
-        <>
+        <Fade triggerOnce duration={3000}>
             <div className="timetableContainer">
                 {/***       HEADER      ***/}
                 <div className="header"><h1>Timetable</h1></div>
@@ -115,7 +116,7 @@ const Timetable = () => {
                 <div className={day.evening === "NO CLASSES" ? "class evening noClass" : "class evening"}>{day.evening}</div>
 
             </div>
-        </>
+        </Fade>
     );
 };
 

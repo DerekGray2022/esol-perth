@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Modal } from "react-bootstrap";
+import { Fade } from 'react-awesome-reveal';
 
 import member from '../components/BoardMembers';
 import "../scss/Modal.scss";
@@ -25,6 +26,7 @@ const BoardCard = () => {
         <>
                 <div className="boardMember">
 
+                <Fade triggerOnce duration={3000}>
                     {member.map((person) => {
 
                         const classname = `member member${person.id}`;
@@ -53,6 +55,7 @@ const BoardCard = () => {
                             </div>
                         );
                     })}
+                    </Fade>
 
                 </div>
 

@@ -15,6 +15,11 @@
     }
 }
 
+a
+{
+    text-decoration: none;
+}
+
 //      BEGINNER PAGE       ////
 .beginnersContainer
 {
@@ -48,9 +53,31 @@
         color: rgb(190, 36, 46);
     }
 
+    .redLink
+    {
+        text-decoration: none;
+        color: var(--black);
+
+        &:hover
+        {
+            color: rgb(190, 36, 46);
+        }
+    }
+
     .orangeHead
     {
         color: rgb(209, 112, 24);
+    }
+
+    .orangeLink
+    {
+        text-decoration: none;
+        color: var(--black);
+
+        &:hover
+        {
+            color: rgb(209, 112, 24);
+        }
     }
 
     .redBody, .orangeBody
@@ -92,13 +119,35 @@
             color: rgb(23, 154, 208);
             font-weight: 700;
         }
+
+        .intermediateLink
+        {
+            text-decoration: none;
+            color: var(--black);
+
+            &:hover
+            {
+                color: rgb(162, 189, 39);
+            }
+        }
+
+        .advancedLink
+        {
+            text-decoration: none;
+            color: var(--black);
+
+            &:hover
+            {
+                color: rgb(23, 154, 208);
+            }
+        }
     }
 
     .ielts
     {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 75px 5fr 2fr 1fr;
+        grid-template-rows: 125px 350px 2fr 1fr;
 
         margin: 50px auto;
         width: 90vw;
@@ -109,14 +158,28 @@
             grid-row: 1/2;
             color: var(--darkBlue);
             font-weight: 700;
-            color: blue;
+            color: rgb(29, 22, 100);
+        }
+
+        a
+        {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+
+            &:hover
+            {
+                color: rgb(29, 22, 100);
+            }
+        }
+
+        h5
+        {
             margin-bottom: 2rem;
         }
 
         .ieltsImage
         {
             grid-row: 2/3;
-            margin-bottom: 2rem;
         }
 
         .ieltsBody
@@ -172,6 +235,29 @@
 ////////////////////////////////////////////////
 //      MEDIA QUERIES       /////////
 ///////////////////////////////////////////////
+//      MIN-WIDTH: 300PX        //
+@media only screen and (min-width: 300px)
+{
+    .ielts
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 125px 475px 2fr 1fr !important;
+    }
+}
+
+//      MIN-WIDTH: 500PX        //
+@media only screen and (min-width: 500px)
+{
+    .ielts
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 125px 600px 2fr 1fr !important;
+    }
+}
+
+//      MIN-WIDTH: 820PX        //
 @media only screen and (min-width: 820px)
 {
     .beginnersContainer
@@ -192,6 +278,14 @@
         .orange
         {
             grid-column: 2/3;
+        }
+    }
+
+    .ielts
+    {
+        .image
+        {
+            margin-bottom: 3em;
         }
     }
 }

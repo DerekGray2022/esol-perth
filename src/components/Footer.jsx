@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../scss/Footer.scss";
 
 const Footer = () => {
+
     return (
         <>
             <div className="footer">
@@ -55,23 +56,65 @@ const Footer = () => {
                 {/*         SOCIAL MEDIA ICONS       */}
                 <div className="footerIcons">
 
-                    <a href="https://www.facebook.com/search/top?q=esolperth" target="blank">
-                        <h2>
-                            <i className="fa-brands fa-facebook" />
-                        </h2>
-                    </a>
+                    <div className="charityIcons">
 
-                    <a href="https://www.instagram.com/explore/locations/389478557923021/esolperth/" target="blank">
-                        <h2>
-                            <i className="fa-brands fa-instagram"></i>
-                        </h2>
-                    </a>
+                        <a href="https://www.oscr.org.uk/about-charities/search-the-register/charity-details?number=SC046650" target="blank">
+
+                            <img
+                                className="oscr"
+                                src="assets/Partners/OSCR.jpg" alt="OSCR Logo" />
+                            
+                            <span className="sm">
+                                SCN:
+                            </span>
+                            <span className="lg">
+                                Scottish Charity No:
+                            </span>
+                            <b> SC 046650</b>
+
+                        </a>
+
+                        <a className="scvo" href="https://scvo.scot/membership/members/5812/esolperth" target="blank">
+
+                            <img
+                                src="assets/Partners/SCVO.png" alt="SCVO Logo" />
+                            
+                            <span className="lg">
+                                We are proud members of 
+                            </span>
+                            <b> SCVO</b>
+                            <span className="sm"> Membership</span>
+
+                        </a>
+
+                    </div>
+
+                    <div className="smIcons">
+
+                        <a href="https://www.facebook.com/search/top?q=esolperth" target="blank">
+
+                            <h2>
+                                <i className="fa-brands fa-facebook" />
+                            </h2>
+
+                        </a>
+
+                        <a href="https://www.instagram.com/explore/locations/389478557923021/esolperth/" target="blank">
+
+                            <h2>
+                                <i className="fa-brands fa-instagram"></i>
+                            </h2>
+
+                        </a>
+
+                    </div>
+
                 </div>
 
                 {/*         CHARITY  NUMBER       */}
                 <div className="charityNo">
                     <p>
-                        <i>Scottish Charity No:</i><b> SC 046650</b>
+
                     </p>
                     <p className="lwm">
                         powered by Little Wise Monkey 2023
