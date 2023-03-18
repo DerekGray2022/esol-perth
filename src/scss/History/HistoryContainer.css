@@ -1,0 +1,38 @@
+.historyContainer {
+  background-color: var(--background);
+  height: 100%;
+  margin-bottom: 100px;
+}
+.historyContainer p {
+  text-align: left;
+}
+.historyContainer .filler {
+  padding: 0;
+}
+.historyContainer .row {
+  margin: 0;
+}
+.historyContainer .historyCard {
+  background-color: var(--background);
+  border: 1px solid transparent;
+  margin: 50px auto;
+}
+.historyContainer .historyCard .historyBody {
+  background-color: var(--background);
+}
+.historyContainer .historyCard .historyBody .historyText {
+  padding: 10px;
+}
+.historyContainer .historyCard .historyBody .historyText .emph {
+  font-style: italic;
+  font-weight: 600;
+}
+.historyContainer .historyImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.historyContainer .historyImageContainer .historyImage {
+  width: 75%;
+}/*# sourceMappingURL=HistoryContainer.css.map */

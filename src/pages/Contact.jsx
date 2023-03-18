@@ -1,6 +1,6 @@
 
 import { Container, Row } from "react-bootstrap";
-import EsolMap from "../components/Map";
+// import EsolMap from "../components/Map";
 import { Fade } from 'react-awesome-reveal';
 import '../scss/Contact.scss';
 
@@ -28,7 +28,8 @@ const Contact = () => {
 
                     {/* MAP DIVISION */}
                     <Row>
-                        <EsolMap />
+                        {/* <EsolMap /> */}
+                        <img className="map" src="assets/Contact/Map.jpg" alt="ESOLPERTH Map" />
                     </Row>
                 </Fade>
 

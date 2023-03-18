@@ -11,7 +11,9 @@ const Footer = () => {
                 {/*         LOGO         */}
                 <div className="logoLink">
                     <div className="footerLogo">
-                        <img src="assets/images/ESOLPERTH-logo.png" alt="Logo" />
+                        <Link to="/">
+                            <img src="assets/images/ESOLPERTH-logo.png" alt="Logo" />
+                        </Link>
                     </div>
 
                     <div className="footerLinks">
@@ -62,7 +64,7 @@ const Footer = () => {
 
                             <img
                                 className="oscr"
-                                src="assets/Partners/OSCR.jpg" alt="OSCR Logo" />
+                                src="assets/Partners/OSCRfoot.jpg" alt="OSCR Logo" />
                             
                             <span className="sm">
                                 SCN:
@@ -76,8 +78,7 @@ const Footer = () => {
 
                         <a className="scvo" href="https://scvo.scot/membership/members/5812/esolperth" target="blank">
 
-                            <img
-                                src="assets/Partners/SCVO.png" alt="SCVO Logo" />
+                            <img src="assets/Partners/SCVOfoot.png" alt="SCVO Logo" />
                             
                             <span className="lg">
                                 We are proud members of 

@@ -21,9 +21,11 @@ function Donate() {
                 </div>
                 {/* Button */}
                 <div className='donateButtonContainer'>
+                    <a href='https://www.gofundme.com/f/esolperth' alt="Esolperth GoFundMe" target="blank">
                     <Button className='donateButton'>
                         Donate
                     </Button>
+                    </a>
                 </div>
 
             </div>

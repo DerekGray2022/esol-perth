@@ -8,46 +8,22 @@
   }
 }
 
-.map-container 
+.map
 {
   display: flex;
   margin: 0 auto;
-  height: 400px;
-  width: 75vw;
-  max-width: 750px;
-  border: 2px solid var(--darkBlue);
-}
-
-.sidebar 
-{
-  background-color: var(--darkBlueTint);
-  color: var(--background);
-  padding: 6px 12px;
-  font-family: 'Nunito Sans';
-  font-size: 0.75rem;
-  font-weight: 700;
-  z-index: 1;
-  position: relative;
-  width: 33vw;
-  max-width: 750px;
-  height: 40px;
-  top: 0;
-  left: 0;
-
-  span
-  {
-    color: var(--darkBlue);
-  }
+  height: auto;
+  width: 90vw !important;
+  border: 3px solid var(--darkBlue);
+  border-radius: 1rem;
 }
 
 ////        MEDIA QUERIES       ////////////////////////////
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) 
+@media only screen and (min-width: 1000px) 
 {
-  .sidebar
+  .map
   {
-    width: 70vw;
-    height: 3.5rem;
+    max-width: 800px !important;
     margin: 0 auto;
   }
 }

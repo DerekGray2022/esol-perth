@@ -1,0 +1,38 @@
+.ourAimContainer {
+  background-color: var(--background);
+  height: 100%;
+  margin-bottom: 100px;
+}
+.ourAimContainer p {
+  text-align: left;
+}
+.ourAimContainer .filler {
+  padding: 0;
+}
+.ourAimContainer .row {
+  margin: 0;
+}
+.ourAimContainer .ourAimCard {
+  background-color: var(--background);
+  border: 1px solid transparent;
+  margin: 50px auto;
+}
+.ourAimContainer .ourAimCard .ourAimBody {
+  background-color: var(--background);
+}
+.ourAimContainer .ourAimCard .ourAimBody .ourAimText {
+  padding: 10px;
+}
+.ourAimContainer .ourAimCard .ourAimBody .ourAimText span {
+  font-style: italic;
+  font-weight: 600;
+}
+.ourAimContainer .ourAimImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.ourAimContainer .ourAimImageContainer .ourAimImage {
+  width: 100%;
+}/*# sourceMappingURL=OurAim.css.map */

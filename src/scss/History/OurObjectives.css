@@ -1,0 +1,38 @@
+.ourObjectivesContainer {
+  background-color: var(--background);
+  height: 100%;
+  margin-bottom: 100px;
+}
+.ourObjectivesContainer p {
+  text-align: left;
+}
+.ourObjectivesContainer .filler {
+  padding: 0;
+}
+.ourObjectivesContainer .row {
+  margin: 0;
+}
+.ourObjectivesContainer .ourObjectivesCard {
+  background-color: var(--background);
+  border: 1px solid transparent;
+  margin: 50px auto;
+}
+.ourObjectivesContainer .ourObjectivesCard .ourObjectivesBody {
+  background-color: var(--background);
+}
+.ourObjectivesContainer .ourObjectivesCard .ourObjectivesBody .ourObjectivesText {
+  padding: 10px;
+}
+.ourObjectivesContainer .ourObjectivesCard .ourObjectivesBody .ourObjectivesText li {
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+.ourObjectivesContainer .ourObjectivesImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.ourObjectivesContainer .ourObjectivesImageContainer .ourObjectivesImage {
+  width: 50%;
+}/*# sourceMappingURL=OurObjectives.css.map */

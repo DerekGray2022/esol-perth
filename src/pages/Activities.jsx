@@ -113,11 +113,15 @@ const Activities = () => {
                 <div className="actContText">
                   <h2>Perth Speakers Club</h2>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem aperiam temporibus, voluptates ad ipsam sed!
+                    Meets every ???
                     <br />
                     <span className="block">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      It is a normal misconception about Speakers Clubs that they are full of very good and accomplished speakers.
+                      <br />
                     </span>
+                      <span className="emphasis">
+                      The truth is, that it is the very place to be looking for if you struggle with confidence, and presenting the best version of yourself to the world. 
+                      </span>
                   </p>
                 </div>
               </div>
