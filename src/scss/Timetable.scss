@@ -1,264 +1,227 @@
 //      GENERAL     ////
-.timetableContainer
-{
-    display: grid;
-    grid-template-columns: repeat(14, 1fr);
-    grid-template-rows: repeat(4, 100px);
-    gap: 0;
+.timetableContainer {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  grid-template-rows: repeat(4, 100px);
+  gap: 0;
 
-    width: 90vw;
-    max-width: 900px;
-    margin: 50px auto;
-    align-items: center;
+  width: 90vw;
+  max-width: 900px;
+  margin: 50px auto;
+  align-items: center;
 }
 
 //      HEADER      ////
-.header
-{
-    grid-column: 1/15;
-    grid-row: 1;
-    font-weight: 900;
-    text-align: center;
-    border: 1px solid var(--darkBlue);
+.header {
+  grid-column: 1/15;
+  grid-row: 1;
+  font-weight: 900;
+  text-align: center;
+  border: 1px solid var(--darkBlue);
+  padding-top: 0.5rem;
 }
 
 //      SEASON      ////
-.newSeason
-{
-    grid-column: 1/15;
-    grid-row: 2;
+.newSeason {
+  grid-column: 1/15;
+  grid-row: 2;
 }
 
 //      BUTTONS     ////
-.buttons
-{
-    grid-row: 3;
-    cursor: pointer;
-    color: var(--darkBlue);
-    border: 1px solid var(--darkBlue);
-    border-radius: 3px;
-    font-weight: 600;
-    font-size: 1rem;
+.buttons {
+  grid-row: 3;
+  cursor: pointer;
+  color: var(--darkBlue);
+  border: 1px solid var(--darkBlue);
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 1rem;
 
-    &:hover
-    {
-        background-color: var(--esolBlue);
-        color: var(--background);
-        font-weight: 900;
-    }
-}
-
-.dayPicked
-{
-    background-color: var(--darkBlue);
+  &:hover {
+    background-color: var(--esolBlue);
     color: var(--background);
     font-weight: 900;
-
-    &:hover
-    {
-        background-color: var(--darkBlue);
-        color: var(--background);
-    }
+  }
 }
 
-.monButton
-{
-    grid-column: 1/3;
-    gap: 10px;
+.dayPicked {
+  background-color: var(--darkBlue);
+  color: var(--background);
+  font-weight: 900;
+
+  &:hover {
+    background-color: var(--darkBlue);
+    color: var(--background);
+  }
 }
 
-.tueButton
-{
-    grid-column: 3/5;
+.monButton {
+  grid-column: 1/3;
+  gap: 10px;
 }
 
-.wedButton
-{
-    grid-column: 5/7;
+.tueButton {
+  grid-column: 3/5;
 }
 
-.thuButton
-{
-    grid-column: 7/9;
+.wedButton {
+  grid-column: 5/7;
 }
 
-.friButton
-{
-    grid-column: 9/11;
+.thuButton {
+  grid-column: 7/9;
 }
 
-.satButton
-{
-    grid-column: 11/13;
+.friButton {
+  grid-column: 9/11;
 }
 
-.sunButton
-{
-    grid-column: 13/15;
+.satButton {
+  grid-column: 11/13;
+}
+
+.sunButton {
+  grid-column: 13/15;
 }
 
 //      DAY TITLE       ////
-.dayTitle
-{
-    grid-column: 1/15;
-    grid-row: 4;
+.dayTitle {
+  grid-column: 1/15;
+  grid-row: 4;
 
-    h1
-    {
-        font-weight: 700;
-    }
+  h1 {
+    font-weight: 700;
+  }
 }
-
 
 //      TIMES       ////
-.time
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-column: 1/7;
-    font-weight: 700;
-    font-size: 1rem;
-    border: 1px solid var(--darkBlue);
-    height: 100px;
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1/7;
+  font-weight: 700;
+  font-size: 1rem;
+  border: 1px solid var(--darkBlue);
+  height: 100px;
 }
 
-.earlyAM
-{
-    grid-row: 5/7;
+.earlyAM {
+  grid-row: 5/7;
 }
 
-.lateAM
-{
-    grid-row: 7/9;
+.lateAM {
+  grid-row: 7/9;
 }
 
-.lunch
-{
-    grid-row: 9;
-    color: green;
+.lunch {
+  grid-row: 9;
+  color: green;
 }
 
-.earlyPM
-{
-    display: flex;
-    flex-direction: column;
-    grid-row: 10/12;
-    padding: 1rem;
+.earlyPM {
+  display: flex;
+  flex-direction: column;
+  grid-row: 10/12;
+  padding: 1rem;
 }
 
-.classTitle
-{
-    display: none;
-    font-size: 1rem;
+.classTitle {
+  display: none;
+  font-size: 1rem;
 }
 
-.latePM
-{
-    grid-row: 12/14;
+.latePM {
+  grid-row: 12/14;
 }
 
-.evening
-{
-    grid-row: 14/16;
+.evening {
+  grid-row: 14/16;
 }
 
 //      CLASSES     ////
-.class
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-column: 7/15;
-    font-weight: 700;
-    font-size: 1rem;
-    border: 1px solid var(--darkBlue);
-    height: 100px;
+.class {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 7/15;
+  font-weight: 700;
+  font-size: 1rem;
+  border: 1px solid var(--darkBlue);
+  height: 100px;
 }
 
-.noClass
-{
-    color: red;
+.noClass {
+  color: red;
 }
 
-.day
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-column: 1/3;
-    font-weight: 700;
-    border: 1px solid var(--darkBlue);
-    height: 75px;
+.day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1/3;
+  font-weight: 700;
+  border: 1px solid var(--darkBlue);
+  height: 75px;
 }
-
-
 
 //////////////////////////////////
 //      MEDIA QUERIES       ////////////////
 /////////////////////////////////
-@media only screen and (min-width: 350px)
-{
-    .lunch, .buttons, .noClass
-    {
-        font-size: 1.2rem;
-    }
+@media only screen and (min-width: 350px) {
+  .lunch,
+  .buttons,
+  .noClass {
+    font-size: 1.2rem;
+  }
 }
 
-@media only screen and (min-width: 600px)
-{
-    .lunch, .buttons, .noClass
-    {
-        font-size: 1.5rem;
-    }
+@media only screen and (min-width: 600px) {
+  .lunch,
+  .buttons,
+  .noClass {
+    font-size: 1.5rem;
+  }
 }
 
-@media only screen and (min-width: 768px)
-{
-    .time
-    {
-        grid-column: 1/6;
-        font-size: 1.2rem;
-    }
+@media only screen and (min-width: 768px) {
+  .time {
+    grid-column: 1/6;
+    font-size: 1.2rem;
+  }
 
-    .class
-    {
-        grid-column: 6/15;
-        font-size: 1.2rem;
-    }
+  .class {
+    grid-column: 6/15;
+    font-size: 1.2rem;
+  }
 
-    .classTitle
-    {
-        display: flex;
-    }
+  .classTitle {
+    display: flex;
+  }
 }
 
-@media only screen and (min-width: 992px)
-{
-    .time
-    {
-        grid-column: 1/5;
-        font-size: 1.3rem;
-    }
+@media only screen and (min-width: 992px) {
+  .time {
+    grid-column: 1/5;
+    font-size: 1.3rem;
+  }
 
-    .class
-    {
-        grid-column: 5/15;
-        font-size: 1.3rem;
-    }
+  .class {
+    grid-column: 5/15;
+    font-size: 1.3rem;
+  }
 
-    .lunch, .buttons, .noClass
-    {
-        font-size: 1.5rem;
-    }
+  .lunch,
+  .buttons,
+  .noClass {
+    font-size: 1.5rem;
+  }
 
-    .buttons:hover
-    {
-        font-size: 1.8rem;
-    }
+  .buttons:hover {
+    font-size: 1.8rem;
+  }
 
-    .dayPicked:hover
-    {
-        font-size: 1.5rem;
-    }
+  .dayPicked:hover {
+    font-size: 1.5rem;
+  }
 }

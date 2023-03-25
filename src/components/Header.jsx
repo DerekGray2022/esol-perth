@@ -1,93 +1,106 @@
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
-import { LinkContainer } from 'react-router-bootstrap';
-import '../scss/Header.scss';
+import { LinkContainer } from "react-router-bootstrap";
+import "../scss/Header.scss";
 
 const Header = () => {
-    return (
-        <>
-            <Navbar
-                className="headBar"
-                sticky="top"
-                expand="xl"
-                collapseOnSelect
-            >
+  return (
+    <>
+      <Navbar className="headBar" sticky="top" expand="xl" collapseOnSelect>
+        <Navbar.Brand className="brand">
+          <LinkContainer to="/">
+            <Nav.Link>
+              <img
+                src="assets/images/ESOLPERTH-logo.png"
+                width="300px"
+                alt="Logo"
+              />
+            </Nav.Link>
+          </LinkContainer>
 
-                <Navbar.Brand className="brand">
+          {/* esolperth */}
+        </Navbar.Brand>
 
-                    <LinkContainer to="/">
-                        <Nav.Link>
-                            <img src="assets/images/ESOLPERTH-logo.png" width="300px" alt="Logo" />
-                        </Nav.Link>
-                    </LinkContainer>
+        <Navbar.Toggle className="toggle" />
 
-                    {/* esolperth */}
-                </Navbar.Brand>
+        <Navbar.Collapse className="justify-content-end">
+          <Nav>
+            {/*         Home         */}
+            <LinkContainer to="/">
+              <Nav.Link>
+                <b>Home</b>
+              </Nav.Link>
+            </LinkContainer>
 
-                <Navbar.Toggle className="toggle" />
+            {/*     About DropDown      */}
+            <b>
+              <NavDropdown variant="dark" title="About Us">
+                <LinkContainer to="/history">
+                  <Nav.Link>History</Nav.Link>
+                </LinkContainer>
+                <LinkContainer to="/tutors">
+                  <Nav.Link>Tutors</Nav.Link>
+                </LinkContainer>
+                <LinkContainer to="/board">
+                  <Nav.Link>Board Members</Nav.Link>
+                </LinkContainer>
+              </NavDropdown>
+            </b>
+            {/*     End About DropDown      */}
 
-                <Navbar.Collapse className="justify-content-end">
-                    <Nav>
-                        {/*         Home         */}
-                        <LinkContainer to="/">
-                            <Nav.Link><b>Home</b></Nav.Link>
-                        </LinkContainer>
+            {/*     Timetable       */}
+            <LinkContainer to="/timetable">
+              <Nav.Link>
+                <b>Timetable</b>
+              </Nav.Link>
+            </LinkContainer>
 
-                        {/*     About DropDown      */}
-                        <b><NavDropdown variant="dark" title="About Us">
-                            <LinkContainer to="/history">
-                                <Nav.Link>History</Nav.Link>
-                            </LinkContainer>
-                            <LinkContainer to="/tutors">
-                                <Nav.Link>Tutors</Nav.Link>
-                            </LinkContainer>
-                            <LinkContainer to="/board">
-                                <Nav.Link>Board Members</Nav.Link>
-                            </LinkContainer>
-                        </NavDropdown></b>
-                        {/*     End About DropDown      */}
+            {/*     Lessons DropDown        */}
+            <b>
+              <NavDropdown variant="dark" title="English Lessons">
+                <LinkContainer to="/beginners">
+                  <Nav.Link>Beginner Lessons</Nav.Link>
+                </LinkContainer>
+                <LinkContainer to="/intermediate">
+                  <Nav.Link>Intermediate Lessons</Nav.Link>
+                </LinkContainer>
+                <LinkContainer to="/advanced">
+                  <Nav.Link>Advanced Lessons</Nav.Link>
+                </LinkContainer>
+                <LinkContainer to="/ielts">
+                  <Nav.Link>IELTS Lessons</Nav.Link>
+                </LinkContainer>
+              </NavDropdown>
+            </b>
+            {/* End Lessons DropDown */}
 
-                        {/*     Timetable       */}
-                        <LinkContainer to="/timetable">
-                            <Nav.Link><b>Timetable</b></Nav.Link>
-                        </LinkContainer>
+            {/*     Activities      */}
+            <LinkContainer to="/activities">
+              <Nav.Link>
+                <b>Activities</b>
+              </Nav.Link>
+            </LinkContainer>
 
-                        {/*     Lessons DropDown        */}
-                        <b><NavDropdown variant="dark" title="English Lessons">
-                            <LinkContainer to="/beginners">
-                                <Nav.Link>Beginner Lessons</Nav.Link>
-                            </LinkContainer>
-                            <LinkContainer to="/intermediate">
-                                <Nav.Link>Intermediate Lessons</Nav.Link>
-                            </LinkContainer>
-                            <LinkContainer to="/advanced">
-                                <Nav.Link>Advanced Lessons</Nav.Link>
-                            </LinkContainer>
-                            <LinkContainer to="/ielts">
-                                <Nav.Link>IELTS Lessons</Nav.Link>
-                            </LinkContainer>
-                        </NavDropdown></b>
-                        {/* End Lessons DropDown */}
+            {/*     Friends & Feedback      */}
+            <LinkContainer to="/friends">
+              <Nav.Link>
+                <b>
+                  Friends &<br />
+                  Feedback
+                </b>
+              </Nav.Link>
+            </LinkContainer>
 
-                        {/*     Activities      */}
-                        <LinkContainer to="/activities">
-                            <Nav.Link><b>Activities</b></Nav.Link>
-                        </LinkContainer>
-
-                        {/*     Friends & Feedback      */}
-                        <LinkContainer to="/friends">
-                            <Nav.Link><b>Friends &<br />Feedback</b></Nav.Link>
-                        </LinkContainer>
-
-                        {/*     Contact     */}
-                        <LinkContainer to="/contact">
-                            <Nav.Link><b>Contact</b></Nav.Link>
-                        </LinkContainer>
-
-                    </Nav>
-                </Navbar.Collapse>
-            </Navbar>
-        </>
-    );
+            {/*     Contact     */}
+            <LinkContainer to="/contact">
+              <Nav.Link>
+                <b>Contact</b>
+              </Nav.Link>
+            </LinkContainer>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+    </>
+  );
 };
 
 export default Header;

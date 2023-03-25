@@ -1,12 +1,11 @@
 import { Container } from "react-bootstrap";
-import { Fade } from 'react-awesome-reveal';
+import { Fade } from "react-awesome-reveal";
 
-import '../scss/Activities.scss';
+import "../scss/Activities.scss";
 
 const Activities = () => {
   return (
     <div className="page">
-
       <Container fluid>
         <Fade triggerOnce duration={3000}>
           {/*     HEADER     */}
@@ -16,28 +15,39 @@ const Activities = () => {
             {/*     INTRODUCTION     */}
             <div className="activitiesText">
               <h5>
-                <b>Each week our volunteers run activities to help our students mingle with each other.</b>
+                <b>
+                  Each week our volunteers run activities to help our students
+                  mingle with each other.
+                </b>
               </h5>
-              <p>
-                Some activities happen on a regular weekly basis, where others are one off or opportunistic.
+              <p data-testid="para00">
+                Some activities happen on a regular weekly basis, where others
+                are one off or opportunistic.
               </p>
             </div>
           </div>
 
           {/*     FACESPOOK BANNER     */}
           <div className="activitiesFacebook">
-            <a href="https://www.facebook.com/search/top?q=esolperth" target="blank">
+            <a
+              href="https://www.facebook.com/search/top?q=esolperth"
+              target="_blank"
+              rel="noreferrer"
+            >
               <h4>
                 <i className="fa-brands fa-facebook"></i>
-                &nbsp;
-                - see our Facebook page for updates
+                &nbsp; - see our Facebook page for updates
               </h4>
             </a>
           </div>
 
           {/*     INSTAGRAM BANNER     */}
           <div className="activitiesInstagram">
-            <a href="https://www.instagram.com/explore/locations/389478557923021/esolperth/" target="blank">
+            <a
+              href="https://www.instagram.com/explore/locations/389478557923021/esolperth/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <h4>
                 <i className="fa-brands fa-instagram"></i>
                 &nbsp;
@@ -50,20 +60,20 @@ const Activities = () => {
 
           {/***    ACTIVITIES GRID   ***/}
           <div className="activitiesGrid">
-
             <Fade triggerOnce duration={3000}>
               {/*     INTERNATIONAL CAFE     */}
-              <div className="activitiesContainer cafe">
+              <div data-testid="div00" className="activitiesContainer cafe">
                 <div className="actContText">
                   <h2>International Café</h2>
-                  <p>
+                  <p data-testid="para01">
                     Usually held at 7pm on the second Monday of each month.
                     <br />
-                    <span className="block">
-                      This is an opportunity for people from different nations to socialise and make friends.
+                    <span data-testid="para02" className="block">
+                      This is an opportunity for people from different nations
+                      to socialise and make friends.
                     </span>
                     <br />
-                    <span className="emphasis">
+                    <span data-testid="para03" className="emphasis">
                       There is a different focus or topic for each session.
                     </span>
                   </p>
@@ -71,37 +81,41 @@ const Activities = () => {
               </div>
 
               {/*     DAY TRIPS    */}
-              <div className="activitiesContainer dayTrips">
+              <div data-testid="div01" className="activitiesContainer dayTrips">
                 <div className="actContText">
                   <h2>Daytrips</h2>
-                  <p>
+                  <p data-testid="para04">
                     We explore Scotland on coach trips.
                     <br />
-                    <span className="block">
-                      Past visits have been to Glasgow, Edinburgh, St. Andrews, Stirling and Blair Atholl!
+                    <span data-testid="para05" className="block">
+                      Past visits have been to Glasgow, Edinburgh, St. Andrews,
+                      Stirling and Blair Atholl!
                     </span>
                   </p>
                 </div>
               </div>
 
               {/*     CITY WALKS     */}
-              <div className="activitiesContainer cityWalks">
+              <div
+                data-testid="div02"
+                className="activitiesContainer cityWalks"
+              >
                 <div className="actContText">
                   <h2>City Walks</h2>
-                  <p>
+                  <p data-testid="para06">
                     A chance to explore the place in which we live.
                   </p>
                 </div>
               </div>
 
               {/*     CHESS CLUB     */}
-              <div className="activitiesContainer chess">
+              <div data-testid="div03" className="activitiesContainer chess">
                 <div className="actContText">
                   <h2>Perth Chess Club</h2>
-                  <p>
+                  <p data-testid="para07">
                     Meets every Monday at 7.30pm.
                     <br />
-                    <span className="block">
+                    <span data-testid="para08" className="block">
                       Beginners and experienced players are welcome.
                     </span>
                   </p>
@@ -109,35 +123,44 @@ const Activities = () => {
               </div>
 
               {/*     SPEAKERS CLUB     */}
-              <div className="activitiesContainer speakers">
+              <div data-testid="div04" className="activitiesContainer speakers">
                 <div className="actContText">
                   <h2>Perth Speakers Club</h2>
-                  <p>
+                  <p data-testid="para09">
                     Meets every ???
                     <br />
-                    <span className="block">
-                      It is a normal misconception about Speakers Clubs that they are full of very good and accomplished speakers.
+                    <span data-testid="para10" className="block">
+                      It is a normal misconception about Speakers Clubs that
+                      they are full of very good and accomplished speakers.
                       <br />
                     </span>
-                      <span className="emphasis">
-                      The truth is, that it is the very place to be looking for if you struggle with confidence, and presenting the best version of yourself to the world. 
-                      </span>
+                    <span data-testid="para11" className="emphasis">
+                      The truth is, that it is the very place to be looking for
+                      if you struggle with confidence, and presenting the best
+                      version of yourself to the world.
+                    </span>
                   </p>
                 </div>
               </div>
 
               {/*     CHILDREN'S HOLIDAY CLUB     */}
-              <div className="activitiesContainer childrensClub">
+              <div
+                data-testid="div05"
+                className="activitiesContainer childrensClub"
+              >
                 <div className="actContText">
                   <h2>Children's Holiday Club</h2>
-                  <p>
-                    This course runs in the second week of the school holidays and throughout July.
+                  <p data-testid="para12">
+                    This course runs in the second week of the school holidays
+                    and throughout July.
                     <br />
-                    <span className="block">
-                      It is primarily to support the learning and development language skills but we also recognise that there is a need for childcare in the school holidays.
+                    <span data-testid="para13" className="block">
+                      It is primarily to support the learning and development
+                      language skills but we also recognise that there is a need
+                      for childcare in the school holidays.
                     </span>
                     <br />
-                    <span className="emphasis">
+                    <span data-testid="para14" className="emphasis">
                       There are only 10 places available in the Holiday Club.
                     </span>
                   </p>
@@ -145,15 +168,20 @@ const Activities = () => {
               </div>
 
               {/*     TABLE TENNIS CLUB     */}
-              <div className="activitiesContainer tableTennis">
+              <div
+                data-testid="div06"
+                className="activitiesContainer tableTennis"
+              >
                 <div className="actContText">
                   <h2>Table Tennis Club</h2>
-                  <p>
-                    Meets Monday at 4pm for children aged 4 - 10 years.<br />
-                    <span className="block">
+                  <p data-testid="para15">
+                    Meets Monday at 4pm for children aged 4 - 10 years.
+                    <br />
+                    <span data-testid="para16" className="block">
                       Wednesday at 7.30pm for teenagers and adults.
-                    </span><br />
-                    <span className="emphasis">
+                    </span>
+                    <br />
+                    <span data-testid="para17" className="emphasis">
                       Beginners and experienced players are welcome.
                     </span>
                   </p>
@@ -161,41 +189,52 @@ const Activities = () => {
               </div>
 
               {/*     JULY SUMMER SCHOOL     */}
-              <div className="activitiesContainer summerSchool">
+              <div
+                data-testid="div07"
+                className="activitiesContainer summerSchool"
+              >
                 <div className="actContText">
                   <h2>July Summer School</h2>
-                  <p>
-                    Every year in July we run an intensive English language course for 4 weeks.<br />
-                    <span className="block">
-                      Monday to Thursday in the classroom and every Friday we go for an educational and fun day out.
-                    </span><br />
-                    <span className="emphasis">
-                      This is a good course to attend if you need an IELTS qualification to start a university course in September.
+                  <p data-testid="para18">
+                    Every year in July we run an intensive English language
+                    course for 4 weeks.
+                    <br />
+                    <span data-testid="para19" className="block">
+                      Monday to Thursday in the classroom and every Friday we go
+                      for an educational and fun day out.
                     </span>
                     <br />
-                    <span className="emphasis">
-                      ...It is also a good course to attend if you are looking for work.
+                    <span data-testid="para20" className="emphasis">
+                      This is a good course to attend if you need an IELTS
+                      qualification to start a university course in September.
+                    </span>
+                    <br />
+                    <span data-testid="para21" className="emphasis">
+                      ...It is also a good course to attend if you are looking
+                      for work.
                     </span>
                   </p>
                 </div>
               </div>
 
               {/*     TODDLER GROUP     */}
-              <div className="activitiesContainer toddlerGroup">
+              <div
+                data-testid="div08"
+                className="activitiesContainer toddlerGroup"
+              >
                 <div className="actContText">
                   <h2>Esolperth Toddler Group</h2>
-                  <p>
-                    The Esolperth Toddler group runs alongside the Beginner class in the same room so Mums, Dads and Grandparents can come along to class with their children.
+                  <p data-testid="para22">
+                    The Esolperth Toddler group runs alongside the Beginner
+                    class in the same room so Mums, Dads and Grandparents can
+                    come along to class with their children.
                   </p>
                 </div>
               </div>
             </Fade>
-
           </div>
         </Fade>
-
       </Container>
-
     </div>
   );
 };

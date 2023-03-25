@@ -1,58 +1,59 @@
-.ourObjectivesContainer
+.ourObjectivesContainer 
 {
+  background-color: var(--background);
+  height: 100%;
+  margin-bottom: 100px;
+
+  p 
+  {
+    text-align: left;
+  }
+
+  .filler 
+  {
+    padding: 0;
+  }
+
+  .row 
+  {
+    margin: 0;
+  }
+
+  .ourObjectivesCard 
+  {
     background-color: var(--background);
-    height: 100%;
-    margin-bottom: 100px;
+    border: 1px solid transparent;
+    margin: 50px auto;
 
-    p
+    .ourObjectivesBody 
     {
-        text-align: left;
-    }
+      background-color: var(--background);
 
-    .filler
-    {
-        padding: 0;
-    }
-
-    .row
-    {
-        margin: 0;
-    }
-
-    .ourObjectivesCard
-    {
-        background-color: var(--background);
-        border: 1px solid transparent;
-        margin: 50px auto;
-
-        .ourObjectivesBody
-        {
-            background-color: var(--background);
-
-            .ourObjectivesText
-            {
-                padding: 10px;
-
-                li
-                {
-                    margin-bottom: 2rem;
-                    font-weight: 600;
-                }
-            }
-        }
-    }
-
-    //      OBJECTIVES IMAGE CONTAINER     //
-    .ourObjectivesImageContainer
-    {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      .ourObjectivesText 
+      {
         padding: 10px;
 
-        .ourObjectivesImage
+        li 
         {
-            width: 50%;
+          text-align: left;
+          margin-bottom: 2rem;
+          font-weight: 600;
         }
+      }
     }
+  }
+
+  //      OBJECTIVES IMAGE CONTAINER     //
+  .ourObjectivesImageContainer 
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    .ourObjectivesImage 
+    {
+      width: 50%;
+    }
+  }
 }
