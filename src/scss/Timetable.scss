@@ -107,22 +107,18 @@
 }
 
 .earlyAM {
-  grid-row: 5/7;
-}
-
-.lateAM {
-  grid-row: 7/9;
+  grid-row: 5/6;
 }
 
 .lunch {
-  grid-row: 9;
+  grid-row: 6/7;
   color: green;
 }
 
 .earlyPM {
   display: flex;
   flex-direction: column;
-  grid-row: 10/12;
+  grid-row: 7/8;
   padding: 1rem;
 }
 
@@ -132,11 +128,15 @@
 }
 
 .latePM {
-  grid-row: 12/14;
+  grid-row: 8/9;
 }
 
 .evening {
-  grid-row: 14/16;
+  grid-row: 9/10;
+}
+
+.lateEvening {
+  grid-row: 10/11;
 }
 
 //      CLASSES     ////

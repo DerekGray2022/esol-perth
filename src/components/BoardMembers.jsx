@@ -2,7 +2,7 @@ const BoardMembers = [
   {
     id: 0,
     img: "assets/Board/AndrewParrott.jpg",
-    name: "Councillor Andrew Parrott",
+    name: "Cllr. Andrew Parrott",
     firstName: "Andrew",
     title: "",
     biography: [

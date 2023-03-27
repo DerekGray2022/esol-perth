@@ -8,7 +8,7 @@ const Tutors = () => {
     <Fade triggerOnce duration={3000}>
       <div className="splashBox">
         {/*         INTRODUCTION       */}
-        <div className="splashRow">
+        <div className="splashRow" data-testid="splash">
           <div className="splashCol">
             We know that learning is easier when you have an excellent teacher.
             That's why our tutors keep their qualifications up to date with
@@ -129,7 +129,7 @@ const Tutors = () => {
           />
           <div className="supportInfo">
             <h5>Administrator</h5>
-            <p>ESOLPERTH Administrator</p>
+            <p>Magda Kudelka</p>
           </div>
         </div>
       </div>

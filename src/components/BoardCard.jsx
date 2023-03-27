@@ -36,7 +36,7 @@ const BoardCard = () => {
                 <div className="memberTitle">
                   <h4>{person.title}</h4>
 
-                  <h3>{person.name}</h3>
+                  {person.firstName === "Andrew" ? <h4>{person.name}</h4> : <h3>{person.name}</h3>}
 
                   <h6>{person.biography[0]}</h6>
                 </div>
@@ -45,7 +45,7 @@ const BoardCard = () => {
                   <button onClick={() => handleShow(person.id)}>
                     Read more about
                     <br />
-                    {person.firstName}
+                    {person.firstName}...
                   </button>
                 </div>
               </div>

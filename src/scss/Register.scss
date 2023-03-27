@@ -1,4 +1,4 @@
-.register
+.register 
 {
   display: flex;
   flex-direction: column;
@@ -7,78 +7,88 @@
   padding: 25px 0;
   height: 100%;
 
-  h2
+  h2 
   {
     font-weight: 700;
     color: var(--black);
     margin-top: 50px;
   }
 
-  .registerForm
+  .registerForm 
   {
     width: 40vw !important;
     min-width: 250px;
     margin: 50px auto;
 
-    input
+    input 
     {
       font-size: 1.2rem;
       background-color: var(--esolBlue);
       border: 1px solid var(--darkBlue);
 
-      &::placeholder
+      &::placeholder 
       {
         font-size: 1.2rem;
         color: white !important;
       }
     }
   }
+
+  .registerLink 
+  {
+    text-decoration: none;
+    color: var(--background);
+    font-size: 1.5rem;
+    margin: 2rem auto 4rem;
+  
+    .esolperth 
+    {
+      color: var(--background);
+    }
+
+    &:hover 
+    {
+      font-weight: 700;
+
+      .esolperth  
+      {
+        color: var(--darkOrange) !important;
+      }
+    }
 }
-
-
-
+}
 
 /// ///////////////////////////////
 ////    MEDIA QUERIES   /////////////////
 /// ///////////////////////////////
 
 /*Galaxy Fold ----------- */
-@media (min-width: 280px) and (max-width: 320px) 
-{
-  
+@media (min-width: 280px) and (max-width: 320px) {
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) 
-{
-  h1
-  {
+@media only screen and (max-width: 600px) {
+  h1 {
     font-size: 10vw;
     font-weight: 700;
   }
 
-  .col
-  {
+  .col {
     align-items: flex-start;
   }
 
-  .container
-  {
+  .container {
     width: 90vw;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) 
-{
-  .register
-  {
-    .container
-    {
+@media only screen and (min-width: 600px) {
+  .register {
+    .container {
       width: 80vw;
 
-      h2
-      {
+      h2 {
         font-size: 8vw;
         font-weight: 700;
       }
@@ -87,16 +97,12 @@
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) 
-{
-  .register
-  {
-    .container
-    {
+@media only screen and (min-width: 768px) {
+  .register {
+    .container {
       width: 70vw;
 
-      h2
-      {
+      h2 {
         font-size: 7vw;
         font-weight: 700;
       }
@@ -105,32 +111,21 @@
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) 
-{
-  .register
-  {
-    .container
-    {
+@media only screen and (min-width: 992px) {
+  .register {
+    .container {
       width: 55vw;
-    
-      h1
-      {
+
+      h1 {
         font-size: 5vw;
         font-weight: 700;
       }
     }
 
-    .registerForm
-    {
-      input::placeholder
-      {
+    .registerForm {
+      input::placeholder {
         font-size: 1.5rem;
       }
     }
   }
 }
-
-
-
-
-

@@ -9,7 +9,7 @@ const Activities = () => {
       <Container fluid>
         <Fade triggerOnce duration={3000}>
           {/*     HEADER     */}
-          <div className="activitiesTextContainer">
+          <div className="activitiesTextContainer" data-testid="splash">
             <h1 className="activitiesHeader">Activities</h1>
 
             {/*     INTRODUCTION     */}

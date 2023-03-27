@@ -29,15 +29,19 @@
     justify-items: center;
 
     h3 {
-      width: 90vw;
+      width: 90%;
       max-width: 15rem;
       margin: 0 auto 2rem;
     }
 
     h4 {
-      font-weight: 700;
-      margin-top: 1rem;
-      color: var(--darkBlue);
+      font-weight: 600;
+      // margin-top: 1rem;
+      // color: var(--darkBlue);
+
+      width: 90%;
+      max-width: 15rem;
+      margin: 0 auto 2rem;
     }
 
     h6 {

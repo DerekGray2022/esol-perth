@@ -2,6 +2,27 @@ import { render, screen } from "@testing-library/react";
 
 import Tutors from "../pages/Tutors";
 
+////        SPLASH DIVISION        //////////////////////////////////
+describe("Splash Division", () => {
+  // Splash Division
+  test("should render Splash Division", () => {
+    render(<Tutors />);
+
+    const splashDiv = screen.getByTestId(/splash/i);
+    expect(splashDiv).toBeInTheDocument();
+  });
+
+  // Splash Division has Background Image
+  test("Splash Division has Background Image", () => {
+    render(<Tutors />);
+
+    const splashDiv = screen.getByTestId(/splash/i);
+    expect(splashDiv).toHaveStyle({
+      backgroundImage: "",
+    });
+  });
+});
+
 ////        HEADINGS        /////////////////////////////////////////////
 describe("Headings", () => {
   // Senior Tutor

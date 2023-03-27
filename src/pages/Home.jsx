@@ -63,7 +63,7 @@ const Home = () => {
                     <Sponsors />
                 </Container>
 
-                {/* SIGN-UP FORM DIVISION */}
+                {/* REGISTER DIVISION */}
                 <Container fluid className="register">
 
                     <h2>Register Here</h2>

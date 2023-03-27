@@ -39,7 +39,7 @@ const Timetable = () => {
                 <div className="header"><h1>Timetable</h1></div>
 
                 {/***       SEASON      ***/}
-                <h1 className="newSeason">September - December 2022</h1>
+                <h1 className="newSeason">April – June 2023</h1>
 
                 {/***       BUTTONS     ***/}
                 <div className="monButton buttons dayPicked" onClick={(e) => { handleClick(e, 0); }}>
@@ -74,32 +74,28 @@ const Timetable = () => {
                 <div className="dayTitle"><h1>{day.day}</h1></div>
 
                 {/***       TIMES       ***/}
-                <div className="time earlyAM">
-                    <span>10:00 - 11:00</span>
-                </div>
-                <div className="time lateAM">
-                    <span>11:00 - 12:00</span>
+                <div className="time AM">
+                    <span>10:00 - 12:00</span>
                 </div>
                 <div className="time lunch">
-                    <span>12:00 - 13:00</span>
+                    <span>12:00 - 14:00</span>
                 </div>
                 <div className="time earlyPM">
-                    <span>13:00 - 14:30</span>
+                    <span>14:00 - 16:00</span>
                 </div>
                 <div className="time latePM">
-                    <span>15:30 - 17:00</span>
+                    <span>16:00 - 18:00</span>
                 </div>
                 <div className="time evening">
                     <span>18:00</span>
                 </div>
-
-                {/***       CLASSES       ***/}
-                <div className={day.earlyAM === "NO CLASSES" ? "class earlyAM noClass" : "class earlyAM"}>
-                    {day.earlyAM}
+                <div className="time lateEvening">
+                    <span>19:30</span>
                 </div>
 
-                <div className={day.lateAM === "NO CLASSES" ? "class lateAM noClass" : "class lateAM"}>
-                    {day.lateAM}
+                {/***       CLASSES       ***/}
+                <div className={day.AM === "NO CLASSES" ? "class earlyAM noClass" : "class earlyAM"}>
+                    {day.AM}
                 </div>
 
                 <div className="class lunch">LUNCH</div>
@@ -114,6 +110,8 @@ const Timetable = () => {
                 </div>
 
                 <div className={day.evening === "NO CLASSES" ? "class evening noClass" : "class evening"}>{day.evening}</div>
+
+                <div className={day.lateEvening === "NO CLASSES" ? "class evening noClass" : "class lateEvening"}>{day.lateEvening}</div>
 
             </div>
         </Fade>

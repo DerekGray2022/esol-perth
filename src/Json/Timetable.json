@@ -1,65 +1,58 @@
 [
     {
         "day": "Monday",
-        "earlyAM": "Beginners Class and Intermediate Class",
-        "lateAM": "Beginners Class and Intermediate Class",
-        "earlyPM": "Women's Health",
-        "latePM": "Children's English Club",
-        "evening": "Beginners Class and Intermediate Class",
-        "title": "a discussion class with a focus on women's health and wellbeing.  In collaboration with local health providers."
+        "AM": "ESOL",
+        "earlyPM": "NO CLASSES",
+        "latePM": "NO CLASSES",
+        "evening": "ESOL",
+        "lateEvening": "Chess Club"
     },
     {
         "day": "Tuesday",
-        "earlyAM": "Beginners Class and Intermediate Class",
-        "lateAM": "Beginners Class and Intermediate Class",
-        "earlyPM": "Net Zero",
-        "latePM": "Children's English Club",
-        "evening": "Beginners Class and Intermediate Class",
-        "title": "a discussion class exploring climate change and the response of the community."
+        "AM": "ESOL | Voice Class, Perth Theatre",
+        "earlyPM": "NO CLASSES",
+        "latePM": "Guitar Class",
+        "evening": "ESOL",
+        "lateEvening": ""
     },
     {
         "day": "Wednesday",
-        "earlyAM": "Beginners Class and Intermediate Class",
-        "lateAM": "Beginners Class and Intermediate Class",
-        "earlyPM": "Exploring the History of Perth ",
-        "latePM": "Children's English Club",
-        "evening": "Beginners Class and Intermediate Class",
-        "title": "a discussion class in collaboration with Perth museum."
+        "AM": "ESOL",
+        "earlyPM": "Speakers' Club",
+        "latePM": "NO CLASSES",
+        "evening": "ESOL",
+        "lateEvening": ""
     },
     {
         "day": "Thursday",
-        "earlyAM": "Beginners Class and Intermediate Class",
-        "lateAM": "Beginners Class and Intermediate Class",
-        "earlyPM": "Citizenship",
-        "latePM": "Children's English Club",
-        "evening": "Beginners Class and Intermediate Class",
-        "title": "a discussion class in collaboration with Police Scotland."
+        "AM": "ESOL",
+        "earlyPM": "Table Tennis Club",
+        "latePM": "Table Tennis",
+        "evening": "ESOL",
+        "lateEvening": "Speakers' Club (alternate weeks)"
     },
     {
         "day": "Friday",
-        "earlyAM": "Beginners Class and Intermediate Class",
-        "lateAM": "NO CLASSES",
+        "AM": "ADMIN",
         "earlyPM": "NO CLASSES",
         "latePM": "NO CLASSES",
         "evening": "NO CLASSES",
-        "title": ""
+        "lateEvening": ""
     },
     {
         "day": "Saturday",
-        "earlyAM": "Beginners Class and Intermediate Class",
-        "lateAM": "Beginners Class and Intermediate Class",
+        "AM": "ESOL | Children's Club",
         "earlyPM": "NO CLASSES",
         "latePM": "NO CLASSES",
         "evening": "NO CLASSES",
-        "title": ""
+        "lateEvening": ""
     },
     {
         "day": "Sunday",
-        "earlyAM": "Beginners Class and Intermediate Class",
-        "lateAM": "Beginners Class and Intermediate Class",
+        "AM": "ESOL",
         "earlyPM": "NO CLASSES",
         "latePM": "NO CLASSES",
         "evening": "NO CLASSES",
-        "title": ""
+        "lateEvening": ""
     }
 ]

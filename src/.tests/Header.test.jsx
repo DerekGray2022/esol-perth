@@ -128,10 +128,10 @@ describe("Buttons & Dropdowns", () => {
 });
 
 //      DROPDOWN LISTS RENDER      /////////////////////////
-describe("Dropdown Lists render", () => {
+describe("Dropdown Lists work as expected", () => {
   //
   // About Us Dropdown
-  test('should render "About Us" dropdown items when clicked', async () => {
+  test('"About Us" dropdown works as expected', async () => {
     user.setup();
 
     render(
@@ -152,22 +152,25 @@ describe("Dropdown Lists render", () => {
       name: /history/i,
     });
     expect(historyLink).toBeInTheDocument();
+    expect(historyLink).toHaveAttribute("href", "/history");
 
     // Tutors link
     const tutorList = screen.getByRole("link", {
       name: /tutors/i,
     });
     expect(tutorList).toBeInTheDocument();
+    expect(tutorList).toHaveAttribute("href", "/tutors");
 
     // Board link
     const boardList = screen.getByRole("link", {
       name: /board/i,
     });
     expect(boardList).toBeInTheDocument();
+    expect(boardList).toHaveAttribute("href", "/board");
   });
 
   // English Lessons Dropdown
-  test('should render "English Lessons" dropdown items when clicked', async () => {
+  test('"English Lessons" dropdown works as expected', async () => {
     user.setup();
 
     render(
@@ -188,20 +191,27 @@ describe("Dropdown Lists render", () => {
       name: /beginner/i,
     });
     expect(beginnersLink).toBeInTheDocument();
+    expect(beginnersLink).toHaveAttribute("href", "/beginners");
+
     // Intermediate link
     const intermediateLink = screen.getByRole("link", {
       name: /intermediate/i,
     });
     expect(intermediateLink).toBeInTheDocument();
+    expect(intermediateLink).toHaveAttribute("href", "/intermediate");
+
     // Advanced link
     const advancedLink = screen.getByRole("link", {
       name: /advanced/i,
     });
     expect(advancedLink).toBeInTheDocument();
+    expect(advancedLink).toHaveAttribute("href", "/advanced");
+
     // IELTS link
     const ieltsLink = screen.getByRole("link", {
       name: /ielts/i,
     });
     expect(ieltsLink).toBeInTheDocument();
+    expect(ieltsLink).toHaveAttribute("href", "/ielts");
   });
 });

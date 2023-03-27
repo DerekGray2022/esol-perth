@@ -6,15 +6,22 @@ import "../scss/Register.scss";
 const Register = () => {
   return (
     <>
-      <Form className="registerForm" action="#form">
+      <Form className="registerForm" action="mailto:esolperth@gmail.com?subject=Registration Request" method="post" encType="text/plain">
         <Form.Group className="mb-3" controlId="formBasicName">
-          <Form.Control type="text" placeholder="Enter Full Name:" />
+          <Form.Control
+            type="text"
+            id="name"
+            name="Name "
+            placeholder="Enter Full Name here..."
+          />
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Control
             type="email"
-            placeholder="Enter Email:"
+            name="Email "
+            id="email"
+            placeholder="Enter Email here..."
             autoComplete="off"
           />
           <Form.Text className="text-muted">

@@ -291,11 +291,22 @@ describe("Partners: Header, Image & Functional Link", () => {
 
 ////        COMMENTS DIVISION        /////////////////////
 describe("Comments Division", () => {
+  // Comments Division Renders
   test("should render Comments Division", () => {
     render(<Friends />);
 
     const commentsDiv = screen.getByTestId(/comments/i);
     expect(commentsDiv).toBeInTheDocument();
+  });
+
+  // Comments Division has Background Image
+  test("Comments Division has Background Image", () => {
+    render(<Friends />);
+
+    const commentsDiv = screen.getByTestId(/comments/i);
+    expect(commentsDiv).toHaveStyle({
+      backgroundImage: "",
+    });
   });
 });
 

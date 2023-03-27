@@ -2,25 +2,25 @@
     {
         "id": "one",
         "day": "Monday-Thursday",
-        "title": "Beginners and Intermediate",
+        "title": "ESOL",
         "time": "10:00-12:00 & 18:00-19:00"
     },
     {
         "id": "two",
-        "day": "Friday",
-        "title": "Beginners",
-        "time": "10:00-11:00"
-    },
-    {
-        "id": "three",
-        "day": "Saturday & Sunday",
-        "title": "Beginners and Intermediate",
+        "day": "Tuesday",
+        "title": "Voice Class | Perth Theatre",
         "time": "10:00-12:00"
     },
     {
+        "id": "three",
+        "day": "Tuesday",
+        "title": "Guitar Class",
+        "time": "16:00-18:00"
+    },
+    {
         "id": "four",
-        "day": "Monday-Thursday",
-        "title": "Discussion Classes",
-        "time": "13:00-14:30"
+        "day": "Saturday-Sunday",
+        "title": "ESOL",
+        "time": "10:00-12:00"
     }
 ]
